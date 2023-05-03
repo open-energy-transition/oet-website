@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- HTML Meta Tags -->
+    <title>Open Energy Transiton - A non-profit tackling globally energy planning challenges with an unique open approach.</title>
+    <meta name="description" content="The Open Energy Transiton gGmbH works on open-source software, open data and open communities for energy system planning to enable better decision-making."/>
+    <!-- Google verfication to be 'findable' on google -->
+    <meta name="google-site-verification" content="gHJzkLzpVaJqghYQHRS6GrS92bTJjLyfr9FUIxQCd2U" />
+    <!-- Authors -->
+    <link rel="author" href="https://pypsa-earth.readthedocs.io/en/latest/project_structure_and_credits.html"/>
+
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="Open Energy Transiton - A non-profit tackling energy planning challenges worldwide."/>
+    <meta itemprop="description" content="The Open Energy Transiton gGmbH works on open-source software, open data and open communities for energy system planning to enable better decision-making."/>
+    <meta itemprop="image" content="https://openenergytransition.org/assets/img/website_screenshot.png"/>
+
+    <!-- Facebook Meta Tags -->
+    <meta name="title" property="og:title" content="Open Energy Transiton - A non-profit tackling energy planning challenges worldwide."/>
+    <meta name="type" property="og:type" content="website"/>
+    <meta name="image" property="og:image" content="https://openenergytransition.org/assets/img/website_screenshot.png"/>
+    <meta name="url" property="og:url" content="https://openenergytransition.org"/>
+    <meta name="description" property="og:description" content="The PyPSA meets Earth initiative works on open energy system planning, open data, and open communities to enable better and trusted decision-making."/>
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="Open Energy Transiton - A non-profit tackling energy planning challenges worldwide."/>
+    <meta name="twitter:description" content="The Open Energy Transiton gGmbH works on open-source software, open data and open communities for energy system planning to enable better decision-making."/>
+    <meta name="twitter:image" content="https://openenergytransition.org/assets/img/website_screenshot.png"/>
+
+    <!-- Meta Tags Generated via http://heymeta.com -->
+    <meta content="open source, energy system modelling, pypsa, earth, energy, power grid" name="keywords">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    
+  -->
+  <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+ 
+    <!-- LinkedIn buttom -->
+    <script src="https://platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5D0EVH2HFL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-5D0EVH2HFL');
+    </script>
+
+
+    <!-- =======================================================
+  * Based on Template Name: Bocor - v4.3.0
+  * Template URL: https://bootstrapmade.com/bocor-bootstrap-template-nice-animation/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header">
+        <div class="container d-flex align-items-center justify-content-around justify-content-md-between">
+            <div class="logo">
+                <!-- <h1><a href="index.html">Bocor<span>.</span></a></h1> -->
+                <!-- Uncomment below if you prefer to use an image logo -->
+                <a href="index.html"><img src="assets/img/oet-logo-red-n-subtitle.png" alt="" class="img-fluid"></a>
+            </div>
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="#hero"></a></li>
+                    <li><a class="nav-link scrollto" href="index.html#intro">What we do</a></li>
+                    <li class="dropdown"><a href="projects.html"><span>Projects</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="projects.html#devpartners">Development partners</a></li>
+                            <li><a href="projects.html#model">Open framework and model</a></li>
+                            <li><a href="projects.html#data">Open data</a></li>
+                            <li><a href="projects.html#solver">Open solver</a></li>
+                            <li><a href="projects.html#community">Open community</a></li>
+                            <li><a href="projects.html#refprojects">Reference projects</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="about-us.html"><span>About us</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="about-us.html#mission">Our mission</a></li>
+                            <li><a href="about-us.html#team">Team</a></li>
+                            <li><a href="about-us.html#partners">Partners</a></li>
+                            <li><a href="about-us.html#contributors">Contributors</a></li>
+                            <li><a href="about-us.html#workwithus">Work with us</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+                <script type="IN/FollowCompany" data-id="94152365" data-counter="bottom"></script>
+            </nav>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Get Involved Section ======= -->
+    <section id="devpartners" class="getinvolved section-bg">
+        <div class="container my-5">
+            <div class="section-title">
+                <h2 data-aos="fade-in">Development Partners</h2>
+                <div class="flex-container">
+                    <div class="col-sm-4">
+                      <div class="img-wrapper">
+                        <img src="assets/img/get_involved/oet-logo-min.png">
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="img-wrapper">
+                        <a href="https://pypsa-meets-earth.github.io/">
+                        <img src="assets/img/get_involved/pypsameetsearth-logo.png">
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="img-wrapper">
+                        <a href="https://pypsa.org/">
+                        <img src="assets/img/get_involved/pypsa-logo.png">
+                        </a>
+                      </div>
+                    </div>
+                </div>
+                <p style="padding:20px;">
+                We are three main players with distinctive roles that work on open modelling, open data,
+                open source solver support and open communities for energy system planning. 
+                
+                The <strong><a href="https://pypsa.org/">PyPSA.org Team</a></strong> is a research-focused
+                group that aim is to push the state-of-the-art in energy system modelling in Europe.
+                
+                The <strong><a href="https://pypsa-meets-earth.github.io/">PyPSA meets Earth Team</a></strong>
+                is a research focused grassroots research initiative extending the cutting-edge work from Europe
+                to Earth-scale to push the state-of-the-art in energy system modelling with an open community.
+
+                The <strong><a href="https://openenergytransition.org/team">Open Energy Transition Team</a></strong>
+                is an impact-driven company that aim is push the worldwide adoption of all open tools to accelerate
+                better and transparent decision-making.
+
+                Many of the data, model, solver activities are neutral to the model framework, opening
+                the door for collaboration also outside of the PyPSA space.
+                </p>
+
+                <!-- <p style="padding:10px;">
+                    <p font-style="italic">
+                        <i>
+                            "I am very impressed by what PyPSA meets Earth has achieved.
+                            They are a real grassroots initiative without funding,
+                            who have expanded and enriched the PyPSA ecosystem and
+                            had more impact than many multi-million-euro funded projects.
+                            I believe that this initiative shows the power of free and open
+                            source software to catalyse new innovation.
+                            We can expect many more exciting developments!"
+                        </i> 
+                        <br>
+                        <br>
+                    </p>
+                    <p><b>
+                        - Prof. Tom Brown, Co-Creator of PyPSA and lead of PyPSA.org
+                    </b></p> 
+                    <img src="/assets/img/people/tombrown_cropped.jpg" style=height:180px alt="Max Parzen image">               
+                </p> -->
+            </div>
+        </div>
+    </section>
+    <section id="model" class="getinvolved section-bg">
+        <div class="container my-5">
+            <div class="section-title">
+                <h2 data-aos="fade-in">Framework and Models for Energy System Modelling</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 container-fluid text-center px-4">
+                    <h2><a href="https://pypsa.readthedocs.io/en/latest/">PyPSA</a></h2>
+                    <p>A python software toolbox for simulating and optimising modern power systems.
+                        <br>
+                        <img src="/assets/img/get_involved/pypsa.png" onmouseover="this.src='/assets/img/get_involved/gifs/pypsa.gif'" onmouseout="this.src='/assets/img/get_involved/pypsa.png'" alt="PyPSA network image">
+                    </p>
+                    <a href="https://pypsa.readthedocs.io/en/latest/">
+                        <button class="btn btn-primary"><i class="fa fa-book"></i> | Documentation</button>
+                    </a>
+                    <a href="https://github.com/PyPSA/PyPSA">
+                        <button class="btn btn-info"><i class="fa fa-info-circle"></i> | Source Code</button>
+                    </a>
+                    <button class="btn btn-warning"> Category: Framework </button>
+                    <a href="https://pypsa.org/">
+                        <button class="btn btn-success"> Maintained: pypsa.org </button>
+                    </a>
+                    <div class="pb-5"></div>
+                </div>
+                <div class="col-lg-3 container-fluid text-center px-4">
+                    <h2><a href="https://github.com/PyPSA/pypsa-eur">PyPSA-Eur</a></h2>
+                    <p>An open optimisation model of the European transmission system.
+                        <br>
+                        <img src="/assets/img/get_involved/pypsa-eur.png" onmouseover="this.src='/assets/img/get_involved/gifs/pypsa-eur.gif'" onmouseout="this.src='/assets/img/get_involved/pypsa-eur.png'" alt="European Transmission Network image">
+                    </p>
+                    <a href="https://pypsa-eur.readthedocs.io/en/latest/">
+                        <button class="btn btn-primary"><i class="fa fa-book"></i> | Documentation</button>
+                    </a>
+                    <a href="https://github.com/PyPSA/pypsa-eur">
+                        <button class="btn btn-info"><i class="fa fa-info-circle"></i> | Source Code</button>
+                    </a>
+                    <button class="btn btn-warning"> Category: Model </button>
+                    <a href="https://pypsa.org/">
+                        <button class="btn btn-success"> Maintained: pypsa.org </button>
+                    </a>
+                    <div class="pb-5"></div>
+                </div>
+                <div class="col-lg-3 container-fluid text-center px-4">
+                    <h2><a href="https://github.com/PyPSA/pypsa-eur-sec">PyPSA-Eur-Sec</a></h2>
+                    <p>A sector-coupled open optimisation model of the European energy system.
+                        <br>
+                        <img src="/assets/img/get_involved/pypsa-eur-sec.png" alt="Sector coupled model image">
+                    </p>
+                    <a href="https://pypsa-eur-sec.readthedocs.io/en/latest/">
+                        <button class="btn btn-primary"><i class="fa fa-book"></i> | Documentation</button>
+                    </a>
+                    <a href="https://github.com/PyPSA/pypsa-eur-sec">
+                        <button class="btn btn-info"><i class="fa fa-info-circle"></i> | Source Code</button>
+                    </a>
+                    <button class="btn btn-warning"> Category: Model </button>
+                    <a href="https://pypsa.org/">
+                        <button class="btn btn-success"> Maintained: pypsa.org </button>
+                    </a>
+                    <div class="pb-5"></div>
+                </div>
+                <div class="col-lg-3 container-fluid text-center px-4">
+                    <h2><a href="https://github.com/pypsa-meets-earth/pypsa-earth">PyPSA-Earth</a></h2>
+                    <p>A flexible open sector-coupled optimization model of the global energy system.
+                        <br>
+                        <img src="/assets/img/get_involved/earth-network.png" alt="pypsa-earth image">
+                    </p>
+                    <a href="https://pypsa-earth.readthedocs.io/en/latest/how_to_contribute.html">
+                        <button class="btn btn-primary"><i class="fa fa-book"></i> | Documentation</button>
+                    </a>
+                    <a href="https://github.com/pypsa-meets-earth/pypsa-earth">
+                        <button class="btn btn-info"><i class="fa fa-info-circle"></i> | Source Code</button>
+                    </a>
+                    <button class="btn btn-warning"> Category: Model </button>
+                    <a href="https://pypsa-meets-earth.github.io//">
+                        <button class="btn btn-success"> Maintained: pypsa-meets-earth</button>
+                    </a>
+                    <div class="pb-5"></div>
+                </div>
+                <div class="col-lg-3 container-fluid text-center px-4">
+                    <h2><a href="https://model.energy/">Model.Energy</a></h2>
+                    <p>An online toolkit for calculating renewable electricity supplies around the world.
+                        <br>
+                        <img src="/assets/img/get_involved/model-energy.png" alt="model-energy image">
+                    </p>
+                    <a href="https://model.energy/">
+                        <button class="btn btn-primary"><i class="fa fa-book"></i> | Documentation</button>
+                    </a>
+                    <a href="https://github.com/PyPSA/whobs-server#modelenergy-online-optimisation-of-energy-systems">
+                        <button class="btn btn-info"><i class="fa fa-info-circle"></i> | Source Code</button>
+                    </a>
+                    <button class="btn btn-warning"> Category: Model+Front-End </button>
+                    <a href="https://pypsa.org/">
+                        <button class="btn btn-success"> Maintained: pypsa.org </button>
+                    </a>
+                    <div class="pb-5"></div>
+                </div>
+                <div class="col-lg-3 container-fluid text-center px-4">
+                    <h2><a href="https://model.energy/scenarios/">Model.Scenarios</a></h2>
+                    <p>An online toolkit for running and exploring PyPSA-Eur-Sec senarios.
+                        <br>
+                        <img src="/assets/img/get_involved/model-energy.png" alt="model-energy image">
+                    </p>
+                    <a href="https://model.energy/scenarios/">
+                        <button class="btn btn-primary"><i class="fa fa-book"></i> | Documentation</button>
+                    </a>
+                    <a href="https://github.com/PyPSA/pypsa-server">
+                        <button class="btn btn-info"><i class="fa fa-info-circle"></i> | Source Code</button>
+                    </a>
+                    <button class="btn btn-warning"> Category: Model+Front-End </button>
+                    <a href="https://pypsa.org/">
+                        <button class="btn btn-success"> Maintained: pypsa.org </button>
+                    </a>
+                    <div class="pb-5"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="data" class="getinvolved section-bg">
+        <div class="container my-5">
+            <div class="section-title">
+                <h2 data-aos="fade-in">Data for Energy System Modelling</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 container-fluid text-center px-4">
+                    <h2><a href="https://github.com/PyPSA/atlite">Atlite</a></h2>
+                    <p>Convert weather data to energy systems data.
+                        <br>
+                        <img src="/assets/img/get_involved/atlite.png" onmouseover="this.src='/assets/img/get_involved/gifs/atlitegif.gif'" onmouseout="this.src='/assets/img/get_involved/atlite.png'" alt="atlite image">
+                    </p>
+                    <a href="https://atlite.readthedocs.io/en/latest/">
+                        <button class="btn btn-primary"><i class="fa fa-book"></i> | Documentation</button>
+                    </a>
+                    <a href="https://github.com/PyPSA/atlite">
+                        <button class="btn btn-info"><i class="fa fa-info-circle"></i> | Source Code</button>
+                    </a>
+                    <button class="btn btn-warning"> Category: Data </button>
+                    <a href="https://pypsa.org/">
+                        <button class="btn btn-success"> Maintained: pypsa.org </button>
+                    </a>
+                    <div class="pb-5"></div>
+                </div>
+                <div class="col-lg-3 container-fluid text-center px-4">
+                    <h2><a href="https://github.com/pypsa-meets-earth/demand-creator">Demand-Creator</a></h2>
+                    <p>A machine learning toolbox to create demand-timeseries in subnational resolution.
+                        <br>
+                        <img src="/assets/img/get_involved/demand-creator.png" alt="demand creator image">
+                    </p>
+                    <a href="https://github.com/pypsa-meets-earth/demand-creator">
+                        <button class="btn btn-info"><i class="fa fa-info-circle"></i> | Source Code</button>
+                    </a>
+                    <button class="btn btn-warning"> Category: Data </button>
+                    <a href="https://pypsa-meets-earth.github.io//">
+                        <button class="btn btn-success"> Maintained: pypsa-meets-earth</button>
+                    </a>
+                    <div class="pb-5"></div>
+                </div>
+                <div class="col-lg-3 container-fluid text-center px-4">
+                    <h2><a href="https://github.com/pypsa-meets-earth/pypsa-earth">Detect-Infra</a></h2>
+                    <p>A machine learning pipeline to detect infrastructure from satellite images.
+                        <br>
+                        <img src="/assets/img/get_involved/spacex.png" alt="spacex image">
+                    </p>
+                    <a href="https://github.com/pypsa-meets-earth/detect-energy">
+                        <button class="btn btn-info"><i class="fa fa-info-circle"></i> | Source Code</button>
+                    </a>
+                    <button class="btn btn-warning"> Category: Data </button>
+                    <a href="https://pypsa-meets-earth.github.io//">
+                        <button class="btn btn-success"> Maintained: pypsa-meets-earth</button>
+                    </a>
+                    <div class="pb-5"></div>
+                </div>
+                <div class="col-lg-3 container-fluid text-center px-4">
+                    <h2><a href="https://github.com/PyPSA/powerplantmatching">Powerplantmatching</a></h2>
+                    <p>A toolbox to combine multiple powerplant databases.
+                        <br>
+                        <img src="/assets/img/get_involved/powerplantmatching.png" onmouseover="this.src='/assets/img/get_involved/gifs/powerplantmatching.gif'" onmouseout="this.src='/assets/img/get_involved/powerplantmatching.png'" alt="powerplantmatching image">
+                    </p>
+                    <a href="https://powerplantmatching.readthedocs.io/en/latest/">
+                        <button class="btn btn-primary"><i class="fa fa-book"></i> | Documentation</button>
+                    </a>
+                    <a href="https://github.com/PyPSA/powerplantmatching">
+                        <button class="btn btn-info"><i class="fa fa-info-circle"></i> | Source Code</button>
+                    </a>
+                    <button class="btn btn-warning"> Category: Data </button>
+                    <a href="https://pypsa.org/">
+                        <button class="btn btn-success"> Maintained: pypsa.org </button>
+                    </a>
+                    <div class="pb-5"></div>
+                </div>
+                <div class="col-lg-3 container-fluid text-center px-4">
+                    <h2><a href="https://github.com/PyPSA/technology-data">Technology Data</a></h2>
+                    <p>A tool that compiles assumptions on energy system technologies.
+                        <br>
+                        <img src="/assets/img/get_involved/technology-data.jpg" alt="technology-data image">
+                    </p>
+                    <a href="https://technology-data.readthedocs.io/en/latest/">
+                        <button class="btn btn-primary"><i class="fa fa-book"></i> | Documentation</button>
+                    </a>
+                    <a href="https://github.com/PyPSA/technology-data">
+                        <button class="btn btn-info"><i class="fa fa-info-circle"></i> | Source Code</button>
+                    </a>
+                    <button class="btn btn-warning"> Category: Data </button>
+                    <a href="https://pypsa.org/">
+                        <button class="btn btn-success"> Maintained: pypsa.org </button>
+                    </a>
+                    <div class="pb-5"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="solver" class="getinvolved section-bg">
+        <div class="container my-5">
+            <div class="section-title">
+                <h2 data-aos="fade-in">Open source solver interfaces and support</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 container-fluid text-center px-4">
+                    <h2><a href="https://github.com/PyPSA/linopy">Linopy</a></h2>
+                    <p>Linear optimization interface for Python.
+                        <br>
+                        <img src="/assets/img/get_involved/linopy.png" onmouseover="this.src='/assets/img/get_involved/gifs/linopy.gif'" onmouseout="this.src='/assets/img/get_involved/linopy.png'" alt="linopy image">
+                    </p>
+                    <a href="https://linopy.readthedocs.io/en/latest/">
+                        <button class="btn btn-primary"><i class="fa fa-book"></i> | Documentation</button>
+                    </a>
+                    <a href="https://github.com/PyPSA/linopy">
+                        <button class="btn btn-info"><i class="fa fa-info-circle"></i> | Source Code</button>
+                    </a>
+                    <button class="btn btn-warning"> Category: Solver interface </button>
+                    <a href="https://pypsa.org/">
+                        <button class="btn btn-success"> Maintained: pypsa.org </button>
+                    </a>
+                    <div class="pb-5"></div>
+                </div>
+                <div class="col-lg-3 container-fluid text-center px-4">
+                    <h2><a href="https://pypsa-meets-earth.github.io/highs.html">HiGHS-campaign</a></h2>
+                    <p>We organised a campaign, collecting +500k$, to make the worlds-fastest open-source solver HiGHS ready for large energy planning problems.
+                        <br>
+                        <img src="/assets/img/custom/HiGHS_logo.jpg" alt="HiGHS image">
+                    </p>
+                    <a href="https://zenodo.org/record/6534004#.Yx4lmGzMJQo">
+                        <button class="btn btn-primary"><i class="fa fa-book"></i> | Public Proposal</button>
+                    </a>
+                    <a href="https://github.com/ERGO-Code/HiGHS">
+                        <button class="btn btn-info"><i class="fa fa-info-circle"></i> | Source Code</button>
+                    </a>
+                    <button class="btn btn-warning"> Category: Campaign </button>
+                    <a href="https://pypsa-meets-earth.github.io//">
+                        <button class="btn btn-success"> Lead by: pypsa-meets-earth</button>
+                    </a>
+                    <div class="pb-5"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= Community Section ======= -->
+    <section id="community" class="getinvolved section-bg">
+        <div class="container my-5">
+
+            <div class="section-title">
+                <h2 data-aos="fade-in">Open Community</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 container-fluid text-center px-4">
+                    <h2><a href="https://discord.gg/AnuJBk23FU">Check out our Discord server</a></h2>
+                    <p>The heart of the community life is happening on Discord (which we describe as better Slack alternative).
+                        We hold there all our meetings, coffee breaks and exchanges. Discord provides voice channels,
+                        text channels, and event stages. This also allows you to meet up or host your own events if desired. 
+                    </p>
+                    <a href="https://discord.gg/AnuJBk23FU">
+                        <img src="/assets/img/get_involved/discord-logo.png" alt="Discord logo">
+                    </a>
+                    <a href="https://pypsa-meets-earth.github.io//">
+                        <button class="btn btn-success"> Maintained: pypsa-meets-earth</button>
+                    </a>
+                    <div class="pb-3"></div>
+                </div>
+                <div class="col-lg-4 container-fluid text-center px-4">
+                    <h2><a href="https://github.com/pypsa-meets-earth/pypsa-earth">Check out our Github Repository</a></h2>
+                    <p>You can find our developments in the GitHub repository, where you can join our community,
+                        create issues, share ideas and discuss with us. All of our developments are open
+                        source and GPL3 or MIT licensed, meaning they must stay open. Even
+                        <a href="https://github.com/open-energy-transition/oet-website">the website you are looking at</a>
+                        is open source. Feel free to use it and suggest improvements.
+                    </p>
+                    <a href="https://github.com/pypsa-meets-earth/pypsa-earth">
+                        <img src="/assets/img/get_involved/github.png" alt="Github logo">
+                    </a>
+                    <a href="https://pypsa-meets-earth.github.io//">
+                        <button class="btn btn-success"> Maintained: pypsa-meets-earth</button>
+                    </a>
+                    <div class="pb-3"></div>
+                </div>
+                <div id="getinvolved2" class="col-lg-4 container-fluid text-center px-4">
+                    <h2><a href="https://pypsa-earth.readthedocs.io/en/latest/index.html">Check out our Documentation</a></h2>
+                    <p>The documentation describes in more detail how you can contribute, how our project is structured
+                        and further provides the code documentation. Additionally, we share learning materials and some relevant
+                        talks and papers in the roam of PyPSA and Earth modelling. The documentation is also open, feel
+                        free to make it better.
+                    </p>
+                    <a href="https://pypsa-earth.readthedocs.io/en/latest/index.html">
+                        <img src="/assets/img/get_involved/pypsa_earth_documentation.png" alt="documentation">
+                    </a>
+                    <div class="pb-3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About Section -->
+
+    <section id="community" class="getinvolved section-bg">
+        <div class="container my-5">
+
+            <div class="section-title">
+                <h2 data-aos="fade-in">Reference Projects</h2>
+            </div>
+            <strong><p style="font-size: 18px;">Our team directly support or enable the following projects:</p></strong>
+            <ul>
+                <li><a href="https://www.linkedin.com/posts/ekaterina-fedotova-ba8249234_energytransition-opensource-pypsameetsearth-activity-7024446381389955072-KkNR?utm_source=share&utm_medium=member_desktop" style="font-size: 18px;">OET and Environmental Defense Fund, US. Training and assisstance of energy system modelling teams worldwide</a></li>
+                <li><a href="https://drive.google.com/file/d/1Sh33TDltcUBe-_Rw6OVX7Gcl5Bti2WPf/view?usp=sharing" style="font-size: 18px;">OET and Prototypefund. Tauritron - An open-source web interface for global applicable energy system studies</a></li>
+                <li><a href="https://drive.google.com/file/d/1Sgr3NXm2F5gEFea_qEvJ-OWaNmSAjHMx/view?usp=sharing" style="font-size: 18px;">OET, University of Zambia & Co., ZA. Energy System Chef – The energy system implications of transitions to clean cooking in Zambia</a></li>                        
+                <li><a href="#" style="font-size: 18px;">OET and Agora Energiewende, Decarbonization pathways for Kazakhsthan</a></li>
+                <li><a href="#" style="font-size: 18px;">OET, OTH Regensburg & Co., GER. Hydrogen potential map in Africa</a></li>
+                <li><a href="#" style="font-size: 18px;">Fraunhofer IEG, GER. Hydrogen pathway investigations between Europe-Africa</a></li>
+                <li><a href="#" style="font-size: 18px;">University of Ibadan, CPEEL, Nigeria. Machine-Learning based electricity load prediction</a></li>
+                <li><a href="https://drive.google.com/file/d/1n9l50KhCGH4l07Kqsu1wiRGweubw0TYj/view?usp=sharing" style="font-size: 18px;">Copperbelt University & Co., ZA. Macroeconomic implications of the Green Growth Strategy in Zambia</a></li> 
+                <li><a href="https://zenodo.org/record/6534004#.YydQt2zMJQo" style="font-size: 18px;">HiGHS, UK. Bringing world fastest open-source solver up to speed to solve practical problems</a></li>
+            </ul>
+        </div>
+    </section>
+
+        <!-- ======= Contact Section ======= -->
+        <section id="contact" class="contact section-bg">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-title col-lg-8 container-fluid">
+                    <h2>Contact</h2>
+                    <p>Leave an email for any question or enquiry: <strong><a href="mailto:info@openenergytransition.org">info@openenergytransition.org</a></strong></strong></p>
+                </div>
+
+            </div>
+        </section>
+        <!-- End Contact Section -->
+        <!-- End Contact Section -->
+
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+
+        <div class="footer-top">
+
+            <div class="container">
+
+                <div class="row  justify-content-center">
+                    <div class="col-lg-6">
+                        <h3>PyPSA meets Earth</h3>
+                    </div>
+                </div>
+
+
+                <div class="social-links">
+
+                    <a href="mailto:pypsameetsearth@gmail.com">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="55" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                      </svg>
+                    </a>
+
+                    <a href="https://www.linkedin.com/company/pypsa-meets-earth">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="55" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                      <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                    </svg>
+                    </a>
+
+                    <a href="https://github.com/pypsa-meets-earth/pypsa-earth">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="55" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                    </svg>
+                    </a>
+
+                    <a href="https://discord.gg/AnuJBk23FU">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="55" fill="currentColor" class="bi bi-discord-half" viewBox="0 0 16 16">
+                      <path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z"/>
+                    </svg>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-bottom clearfix">
+            <div class="copyright">
+                &copy; Copyright <strong><span>Maximilian Parzen</span></strong>. <br> <a href="https://github.com/open-energy-transition/oet-website">Code for MIT licensed website (here). Enjoy!</a>
+            </div>
+            <div class="credits">
+                <!-- All the links in the footer should remain intact. -->
+                <!-- You can delete the links only if you purchased the pro version. -->
+                <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/bocor-bootstrap-template-nice-animation/ -->
+                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> <br> Logos from <a href=" https://logomakr.com/5HgsGO#">Logomakr</a> <br> Images produced by <a href="https://www.flickr.com/photos/184249102@N03/page2">Iban Ameztoy</a>                and <a href="https://www.flickr.com/photos/andymilnerastro/20126916706/in/photolist-wExH8h-2ivPWVq-2jdhJnW-Ld9kjV-2hJHi7C-bWX1Y-2iQ2z2H-2kxt5U6-2cNhVnU-9RfrVs-2iQua29-iwBvnX-7witeh-2d1WD9M-2iyr9GJ-DhAni8-NkxEa3-cCewFJ-6HxTxk-5PfNcf-F9YNLR-2ek8URh-2ivQGJx-2gG6tm1-UcBypo-2dfH7Fp-ER5CL1-dJ4SAt-24HVPAK-2iP292i-26ja82Q-axzBQi-2iPV8Ck-22sprGi-2iP27Xp-2iyqrYp-De8Ct1-2iyvdyd-S8336x-2kxwM1F-2iyrbFj-QDqm6p-2dsJM8M-VQCcff-pGxCtG-SgBURu-SgBxay-X4sYN5-Ghq9Xi-2epHSnr/">Andy Milner</a>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- Particles -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.29.2/tsparticles.min.js" integrity="sha512-BCawwABAvfbOiCjTAAsgG2SSs35AjAVlQq66rOTeQsS+2H/1OZsY3QEi3IAEQ0odsSxqVSHNqhBe3ut0pKl9ZA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/custom_particle.js"></script>
+    <script src="https://cdn.rawgit.com/progers/pathseg/master/pathseg.js"></script>
+
+    <!-- Bootstrap Default Max 
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   -->
+</body>
+
+</html>
