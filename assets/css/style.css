@@ -465,7 +465,7 @@ section {
 .section-pic-fluss {
     background: url("../img/custom/fluss.jpeg") center center no-repeat;
     background-size: cover;
-    min-height: 200px;
+    min-height: 400px;
 }
 
 .section-particle {
