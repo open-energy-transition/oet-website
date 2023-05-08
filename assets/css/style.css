@@ -627,6 +627,10 @@ section {
     margin-top: 25px;
 }
 
+/*--------------------------------------------------------------
+# Story
+--------------------------------------------------------------*/
+
 .story a {
     font-weight: bold;
     transition: 0.3s;
@@ -647,6 +651,25 @@ section {
   .story .image-story img {
       max-width: 100%;
   }
+}
+
+
+/*--------------------------------------------------------------
+# Beta
+--------------------------------------------------------------*/
+.beta .iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.beta .iframe-container iframe {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 
