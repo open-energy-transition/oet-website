@@ -129,19 +129,19 @@
                 <h2 data-aos="fade-in">Development Partners in the PyPSA Universe</h2>
                 <div class="flex-container">
                     <div class="col-sm-4">
-                      <div class="img-wrapper">
+                      <div class="img-wrapper lazyload">
                         <img src="assets/img/get_involved/oet-logo-min.png">
                       </div>
                     </div>
                     <div class="col-sm-4">
-                      <div class="img-wrapper">
+                      <div class="img-wrapper lazyload">
                         <a href="https://pypsa-meets-earth.github.io/">
                         <img src="assets/img/get_involved/pypsameetsearth-logo.png">
                         </a>
                       </div>
                     </div>
                     <div class="col-sm-4">
-                      <div class="img-wrapper">
+                      <div class="img-wrapper lazyload">
                         <a href="https://pypsa.org/">
                         <img src="assets/img/get_involved/pypsa-logo.png">
                         </a>
@@ -185,7 +185,7 @@
                         <p><b>
                             - Prof. Tom Brown, Co-Creator of PyPSA and lead of PyPSA.org
                         </b></p> 
-                        <img src="/assets/img/people/tombrown_cropped.jpg" style=height:180px alt="Max Parzen image">               
+                        <img src="/assets/img/people/tombrown_cropped.jpg" style=height:180px alt="Tom Brown image">               
                     </p>
                 </div>
             </div>
@@ -197,7 +197,7 @@
                 <h2 data-aos="fade-in">Framework and Models for Energy System Modelling</h2>
             </div>
             <div class="row">
-                <div class="col-lg-3 container-fluid text-center px-4">
+                <div class="col-lg-3 container-fluid text-center px-4 lazyload">
                     <h2><a href="https://pypsa.readthedocs.io/en/latest/">PyPSA</a></h2>
                     <p>A python software toolbox for simulating and optimising modern power systems.
                         <br>
@@ -233,7 +233,7 @@
                     </a>
                     <div class="pb-5"></div>
                 </div>
-                <div class="col-lg-3 container-fluid text-center px-4">
+                <div class="col-lg-3 container-fluid text-center px-4 lazyload">
                     <h2><a href="https://github.com/pypsa-meets-earth/pypsa-earth">PyPSA-Earth</a></h2>
                     <p>A flexible open sector-coupled optimization model of the global energy system.
                         <br>
@@ -251,7 +251,7 @@
                     </a>
                     <div class="pb-5"></div>
                 </div>
-                <div class="col-lg-3 container-fluid text-center px-4">
+                <div class="col-lg-3 container-fluid text-center px-4 lazyload">
                     <h2><a href="https://model.energy/">Model.Energy</a></h2>
                     <p>An online toolkit for calculating renewable electricity supplies around the world.
                         <br>
@@ -269,7 +269,7 @@
                     </a>
                     <div class="pb-5"></div>
                 </div>
-                <div class="col-lg-3 container-fluid text-center px-4">
+                <div class="col-lg-3 container-fluid text-center px-4 lazyload">
                     <h2><a href="https://model.energy/scenarios/">Model.Scenarios</a></h2>
                     <p>An online toolkit for running and exploring PyPSA-Eur sector-coupled senarios.
                         <br>
@@ -287,7 +287,7 @@
                     </a>
                     <div class="pb-5"></div>
                 </div>
-                <div class="col-lg-3 container-fluid text-center px-4">
+                <div class="col-lg-3 container-fluid text-center px-4 lazyload">
                     <h2><a href="https://github.com/pypsa-meets-earth/tauritron">Tauritron</a></h2>
                     <p>An open-source web interface for running worldwide energy system planning studies.
                         <br>
@@ -390,7 +390,7 @@
                 <h2 data-aos="fade-in">Open source solver interfaces and support</h2>
             </div>
             <div class="row">
-                <div class="col-lg-3 container-fluid text-center px-4">
+                <div class="col-lg-3 container-fluid text-center px-4 lazyload">
                     <h2><a href="https://github.com/PyPSA/linopy">Linopy</a></h2>
                     <p>Linear optimization interface for Python.
                         <br>
@@ -408,7 +408,7 @@
                     </a>
                     <div class="pb-5"></div>
                 </div>
-                <div class="col-lg-3 container-fluid text-center px-4">
+                <div class="col-lg-3 container-fluid text-center px-4 lazyload">
                     <h2><a href="https://pypsa-meets-earth.github.io/highs.html">HiGHS-campaign</a></h2>
                     <p>We organised a campaign, collecting +500k$, to make the worlds-fastest open-source solver HiGHS ready for large energy planning problems.
                         <br>
@@ -438,7 +438,7 @@
                 <h2 data-aos="fade-in">Open Community</h2>
             </div>
             <div class="row">
-                <div class="col-lg-4 container-fluid text-center px-4">
+                <div class="col-lg-4 container-fluid text-center px-4 lazyload">
                     <h2><a href="https://discord.gg/AnuJBk23FU">Check out our Discord server</a></h2>
                     <p>The heart of the community life is happening on Discord (which we describe as better Slack alternative).
                         We hold there all our meetings, coffee breaks and exchanges. Discord provides voice channels,
@@ -592,10 +592,8 @@
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
 
-    <!-- Particles -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.29.2/tsparticles.min.js" integrity="sha512-BCawwABAvfbOiCjTAAsgG2SSs35AjAVlQq66rOTeQsS+2H/1OZsY3QEi3IAEQ0odsSxqVSHNqhBe3ut0pKl9ZA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="assets/js/custom_particle.js"></script>
-    <script src="https://cdn.rawgit.com/progers/pathseg/master/pathseg.js"></script>
+    <!-- Lazy loading of images in Bootstrap -->
+    <script src="assets/js/lazysizes.min.js" async></script>
 
     <!-- Bootstrap Default Max 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
