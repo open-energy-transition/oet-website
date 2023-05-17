@@ -710,11 +710,11 @@ section {
   color: #213b52;
 }
 
-.users .custom-container {
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center;  */
-}
+/* .users .custom-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+} */
 
 .users .btn-lg {
   padding: 1rem 1.8rem;
