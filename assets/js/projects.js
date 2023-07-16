@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
     categoryFilter.addEventListener('change', handleFilterFormSubmit);
     statusFilter.addEventListener('change', handleFilterFormSubmit);
     cardsPerPageSelect.addEventListener('change', handleCardsPerPageChange);
-
+    
     // Simulate card data retrieval
     // Replace this with actual card data fetching from an API or other data source
     fetchCardData().then(function(cardData) {
@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function renderCards() {
       const selectedCategory = categoryFilter.value;
       const selectedStatus = statusFilter.value;
-
+    
       // Filter the cards based on the selected category and status
       const filteredCards = cards.filter(function(card) {
         return (
@@ -155,41 +155,47 @@ document.addEventListener('DOMContentLoaded', function() {
           (selectedStatus === 'all' || card.status === selectedStatus)
         );
       });
-
+    
       // Calculate the total number of pages
       const totalPages = Math.ceil(filteredCards.length / cardsPerPage);
-
+    
       // Update the current page if it exceeds the total number of pages
       if (currentPage > totalPages) {
         currentPage = totalPages;
       }
-
+    
       // Calculate the start and end indices of the cards to be displayed on the current page
       const startIndex = (currentPage - 1) * cardsPerPage;
       let endIndex = startIndex + cardsPerPage;
-
-      // Adjust the end index if it exceeds the total number of cards
-      if (endIndex > filteredCards.length) {
-        endIndex = filteredCards.length;
+    
+      if (cardsPerPage === "all") {
+        endIndex = filteredCards.length; // Show all cards
+      } else {
+        endIndex = startIndex + parseInt(cardsPerPage);
+      
+        // Adjust the end index if it exceeds the total number of cards
+        if (endIndex > filteredCards.length) {
+          endIndex = filteredCards.length;
+        }
       }
-
+    
       // Get the subset of cards to be displayed on the current page
       const cardsForPage = filteredCards.slice(startIndex, endIndex);
-
+    
       // Clear the card container
       cardContainer.innerHTML = '';
-
+    
       // Render the cards for the current page
       cardsForPage.forEach(function(card) {
         const { imageUrl, title, subtitle, description, date, partner } = card;
         const cardElement = createCard(imageUrl, title, subtitle, description, date, partner);
         cardContainer.appendChild(cardElement);
       });
-
+    
       // Render the pagination buttons
       renderPagination(totalPages);
     }
-
+    
     function createCard(imageUrl, title, subtitle, description, date, partner) {
       const cardCol = document.createElement('div');
       cardCol.className = 'col-md-4';
@@ -244,7 +250,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function handleCardsPerPageChange() {
       currentPage = 1;
-      cardsPerPage = parseInt(cardsPerPageSelect.value);
+      cardsPerPage = cardsPerPageSelect.value === "all" ? "all" : parseInt(cardsPerPageSelect.value);
       renderCards();
     }
 
