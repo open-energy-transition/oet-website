@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Card data goes here
             // Example:
             {
-              category: ['study/consultation', 'software development', 'support and training'],
+              category: ['software development', 'support and training'],
               status: 'ongoing',
               imageUrl: 'assets/img/projects/blog1.jpg',
               title: 'Coal-exit modelling in Jharkhand, India',
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
               partner: 'Centre for Environment and Energy Development (CEED)',
             },
             {
-              category: ['study/consultation', 'software development', 'support and training'],
+              category: ['software development', 'support and training'],
               status: 'ongoing',
               imageUrl: 'assets/img/projects/blog2.jpg',
               title: 'Sustainable Hydrogen and Power-to-X ramp-up in Africa',
@@ -75,67 +75,56 @@ document.addEventListener('DOMContentLoaded', function() {
               partner: 'H2Global meets Africa Consortium',
             },
             {
-              category: 'category1',
+              category: ['software development', 'support and training'],
               status: 'ongoing',
               imageUrl: 'assets/img/projects/blog3.jpg',
-              title: 'Title 1',
-              subtitle: 'Subtitle 1',
-              description: 'Description 1',
-              date: 'Date 1'
+              title: 'Energy System Chef Zambia',
+              subtitle: 'The energy system implications of transitions to clean cooking in Zambia',
+              description: 'The Energy System Chef Zambia project explores the energy system implications \
+              of mass e-cooking adoption. It aims to develop implementation scenarios and a tangible roadmap \
+              for a just energy transition in Zambia. With 90% of the population lacking clean cooking access, \
+              this research is crucial. It analyzes the wider energy system implications of clean cooking, \
+              models alternative clean cooking fuel solutions, reviews carbon financing strategies, and assesses \
+              livelihood implications. Stakeholder engagement includes relevant Zambian ministries, USAID, ZESCO, \
+              and the Modern Energy Cooking Services Programme. Open Energy Transition (OET) provides essential \
+              software support, capacity building, and maintenance. OETs expertise ensures successful \
+              implementation of project objectives and efficient functioning of developed software tools. \
+              This project contributes to Zambias clean cooking transition and promotes a sustainable and just energy system.',
+              date: '03/2023',
+              partner: 'University of Zambia, Climate Compatible Growth (CCG)',
             },
             {
-              category: 'category1',
+              category: ['consultancy', 'software development', 'support and training'],
               status: 'ongoing',
               imageUrl: 'assets/img/projects/blog4.jpg',
-              title: 'Title 1',
-              subtitle: 'Subtitle 1',
-              description: 'Description 1',
-              date: 'Date 1'
+              title: 'Energy Transition Kazakhstan',
+              subtitle: 'Exploring more ambitious energy transition pathways for Kazakhstan',
+              description: 'Agora Energiewende has commissioned OET to model the Kazakh power system, focusing on \
+              significant increases in solar and wind energy generation beyond the official mid-term goal of 15% \
+              renewable energy share by 2030. The project includes the incorporation of transmission system \
+              infrastructure in the energy planning study. OET will validate the model, conduct workflow tests, \
+              and perform model runs to assess the impacts of higher variable generation. The results will be \
+              visualized for better understanding. The project also involves documenting the methodology and \
+              conducting a technical review. Through this project, OET aims to provide insights into surpassing \
+              renewable energy targets, supporting decision-making, and facilitating the transition to a more \
+              sustainable energy sector in Kazakhstan.',
+              date: '05/2023',
+              partner: 'Agora Energiewende',
             },
             {
-              category: 'category1',
-              status: 'past',
-              imageUrl: 'assets/img/projects/blog5.jpg',
-              title: 'Title 1',
-              subtitle: 'Subtitle 1',
-              description: 'Description 1',
-              date: 'Date 1'
-            },
-            {
-              category: 'category1',
-              status: 'past',
-              imageUrl: 'image1.jpg',
-              title: 'Title 1',
-              subtitle: 'Subtitle 1',
-              description: 'Description 1',
-              date: 'Date 1'
-            },
-            {
-              category: 'category1',
-              status: 'past',
-              imageUrl: 'image1.jpg',
-              title: 'Title 1',
-              subtitle: 'Subtitle 1',
-              description: 'Description 1',
-              date: 'Date 1'
-            },
-            {
-              category: 'category1',
-              status: 'past',
-              imageUrl: 'image1.jpg',
-              title: 'Title 1',
-              subtitle: 'Subtitle 1',
-              description: 'Description 1',
-              date: 'Date 1'
-            },
-            {
-              category: 'category2',
+              category: 'software development',
               status: 'ongoing',
-              imageUrl: 'image1.jpg',
-              title: 'Title 1',
-              subtitle: 'Subtitle 1',
-              description: 'Description 1',
-              date: 'Date 1'
+              imageUrl: 'assets/img/get_involved/tauritro-logo-small.png',
+              title: 'Project Tauritron',
+              subtitle: 'An user focused open-source webinterface for executing and visualizing energy system models',
+              description: 'The open source project that our CEO Maximilian Parzen was awarded as individual, \
+              puts the human back at the center of energy planning decisions. This project will improve how people \
+              interact with energy data, enable simple calculations and visualizations, promote public engagement, \
+              and improve human-centered decision making. Specifically, the project aims to develop a graphical web \
+              interface for the popular open-source energy system model, PyPSA, which is used in research and industry \
+              worldwide. After successful development, the open-source developments can be adapted by any other tool.',
+              date: '03/2023',
+              partner: 'Prototype Fund, Federal Ministry of Education and Research Germany',
             },
             // Add more cards here
           ];
@@ -187,8 +176,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
       // Render the cards for the current page
       cardsForPage.forEach(function(card) {
-        const { imageUrl, title, subtitle, description, date, partner } = card;
-        const cardElement = createCard(imageUrl, title, subtitle, description, date, partner);
+        const { imageUrl, title, subtitle, description, category, date, status, partner } = card;
+        const cardElement = createCard(imageUrl, title, subtitle, description, category, date, status, partner);
         cardContainer.appendChild(cardElement);
       });
     
@@ -196,7 +185,7 @@ document.addEventListener('DOMContentLoaded', function() {
       renderPagination(totalPages);
     }
     
-    function createCard(imageUrl, title, subtitle, description, date, partner) {
+    function createCard(imageUrl, title, subtitle, description, category, date, status, partner) {
       const cardCol = document.createElement('div');
       cardCol.className = 'col-md-4';
 
@@ -210,8 +199,10 @@ document.addEventListener('DOMContentLoaded', function() {
           <h5 class="card-title">${title}</h5>
           <h6 class="card-subtitle mb-2 text-muted">${subtitle}</h6>
           <p class="card-text">${truncateDescription(description)}</p>
-          <p class="card-text"><small class="text-muted">Start date: ${date}</small></p>
-          <p class="card-text"><small class="text-muted">Partner: ${partner}</small></p>
+          <p class="card-text-custom"><small class="text-muted"><strong>Service:</strong> ${category}</small></p>
+          <p class="card-text-custom"><small class="text-muted"><strong>Start:</strong> ${date}</small></p>
+          <p class="card-text-custom"><small class="text-muted"><strong>Status:</strong> ${status}</small></p>
+          <p class="card-text-custom"><small class="text-muted"><strong>Partner:</strong> ${partner}</small></p>
         </div>
       `;
 

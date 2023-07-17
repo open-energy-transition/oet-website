@@ -69,6 +69,11 @@ h4 {
   object-fit: cover;
 }
 
+.card-text-custom {
+  margin-bottom: 0.0rem; /* Adjust the value to control the spacing */
+}
+
+
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
@@ -823,7 +828,7 @@ section {
     background: url("../img/custom/github-star-history.png") center center no-repeat;
     background-size: contain;
     background-position: center;
-    min-height: 350px;
+    min-height: 400px;
 }
 
 @media (max-width: 667px) {
