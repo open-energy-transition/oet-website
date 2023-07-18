@@ -48,10 +48,30 @@ h4 {
 
 
 /*--------------------------------------------------------------
-# project cards
+# project & output cards
 --------------------------------------------------------------*/
+.output-card-title {
+  margin-bottom:0.0rem;
+} 
 
-.card {
+.first-output-badge {
+  font-size: 10px;
+  margin-top: 0.0rem;
+  margin-left:0.5rem;
+}
+
+.output-badge {
+  font-size: 10px;
+  margin-block: 0.0rem;
+}
+
+.card-outputs {
+  border-radius: 10px;
+  margin-bottom: 0px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-projects {
   border-radius: 10px;
   margin-bottom: 20px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);

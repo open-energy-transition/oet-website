@@ -190,7 +190,7 @@ document.addEventListener('DOMContentLoaded', function() {
       cardCol.className = 'col-md-4';
 
       const card = document.createElement('div');
-      card.className = 'card';
+      card.className = 'card-projects';
       card.innerHTML = `
         <div class="card-img-container">
           <img src="${imageUrl}" class="card-img" alt="Card Image">
@@ -267,5 +267,11 @@ document.addEventListener('DOMContentLoaded', function() {
         pageButton.appendChild(link);
         paginationContainer.appendChild(pageButton);
       }
+    // Add top margin to page selection buttons
+    const pageButtons = paginationContainer.querySelectorAll('.page-link');
+    pageButtons.forEach(function(button) {
+      button.style.backgroundColor = '#E31937'; // Set the desired color
+      button.style.borderColor = '#E31937';
+    });
     }
   });
