@@ -27,21 +27,31 @@ document.addEventListener('DOMContentLoaded', function() {
           // Card data goes here
           // Example:
           {
-            category: 'Random',
+            category: 'software',
             title: 'Project Tauritron. An user focused open-source webinterface for executing and visualizing energy system models',
-            date: '03/2023',
+            date: '2023-01-01',
+            author: 'Max Parzen',
+            source: 'https://prototypefund.de/en/project/tauritron/'
+          },
+          {
+            category: 'blog',
+            title: 'Project Tauritron. An user focused open-source webinterface for executing and visualizing energy system models',
+            date: '2023-05-01',
             author: 'Max Parzen',
             source: 'https://www.linkedin.com/posts/maximilian-parzen-b047a1126_sustainableenergy-opensource-opendata-activity-7079345524318855168-mLgy?utm_source=share&utm_medium=member_desktop'
           },
           {
             category: 'blog',
             title: 'Project Tauritron. An user focused open-source webinterface for executing and visualizing energy system models',
-            date: '03/2023',
+            date: '2023-04-01',
             author: 'Max Parzen',
             source: 'https://www.linkedin.com/posts/maximilian-parzen-b047a1126_sustainableenergy-opensource-opendata-activity-7079345524318855168-mLgy?utm_source=share&utm_medium=member_desktop'
           },
           // Add more cards here
         ];
+        // Sort cards by date in descending order (most recent on top)
+        cardData.sort((a, b) => new Date(b.date) - new Date(a.date));
+        
         resolve(cardData);
       }, 1000);
     });

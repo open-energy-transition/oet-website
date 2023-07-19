@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
               the state governments initiatives on energy transition. OETs expertise and open \
               technology solutions will contribute to informed decision-making and efficient \
               planning for a low-carbon future.',
-              date: '08/2023',
+              date: '2023-08-01',
               partner: 'Centre for Environment and Energy Development (CEED)',
             },
             {
@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
               and training. OETs expertise in these areas contributes to the successful implementation \
               of the projects objectives and ensures the efficient functioning of the developed software \
               tools throughout the project duration.',
-              date: '09/2023',
+              date: '2023-09-01',
               partner: 'H2Global meets Africa Consortium',
             },
             {
@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function() {
               software support, capacity building, and maintenance. OETs expertise ensures successful \
               implementation of project objectives and efficient functioning of developed software tools. \
               This project contributes to Zambias clean cooking transition and promotes a sustainable and just energy system.',
-              date: '03/2023',
+              date: '2023-03-01',
               partner: 'University of Zambia, Climate Compatible Growth (CCG)',
             },
             {
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function() {
               conducting a technical review. Through this project, OET aims to provide insights into surpassing \
               renewable energy targets, supporting decision-making, and facilitating the transition to a more \
               sustainable energy sector in Kazakhstan.',
-              date: '05/2023',
+              date: '2023-05-01',
               partner: 'Agora Energiewende',
             },
             {
@@ -123,11 +123,14 @@ document.addEventListener('DOMContentLoaded', function() {
               and improve human-centered decision making. Specifically, the project aims to develop a graphical web \
               interface for the popular open-source energy system model, PyPSA, which is used in research and industry \
               worldwide. After successful development, the open-source developments can be adapted by any other tool.',
-              date: '03/2023',
+              date: '2023-03-01',
               partner: 'Prototype Fund, Federal Ministry of Education and Research Germany',
             },
             // Add more cards here
           ];
+          // Sort cards by date in descending order (most recent on top)
+          cardData.sort((a, b) => new Date(b.date) - new Date(a.date));
+          
           resolve(cardData);
         }, 1000);
       });
