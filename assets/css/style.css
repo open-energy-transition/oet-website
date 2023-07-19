@@ -736,6 +736,11 @@ section {
 # Story
 --------------------------------------------------------------*/
 
+/* Custom CSS for left margin */
+.story-content {
+  margin-left: 20px; /* Adjust the value as needed */
+}
+
 .story a {
     font-weight: bold;
     transition: 0.3s;
@@ -746,7 +751,7 @@ section {
 }
 
 .story .image-story {
-  background: url("../img/mission/wind_plant_germany.jpg") center center no-repeat;
+  background: url("../img/mission/launch_of_Falcon_9_carrying_CRS-6_Dragon.jpg") center center no-repeat;
   background-size: contain;
   background-position: center;
   min-height: 350px;
