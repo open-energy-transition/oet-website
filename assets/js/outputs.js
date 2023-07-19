@@ -27,25 +27,102 @@ document.addEventListener('DOMContentLoaded', function() {
           // Card data goes here
           // Example:
           {
-            category: 'software',
-            title: 'Project Tauritron. An user focused open-source webinterface for executing and visualizing energy system models',
-            date: '2023-01-01',
+            category: ['research', 'blog'],
+            title: 'New PyPSA study explores the EU requirements for hydrogen and power grid expansion for a 100% renewable energy system.',
+            date: '2023-07-13',
+            author: 'Max Parzen',
+            source: 'https://www.linkedin.com/posts/maximilian-parzen-b047a1126_freethemodels-openmod-macroenergysystems-activity-7085144000264814592-gOfq'
+          },
+          {
+            category: 'blog',
+            title: 'OET CEO starts on "Project Tauritron" - an user focused open-source webinterface for executing and visualizing energy system models',
+            date: '2023-03-01',
             author: 'Max Parzen',
             source: 'https://prototypefund.de/en/project/tauritron/'
           },
           {
-            category: 'blog',
-            title: 'Project Tauritron. An user focused open-source webinterface for executing and visualizing energy system models',
-            date: '2023-05-01',
+            category: ['software'],
+            title: 'Quadratic programming extension in Linopy + PyPSA and new release of global energy system model PyPSA-Earth',
+            date: '2023-07-12',
             author: 'Max Parzen',
-            source: 'https://www.linkedin.com/posts/maximilian-parzen-b047a1126_sustainableenergy-opensource-opendata-activity-7079345524318855168-mLgy?utm_source=share&utm_medium=member_desktop'
+            source: 'https://www.linkedin.com/posts/maximilian-parzen-b047a1126_freethemodels-opensource-activity-7083387305775751168-VJAD'
           },
           {
-            category: 'blog',
-            title: 'Project Tauritron. An user focused open-source webinterface for executing and visualizing energy system models',
-            date: '2023-04-01',
+            category: ['blog'],
+            title: 'Out of stealth mode - Launch post Open Energy Transition',
+            date: '2023-06-28',
             author: 'Max Parzen',
-            source: 'https://www.linkedin.com/posts/maximilian-parzen-b047a1126_sustainableenergy-opensource-opendata-activity-7079345524318855168-mLgy?utm_source=share&utm_medium=member_desktop'
+            source: 'https://www.linkedin.com/posts/maximilian-parzen-b047a1126_sustainableenergy-opensource-opendata-activity-7079345524318855168-mLgy'
+          },
+          {
+            category: ['blog'],
+            title: 'Canadas Energy Regulator uses open-source tool PyPSA for their outlook modelling for net-zero by 2050',
+            date: '2023-06-25',
+            author: 'Max Parzen',
+            source: 'https://www.linkedin.com/posts/maximilian-parzen-b047a1126_opensource-open-reproduced-activity-7077610234768150529-qyEE'
+          },
+          {
+            category: ['blog'],
+            title: 'EU Commission JRC recommends open-source (#PyPSA) for assessing candidate hydrogen projects',
+            date: '2023-06-19',
+            author: 'Max Parzen',
+            source: 'https://www.linkedin.com/posts/maximilian-parzen-b047a1126_pypsa-projectdevelopers-opensource-activity-7070326922181791745-8Os3'
+          },
+          {
+            category: ['media'],
+            title: 'Start-up. Max Parzen hilft indischem Staat',
+            date: '2023-05-21',
+            author: 'Elmar Schatz',
+            source: 'https://www.kurier.de/inhalt.start-up-max-parzen-hilft-indischem-staat.b2a38b0c-1c08-4b6d-9599-24cc997470f4.html'
+          },     
+          {
+            category: ['media'],
+            title: 'Centre for Environment and Energy Development enters into an agreement with Open Energy Transition',
+            date: '2023-05-22',
+            author: 'Animesh Bisoee',
+            source: 'https://www.telegraphindia.com/jharkhand/centre-for-environment-and-energy-development-enters-into-an-agreement-with-open-energy-transition/cid/1938632'
+          },
+          {
+            category: ['blog', 'research'],
+            title: 'OET team releases the the worlds first peer-reviewed, open, global-coverage electricity model generator using high-resolution open data, open source and an open community',
+            date: '2023-04-10',
+            author: 'Max Parzen',
+            source: 'https://www.linkedin.com/posts/maximilian-parzen-b047a1126_pypsa-earth-a-new-global-open-energy-system-activity-7054458292261011456-PrvN'
+          },
+          {
+            category: ['blog', 'research', 'software'],
+            title: 'On Hackernews. Parzen et al. open solver funding proposal on Hackernews about optimization solvers: missing link for fully open-source energy system modeling',
+            date: '2022-01-10',
+            author: 'eisa01',
+            source: 'https://news.ycombinator.com/item?id=31214239'
+          }, 
+          {
+            category: ['blog', 'research', 'software'],
+            title: 'E.U.: Climate-Proof Grids Require More Transparency  “Black box” U.S. energy planning hinders renewable energy development',
+            date: '2023-06-27',
+            author: 'Peter Fairley',
+            source: 'https://spectrum.ieee.org/power-grid-transparency-eu-us'
+          },     
+          {
+            category: ['blog'],
+            title: 'Free Software, More Voices, Better Plans How future-ready, zero-cost grid models are democratizing grid planning',
+            date: '2022-12-12',
+            author: 'Aaron Schwartz',
+            source: 'https://rmi.org/free-software-more-voices-better-plans/'
+          },
+          {
+            category: ['media'],
+            title: 'Open-source optimization tool for energy systems offers global coverage',
+            date: '2023-05-17',
+            author: 'Emiliano Bellini',
+            source: 'https://www.pv-magazine.com/2023/05/17/open-source-optimization-tool-for-energy-systems-offers-global-coverage/'
+          },
+          {
+            category: ['media'],
+            title: 'PyPSA-Earth: a new open-source global energy system model',
+            date: '2023-05-19',
+            author: 'Jonathan Spencer Jones',
+            source: 'https://www.smart-energy.com/industry-sectors/energy-grid-management/pypsa-earth-a-new-open-source-global-energy-system-model/'
           },
           // Add more cards here
         ];
