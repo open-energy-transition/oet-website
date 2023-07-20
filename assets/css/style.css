@@ -2090,3 +2090,43 @@ canvas {
     align-self: stretch !important;
   }
   
+  /* jobs */
+.job-info-container {
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-bottom: 4vh;
+}
+.job-main-text {
+  font-weight: 700;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+.job-meta-tags {
+  font-weight: bold;
+}
+.job-submain-text {
+  font-weight: 600;
+  font-size: 2.7rem;
+  margin-bottom: 1rem;
+}
+
+.job-body {
+  font-weight: 300;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.job-body-main {
+  font-weight: 500;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+.job-body-underline {
+  font-weight: 500;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  text-decoration: underline;
+}
+.job-info-section {
+  padding-top: 0;
+}
