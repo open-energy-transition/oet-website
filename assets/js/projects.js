@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', function() {
               imageUrl: 'assets/img/get_involved/tauritro-logo-small.png',
               title: 'Project Tauritron',
               subtitle: 'An user focused open-source webinterface for executing and visualizing energy system models',
-              description: 'The open source project that our CEO Maximilian Parzen was awarded as individual, \
+              description: 'The open source project that CEO Maximilian Parzen was awarded as individual, \
               puts the human back at the center of energy planning decisions. This project will improve how people \
               interact with energy data, enable simple calculations and visualizations, promote public engagement, \
               and improve human-centered decision making. Specifically, the project aims to develop a graphical web \
