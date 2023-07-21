@@ -27,6 +27,13 @@ document.addEventListener('DOMContentLoaded', function() {
           // Card data goes here
           // Example:
           {
+            category: ['blog'],
+            title: 'Finally! OET is sharing their Theory of Change',
+            date: '2023-07-21',
+            author: 'Max Parzen',
+            source: 'https://www.linkedin.com/posts/maximilian-parzen-b047a1126_opensource-openenergymodelling-opendata-activity-7088126997880520704-x1n2'
+          },
+          {
             category: ['research', 'blog'],
             title: 'New PyPSA study explores the EU requirements for hydrogen and power grid expansion for a 100% renewable energy system.',
             date: '2023-07-13',
