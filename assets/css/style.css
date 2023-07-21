@@ -741,16 +741,16 @@ section {
   margin-left: 20px; /* Adjust the value as needed */
 }
 
-.story a {
+.theory-of-change a {
     font-weight: bold;
     transition: 0.3s;
 }
 
-.story a:hover {
+.theory-of-change a:hover {
     color: #E31937;
 }
 
-.story .image-story {
+.theory-of-change .image-story {
   background: url("../img/mission/launch_of_Falcon_9_carrying_CRS-6_Dragon.jpg") center center no-repeat;
   background-size: contain;
   background-position: center;
@@ -758,7 +758,7 @@ section {
 }
 
 @media (max-width: 667px) {
-  .story .image-story img {
+  .theory-of-change .image-story img {
       max-width: 100%;
   }
 }
