@@ -126,6 +126,22 @@ document.addEventListener('DOMContentLoaded', function() {
               date: '2023-03-01',
               partner: 'Prototype Fund, Federal Ministry of Education and Research Germany',
             },
+            {
+              category: ['software development', 'support and training'],
+              status: 'ongoing',
+              imageUrl: 'assets/img/projects/blog5.jpg',
+              title: 'Multi-Country Electricity Transition Potential and Challenges Project',
+              subtitle: 'Training and supporting modelling teams in 10 countries',
+              description: 'OET joined the Multi-Country Electricity Transition Potential and Challenges Project (MCET) \
+              as a model instructor for power system planning in deep decarbonization scenarios. The project aimed to \
+              analyze barriers to decarbonization in individual countries and build capacity through monthly and ad-hoc \
+              modeling trainings. OET provided training materials, "modeling kits," and technical assistance to modeling \
+              teams for calibration, execution, and validation of decarbonization scenarios. The projects focus was on \
+              delivering feasible decarbonization pathways for the electric power sector, contributing to the global \
+              transition towards sustainable and low-carbon electricity systems.',
+              date: '2022-09-01',
+              partner: 'Environmental Defense Fund (EDF)',
+            },
             // Add more cards here
           ];
           // Sort cards by date in descending order (most recent on top)
