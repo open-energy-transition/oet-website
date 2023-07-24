@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', function() {
               partner: 'Prototype Fund, Federal Ministry of Education and Research Germany',
             },
             {
-              category: 'software development', 'support and training',
+              category: ['software development', 'support and training'],
               status: 'ongoing',
               imageUrl: 'assets/img/projects/blog5.jpg',
               title: 'Multi-Country Electricity Transition Potential and Challenges Project',
