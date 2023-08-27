@@ -27,8 +27,15 @@ document.addEventListener('DOMContentLoaded', function() {
           // Card data goes here
           // Example:
           {
+            category: ['research', 'blog'],
+            title: 'Empowering Europe\'s Energy Transition: OET starts new energy project assessing the impact of peak demand reduction measures on the European energy system.',
+            date: '2023-08-27',
+            author: 'Max Parzen',
+            source: 'https://openenergytransition.org/projects.html'
+          },
+          {
             category: ['blog'],
-            title: 'Finally! OET is sharing their Theory of Change',
+            title: 'Finally! OET just shared its "Theory of Change"',
             date: '2023-07-21',
             author: 'Max Parzen',
             source: 'https://www.linkedin.com/posts/maximilian-parzen-b047a1126_opensource-openenergymodelling-opendata-activity-7088126997880520704-x1n2'

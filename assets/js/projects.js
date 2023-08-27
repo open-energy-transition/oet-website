@@ -30,6 +30,26 @@ document.addEventListener('DOMContentLoaded', function() {
             // Card data goes here
             // Example:
             {
+              category: ['consultancy', 'study', 'software development'],
+              status: 'ongoing',
+              imageUrl: 'assets/img/projects/blog6-riccardo-annandale-unsplash.jpg',
+              title: 'Flattening the Energy Curve',
+              subtitle: 'An assessment of efficiency measures and their impact on the European energy system',
+              description: 
+              'The project, commissioned by Open Energy Transition (OET) and supported by the EEE consortium, \
+              aims to assess the impact of various energy efficiency measures on the European energy system. \
+              This comprehensive study will focus on energy affordability, social and household impacts, and \
+              industry considerations in the context of the EU\'s target of 90-95% emissions reduction by 2040. \
+              Utilizing the PyPSA-Eur integrated energy system planning tool, the project will evaluate the \
+              effectiveness of different renovation scenarios, energy management measures, and demand-side \
+              flexibility measures in reducing energy generation needs, flattening the peak demand curve, and \
+              influencing energy prices. The results will provide insights into the benefits of isolated and \
+              combined efficiency measures, contributing to data-driven decision-making in energy policy and \
+              planning. The project will commence in January 2024 and is expected to conclude by July 2024',
+              date: '2023-09-01',
+              partner: 'European Climate Foundation (ECF), European Insulation Manufacturers Association (EURIMA), European Copper Institute (ECI)',
+            },
+            {
               category: ['software development', 'support and training'],
               status: 'ongoing',
               imageUrl: 'assets/img/projects/blog1.jpg',
