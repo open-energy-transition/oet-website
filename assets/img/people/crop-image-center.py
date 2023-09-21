@@ -24,7 +24,7 @@ def centercrop(path):
     return im.crop((left, top, right, bottom))
 
 
-for path in ['assets/img/people/akshatmittal.jpg']:
+for path in ['assets/img/people/emmanuel.jpg']:
     name = path.split('.')[0]
     path = os.path.join(os.getcwd(), path)
     centercrop(path).save(name+'_cropped.jpg')
