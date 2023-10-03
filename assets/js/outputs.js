@@ -28,6 +28,20 @@ document.addEventListener('DOMContentLoaded', function() {
           // Example:
           {
             category: ['research', 'blog'],
+            title: 'OET speak at the prestigious Decision Intelligence Summit organised by Gurobi next to other optimization champs!',
+            date: '2023-10-03',
+            author: 'Open Energy Transition',
+            source: 'https://www.linkedin.com/feed/update/urn:li:activity:7114914678387924993'
+          },
+          {
+            category: ['research', 'blog'],
+            title: 'OET is organiser of leading open energy modelling workshop (openmod) at Stanford University.',
+            date: '2023-09-15',
+            author: 'Max Parzen',
+            source: 'https://www.linkedin.com/posts/maximilian-parzen-b047a1126_openmod-stanford-energymodelling-activity-7109522822145683456-xvyg'
+          },
+          {
+            category: ['research', 'blog'],
             title: 'Empowering Europe\'s Energy Transition: OET starts new energy project assessing the impact of peak demand reduction measures on the European energy system.',
             date: '2023-08-27',
             author: 'Max Parzen',
