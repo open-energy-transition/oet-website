@@ -27,6 +27,13 @@ document.addEventListener('DOMContentLoaded', function() {
           // Card data goes here
           // Example:
           {
+            category: ['software', 'research', 'blog'],
+            title: 'OET team wins prestigious Young Innovator grant from German government! - The goal closing the gap to better energy planning.',
+            date: '2023-10-09',
+            author: 'Open Energy Transition',
+            source: 'https://www.linkedin.com/posts/maximilian-parzen-b047a1126_younginnovators-activity-7117062450696306690-irpu'
+          },
+          {
             category: ['research', 'blog'],
             title: 'OET speak at the prestigious Decision Intelligence Summit organised by Gurobi next to other optimization champs!',
             date: '2023-10-03',
