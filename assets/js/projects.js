@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
               title: 'Exclusive Stanford University Training',
               subtitle: 'Helping to create the next generation of open energy modellers and supporting the Stanford network',
               description: 
-              'On November 10th, 2023, Stanford hosted an elite PyPSA training session. Led by industry \
+              'On November 10th, 2023, Stanford will host an elite PyPSA training session. Led by industry \
               experts including Maximilian Parzen (OET CEO) and Martha Maria Frystacki (Head of Energy \
               Modelling at OET), attendees honed skills in power systems analysis using tools like \
               PyPSA, Linopy, and Atlite. The training demystified open-source practices, emphasizing \
