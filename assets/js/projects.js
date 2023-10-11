@@ -30,6 +30,46 @@ document.addEventListener('DOMContentLoaded', function() {
             // Card data goes here
             // Example:
             {
+              category: ['support and training'],
+              status: 'ongoing',
+              imageUrl: 'assets/img/projects/blog7-stanford-training.jpg',
+              title: 'Exclusive Stanford University Training',
+              subtitle: 'Helping to create the next generation of open energy modellers and supporting the Stanford network',
+              description: 
+              'On November 10th, 2023, Stanford hosted an elite PyPSA training session. Led by industry \
+              experts including Maximilian Parzen (OET CEO) and Martha Maria Frystacki (Head of Energy \
+              Modelling at OET), attendees honed skills in power systems analysis using tools like \
+              PyPSA, Linopy, and Atlite. The training demystified open-source practices, emphasizing \
+              hard vs. soft forks. It was tailored not only to boost technical acumen but also to fortify \
+              the Stanford open energy planning network. Participants brought basic Python knowledge; \
+              prior power system experience, though beneficial, wasn\'t mandatory. All attendees \
+              received exclusive resources and software access.',
+              date: '2023-11-10',
+              partner: 'Stanford University and Carnegie Institution for Science',
+            },
+            {
+              category: ['support and training'],
+              status: 'ongoing',
+              imageUrl: 'assets/img/projects/blog8-openmod-meets-usa.jpg',
+              title: 'Openmod meets USA 2023',
+              subtitle: 'Organising the largest open energy modelling conference in North America',
+              description: 
+              'In November 2023, the Open Energy Transition (OET) team successfully co-organized \
+              the "openmod-meets-usa-2023" workshop at Stanford University. Held in \
+              collaboration with Stanford\'s Bits & Watts Initiative, this event reignited the \
+              passion for open energy modelling, a domain where openmod has been a pioneering \
+              grassroots movement. After previous successes in Vienna and a hiatus since NREL\'s \
+              2019 session in the USA, OET stepped up to fill the gap. Attendees, ranging from \
+              seasoned energy experts to newcomers, were offered a platform that hosted insightful \
+              sessions, engaging talks, and hands-on experiences. Highlights included lightning talks, \
+              live tech demos, breakout sessions, and a networking platform unlike any other. \
+              This free event not only upheld openmod\'s tradition but also showcased OET\'s \
+              commitment to advancing energy planning and collaborative innovation. Link to the event: \
+              https://forum.openmod.org/t/openmod-meets-usa-2023/4148#openmod-meets-usa-2023-workshop-details-1',
+              date: '2023-11-13',
+              partner: 'Stanford University and their Bits and Watts Initiative',
+            },
+            {
               category: ['consultancy', 'study', 'software development'],
               status: 'ongoing',
               imageUrl: 'assets/img/projects/blog6-riccardo-annandale-unsplash.jpg',
@@ -115,7 +155,7 @@ document.addEventListener('DOMContentLoaded', function() {
             },
             {
               category: ['consultancy', 'software development', 'support and training'],
-              status: 'ongoing',
+              status: 'past',
               imageUrl: 'assets/img/projects/blog4.jpg',
               title: 'Energy Transition Kazakhstan',
               subtitle: 'Exploring more ambitious energy transition pathways for Kazakhstan',
@@ -148,7 +188,7 @@ document.addEventListener('DOMContentLoaded', function() {
             },
             {
               category: ['software development', 'support and training'],
-              status: 'ongoing',
+              status: 'past',
               imageUrl: 'assets/img/projects/blog5.jpg',
               title: 'Multi-Country Electricity Transition Potential and Challenges Project',
               subtitle: 'Training and supporting modelling teams in 10 countries',
