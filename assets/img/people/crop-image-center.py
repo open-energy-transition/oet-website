@@ -30,7 +30,7 @@ def centercrop_and_resize(path, min_size=274):
     return im_cropped
 
 
-for path in [r"C:\Users\ramir\OneDrive\Escritorio\OET\EOT_Page\oet-website\assets\img\people\ramirezbryan.jpg,"r"]:
+for path in ["\assets\img\people\ramirezbryan_cropped.jpg"]:
     name = path.split('.')[0]
     path = os.path.join(os.getcwd(), path)
     centercrop_and_resize(path).save(name + '_cropped.jpg')
