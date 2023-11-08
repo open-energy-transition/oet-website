@@ -28,6 +28,27 @@ document.addEventListener('DOMContentLoaded', function() {
           // Example:
           {
             category: ['software', 'research', 'blog'],
+            title: 'Milestone achieved. PyPSA-Earth supports now 193 UN countries.',
+            date: '2023-11-08',
+            author: 'Davide Fioriti',
+            source: 'https://www.linkedin.com/feed/update/urn:li:activity:7127990725647949825'
+          },
+          {
+            category: ['software', 'research', 'blog'],
+            title: 'A delegation from OET is touring 5 weeks through US meeting with leading energy system modelers and researchers.',
+            date: '2023-11-02',
+            author: 'Martha Frysztacki',
+            source: 'https://www.linkedin.com/feed/update/urn:li:activity:7125775233411604482'
+          },
+          {
+            category: ['research','blog'],
+            title: 'We can model how carbon aware computing impacts hyperscaler energy needs through to 2030.',
+            date: '2023-10-23',
+            author: 'Max Parzen',
+            source: 'https://www.linkedin.com/feed/update/urn:li:activity:7121135588472180736'
+          },
+          {
+            category: ['software', 'research', 'blog'],
             title: 'OET team wins prestigious Young Innovator grant from German government! - The goal closing the gap to better energy planning.',
             date: '2023-10-09',
             author: 'Open Energy Transition',
