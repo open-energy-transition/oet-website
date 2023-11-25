@@ -31,13 +31,13 @@ document.addEventListener('DOMContentLoaded', function() {
             // Example:
             {
               category: ['support and training'],
-              status: 'ongoing',
+              status: 'past',
               imageUrl: 'assets/img/projects/blog7-stanford-training.jpg',
               title: 'Exclusive Stanford University Training',
               subtitle: 'Helping to create the next generation of open energy modellers and supporting the Stanford network',
               description: 
-              'On November 10th, 2023, Stanford will host an elite PyPSA training session. Led by industry \
-              experts including Maximilian Parzen (OET CEO) and Martha Maria Frystacki (Head of Energy \
+              'On November 10th, 2023, Stanford hosted an elite PyPSA training session. Led by industry \
+              experts including Maximilian Parzen (CEO at OET) and Martha Maria Frystacki (Head of Energy \
               Modelling at OET), attendees honed skills in power systems analysis using tools like \
               PyPSA, Linopy, and Atlite. The training demystified open-source practices, emphasizing \
               hard vs. soft forks. It was tailored not only to boost technical acumen but also to fortify \
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
             },
             {
               category: ['support and training'],
-              status: 'ongoing',
+              status: 'past',
               imageUrl: 'assets/img/projects/blog8-openmod-meets-usa.jpg',
               title: 'Openmod meets USA 2023',
               subtitle: 'Organising the largest open energy modelling conference in North America',
