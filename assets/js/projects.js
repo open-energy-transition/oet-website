@@ -29,6 +29,25 @@ document.addEventListener('DOMContentLoaded', function() {
           const cardData = [
             // Card data goes here
             // Example:
+            // category: 'consultancy', 'software development', 'support and training'],
+            {
+              category: ['consultancy', 'software development', 'support and training'],
+              status: 'ongoing',
+              imageUrl: 'assets/img/projects/blog9-handshake.png',
+              title: 'Collaborative Energy Modeling with TSO',
+              subtitle: 'Enhancing TransnetBW’s Model compatibility',
+              description: 
+              'The project, led by Open Energy Transition, plans to update TransnetBW\'s model by changing its \
+              development approach in relation to the PyPSA-Eur model. This change aims to make updates quicker, \
+              improve quality with help from the user community, encourage working together, and cut costs, all \
+              while keeping data safe. There are two main parts: first, planning and evaluating the approach, \
+              and then putting it into action. The goals are to integrate smoothly, save money, work fast, \
+              support teamwork, and think ahead. The project will start on November 1, 2023, and is expected \
+              to finish by August 8, 2024. It\'s a new step in improving how we model energy systems in a \
+              commercial environment.',
+              date: '2023-12-06',
+              partner: 'TransnetBW GmbH',
+            },
             {
               category: ['support and training'],
               status: 'past',
