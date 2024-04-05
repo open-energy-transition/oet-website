@@ -1622,3 +1622,19 @@ canvas {
 .job-info-section {
   padding-top: 0;
 }
+
+
+/* funding and patners */
+.funding {
+  font-size: 19px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+.funding-title {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+    }
+
+ 
