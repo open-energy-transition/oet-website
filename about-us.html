@@ -72,6 +72,43 @@
         })(window,document,'script','dataLayer','GTM-P4PR9RQR');</script>
     <!-- End Google Tag Manager -->
 
+    <style>
+        .info-image {
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+        }
+
+        .info-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: filter 0.3s ease;
+        }
+
+        .info-image-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 18px;
+            text-align: center;
+            z-index: 1;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .info-image:hover .info-image-text {
+            opacity: 1;
+        }
+
+        .info-image:hover img {
+            filter: grayscale(100%);
+            cursor: pointer;
+        }
+    </style>
+
 
     <!-- =======================================================
   * Based on Template Name: Bocor - v4.3.0
@@ -213,7 +250,10 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
                     <div class="team text-center rounded p-3 py-4">
-                        <img src="assets/img/people/maxparzen_cropped.jpg" class="img-fluid avatar avatar-medium shadow rounded-pill" alt="">
+                        <div class="info-image">
+                            <img src="assets/img/people/maxparzen_cropped.jpg" class="img-fluid avatar avatar-medium shadow rounded-pill bi" alt="" data-bs-toggle="modal" data-bs-target="#infoModal">
+                            <div class="info-image-text"><i class="bi bi-info-circle"></i> Read Bio</div>
+                        </div>
                         <div class="content mt-3">
                             <h4 class="title mb-0">Dr. Maximilian Parzen</h4>
                             <small class="text-muted">CEO, Co-founder</small>
@@ -223,6 +263,23 @@
                                 <li class="list-inline-item"><a href="https://www.linkedin.com/in/maximilian-parzen-b047a1126/" class="rounded"><i class="mdi mdi-linkedin" title="Linkedin"></i></a></li>
                                 <li class="list-inline-item"><a href="https://max-parzen.github.io/" class="rounded"><i class="bi bi-book-half" title="Website"></i></a></li>
                                 <li class="list-inline-item"><a href="https://github.com/pz-max" class="rounded"><i class="bi bi-github" title="GitHub"></i></a></li>
+                                <!-- Modal -->
+                                <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header" id="modalHeader" style="font-size: 1.5em">
+                                                <!-- Dynamic content goes here -->
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body" id="modalContent">
+                                                <!-- Dynamic content goes here -->
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </ul><!--end icon-->
                         </div>
                     </div>
@@ -230,13 +287,17 @@
 
                 <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
                     <div class="team text-center rounded p-3 py-4">
-                        <img src="assets/img/people/marthamaria_cropped.jpg" class="img-fluid avatar avatar-medium shadow rounded-pill" alt="">
+                        <div class="info-image">
+                            <img src="assets/img/people/marthamaria_cropped.jpg" class="img-fluid avatar avatar-medium shadow rounded-pill bi" alt="" data-bs-toggle="modal" data-bs-target="#infoModal">
+                            <div class="info-image-text"><i class="bi bi-info-circle"></i> Read Bio</div>
+                        </div>
                         <div class="content mt-3">
                             <h4 class="title mb-0">Dr. Martha Maria Frysztacki</h4>
                             <small class="text-muted">Head of Energy System Modelling, Co-founder</small>
                             <ul class="list-unstyled mt-3 social-icon social mb-0">
                                 <li class="list-inline-item"><a href="mailto:martha.frysztacki@openenergytransition.org" class="rounded"><i class="bi bi-envelope" title="Email"></i></a></li>
                                 <li class="list-inline-item"><a href="https://www.linkedin.com/in/marthamaria93/" class="rounded"><i class="mdi mdi-linkedin" title="Linkedin"></i></a></li>
+                                <li class="list-inline-item"><a href="https://publikationen.bibliothek.kit.edu/1000157620" class="rounded"><i class="bi bi-book-half"></i></a></li>
                                 <li class="list-inline-item"><a href="https://github.com/martacki" class="rounded"><i class="bi bi-github" title="GitHub"></i></a></li>
                             </ul><!--end icon-->
                         </div>
@@ -245,9 +306,12 @@
 
                 <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
                     <div class="team text-center rounded p-3 py-4">
-                        <img src="assets/img/people/victormartinez_cropped.jpg" class="img-fluid avatar avatar-medium shadow rounded-pill" alt="">
+                        <div class="info-image">
+                            <img src="assets/img/people/victormartinez_cropped.jpg" class="img-fluid avatar avatar-medium shadow rounded-pill bi" alt="" data-bs-toggle="modal" data-bs-target="#infoModal">
+                            <div class="info-image-text"><i class="bi bi-info-circle"></i> Read Bio</div>
+                        </div>
                         <div class="content mt-3">
-                            <h4 class="title mb-0">Victor Martinez MSc MBA</h4>
+                            <h4 class="title mb-0">Victor Martinez, MSc, MBA</h4>
                             <small class="text-muted">Head of Operations and Strategy</small>
                             <ul class="list-unstyled mt-3 social-icon social mb-0">
                                 <li class="list-inline-item"><a href="mailto:victor.martinez@openenergytransition.org" class="rounded"><i class="bi bi-envelope" title="Email"></i></a></li>
@@ -259,7 +323,10 @@
 
                 <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
                     <div class="team text-center rounded p-3 py-4">
-                        <img src="assets/img/people/ekaterinafedotova_cropped.jpg" class="img-fluid avatar avatar-medium shadow rounded-pill" alt="">
+                        <div class="info-image">
+                            <img src="assets/img/people/ekaterinafedotova_cropped.jpg" class="img-fluid avatar avatar-medium shadow rounded-pill" alt="" data-bs-toggle="modal" data-bs-target="#infoModal">
+                            <div class="info-image-text"><i class="bi bi-info-circle"></i> Read Bio</div>
+                        </div>
                         <div class="content mt-3">
                             <h4 class="title mb-0">Dr. Ekaterina Fedotova</h4>
                             <small class="text-muted">Head of Energy and Climate System Modelling</small>
@@ -273,7 +340,10 @@
 
                 <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
                     <div class="team text-center rounded p-3 py-4">
-                        <img src="assets/img/people/fabianhofmann_cropped.jpg" class="img-fluid avatar avatar-medium shadow rounded-pill" alt="">
+                        <div class="info-image">
+                            <img src="assets/img/people/fabianhofmann_cropped.jpg" class="img-fluid avatar avatar-medium shadow rounded-pill" alt="" data-bs-toggle="modal" data-bs-target="#infoModal">
+                            <div class="info-image-text"><i class="bi bi-info-circle"></i> Read Bio</div>
+                        </div>
                         <div class="content mt-3">
                             <h4 class="title mb-0">Dr. Fabian Hofmann</h4>
                             <small class="text-muted">Senior Optimization and Energy System Modelling Expert</small>
@@ -287,7 +357,10 @@
 
                 <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
                     <div class="team text-center rounded p-3 py-4">
-                        <img src="assets/img/people/oleglugovoy_cropped.jpg" class="img-fluid avatar avatar-medium shadow rounded-pill" alt="">
+                        <div class="info-image">
+                            <img src="assets/img/people/oleglugovoy_cropped.jpg" class="img-fluid avatar avatar-medium shadow rounded-pill bi" alt="" data-bs-toggle="modal" data-bs-target="#infoModal">
+                            <div class="info-image-text"><i class="bi bi-info-circle"></i> Read Bio</div>
+                        </div>
                         <div class="content mt-3">
                             <h4 class="title mb-0">Dr. Oleg Lugovoy</h4>
                             <small class="text-muted">Senior Energy System Modeller</small>
@@ -297,11 +370,14 @@
                             </ul><!--end icon-->
                         </div>
                     </div>
-                </div>
+                </div><!--end col-->
 
                 <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
                     <div class="team text-center rounded p-3 py-4">
-                        <img src="assets/img/people/davidefioriti_cropped.jpg" class="img-fluid avatar avatar-medium shadow rounded-pill" alt="">
+                        <div class="info-image">
+                            <img src="assets/img/people/davidefioriti_cropped.jpg" class="img-fluid avatar avatar-medium shadow rounded-pill bi" alt="" data-bs-toggle="modal" data-bs-target="#infoModal">
+                            <div class="info-image-text"><i class="bi bi-info-circle"></i> Read Bio</div>
+                        </div>
                         <div class="content mt-3">
                             <h4 class="title mb-0">Asst. Prof. Dr. Davide Fioriti</h4>
                             <small class="text-muted">Expert in Global Energy System Modelling, Co-founder</small>
@@ -316,7 +392,10 @@
 
                 <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
                     <div class="team text-center rounded p-3 py-4">
-                        <img src="assets/img/people/siddharth.jpg" class="img-fluid avatar avatar-medium shadow rounded-pill" alt="">
+                        <div class="info-image">
+                            <img src="assets/img/people/siddharth.jpg" class="img-fluid avatar avatar-medium shadow rounded-pill bi" alt="" data-bs-toggle="modal" data-bs-target="#infoModal">
+                            <div class="info-image-text"><i class="bi bi-info-circle"></i> Read Bio</div>
+                        </div>
                         <div class="content mt-3">
                             <h4 class="title mb-0">Dr. Siddharth Krishna</h4>
                             <small class="text-muted">Computer Scientist & Software Engineer</small>
@@ -331,7 +410,10 @@
 
                 <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
                     <div class="team text-center rounded p-3 py-4">
-                        <img src="assets/img/people/ff_cropped.jpg" class="img-fluid avatar avatar-medium shadow rounded-pill" alt="">
+                        <div class="info-image">
+                            <img src="assets/img/people/ff_cropped.jpg" class="img-fluid avatar avatar-medium shadow rounded-pill bi" alt="" data-bs-toggle="modal" data-bs-target="#infoModal">
+                            <div class="info-image-text"><i class="bi bi-info-circle"></i> Read Bio</div>
+                        </div>
                         <div class="content mt-3">
                             <h4 class="title mb-0">Dr. Fabrizio Finozzi</h4>
                             <small class="text-muted">Big Data Software Developer</small>
@@ -346,7 +428,10 @@
 
                 <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
                     <div class="team text-center rounded p-3 py-4">
-                        <img src="assets/img/people/MarioDzamarijaCropped.jpg" class="img-fluid avatar avatar-medium shadow rounded-pill" alt="">
+                        <div class="info-image">
+                            <img src="assets/img/people/MarioDzamarijaCropped.jpg" class="img-fluid avatar avatar-medium shadow rounded-pill bi" alt="" data-bs-toggle="modal" data-bs-target="#infoModal">
+                            <div class="info-image-text"><i class="bi bi-info-circle"></i> Read Bio</div>
+                        </div>
                         <div class="content mt-3">
                             <h4 class="title mb-0">Dr. Mario Dzamarija</h4>
                             <small class="text-muted">Energy Systems Modeller</small>
@@ -361,7 +446,10 @@
 
                 <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
                     <div class="team text-center rounded p-3 py-4">
-                        <img src="assets/img/people/lukasfranken_cropped.jpg" class="img-fluid avatar avatar-medium shadow rounded-pill" alt="">
+                        <div class="info-image">
+                            <img src="assets/img/people/lukasfranken_cropped.jpg" class="img-fluid avatar avatar-medium shadow rounded-pill bi" alt="" data-bs-toggle="modal" data-bs-target="#infoModal">
+                            <div class="info-image-text"><i class="bi bi-info-circle"></i> Read Bio</div>
+                        </div>
                         <div class="content mt-3">
                             <h4 class="title mb-0">Lukas Franken</h4>
                             <small class="text-muted">Senior Energy System Modeller</small>
@@ -375,7 +463,10 @@
 
                 <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
                     <div class="team text-center rounded p-3 py-4">
-                        <img src="assets/img/people/akhmetovyerbol_cropped.jpg" class="img-fluid avatar avatar-medium shadow rounded-pill" alt="">
+                        <div class="info-image">
+                            <img src="assets/img/people/akhmetovyerbol_cropped.jpg" class="img-fluid avatar avatar-medium shadow rounded-pill bi" alt="" data-bs-toggle="modal" data-bs-target="#infoModal">
+                            <div class="info-image-text"><i class="bi bi-info-circle"></i> Read Bio</div>
+                        </div>
                         <div class="content mt-3">
                             <h4 class="title mb-0">Yerbol Akhmetov</h4>
                             <small class="text-muted">Energy System Modelling Expert</small>
@@ -388,7 +479,10 @@
 
                 <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
                     <div class="team text-center rounded p-3 py-4">
-                        <img src="assets/img/people/akshatmittal_cropped.jpg" class="img-fluid avatar avatar-medium shadow rounded-pill" alt="">
+                        <div class="info-image">
+                            <img src="assets/img/people/akshatmittal_cropped.jpg" class="img-fluid avatar avatar-medium shadow rounded-pill bi" alt="" data-bs-toggle="modal" data-bs-target="#infoModal">
+                            <div class="info-image-text"><i class="bi bi-info-circle"></i> Read Bio</div>
+                        </div>
                         <div class="content mt-3">
                             <h4 class="title mb-0">Akshat Mittal</h4>
                             <small class="text-muted">Full-Stack Developer</small>
@@ -401,7 +495,10 @@
 
                 <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
                     <div class="team text-center rounded p-3 py-4">
-                        <img src="assets/img/people/hazemabdelkhalek_cropped.jpg" class="img-fluid avatar avatar-medium shadow rounded-pill" alt="">
+                        <div class="info-image">
+                            <img src="assets/img/people/hazemabdelkhalek_cropped.jpg" class="img-fluid avatar avatar-medium shadow rounded-pill" alt="" data-bs-toggle="modal" data-bs-target="#infoModal">
+                            <div class="info-image-text"><i class="bi bi-info-circle"></i> Read Bio</div>
+                        </div>
                         <div class="content mt-3">
                             <h4 class="title mb-0">Hazem Abdel-Khalek</h4>
                             <small class="text-muted">Expert in Sector-Coupled Energy System Modelling, Co-founder</small>
@@ -415,7 +512,10 @@
 
                 <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
                     <div class="team text-center rounded p-3 py-4">
-                        <img src="assets/img/people/emmanuel_cropped.jpg" class="img-fluid avatar avatar-medium shadow rounded-pill" alt="">
+                        <div class="info-image">
+                            <img src="assets/img/people/emmanuel_cropped.jpg" class="img-fluid avatar avatar-medium shadow rounded-pill" alt="" data-bs-toggle="modal" data-bs-target="#infoModal">
+                            <div class="info-image-text"><i class="bi bi-info-circle"></i> Read Bio</div>
+                        </div>
                         <div class="content mt-3">
                             <h4 class="title mb-0">Emmanuel Bolarinwa</h4>
                             <small class="text-muted">AI Engineer</small>
@@ -429,7 +529,10 @@
 
                 <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
                     <div class="team text-center rounded p-3 py-4">
-                        <img src="assets/img/people/ramirezbryan_cropped.jpg" class="img-fluid avatar avatar-medium shadow rounded-pill" alt="">
+                        <div class="info-image">
+                            <img src="assets/img/people/ramirezbryan_cropped.jpg" class="img-fluid avatar avatar-medium shadow rounded-pill" alt="" data-bs-toggle="modal" data-bs-target="#infoModal">
+                            <div class="info-image-text"><i class="bi bi-info-circle"></i> Read Bio</div>
+                        </div>
                         <div class="content mt-3">
                             <h4 class="title mb-0">Bryan Ramirez</h4>
                             <small class="text-muted">GIS Engineer, WebGIS Research</small>
@@ -443,7 +546,11 @@
 
                 <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
                     <div class="team text-center rounded p-3 py-4">
-                        <img src="assets\img\people\sermisha_cropped.jpg" class="img-fluid avatar avatar-medium shadow rounded-pill" alt="">
+                        <div class="info-image">
+                            <img src="assets\img\people\sermisha_cropped.jpg" class="img-fluid avatar avatar-medium shadow rounded-pill" alt="" data-bs-toggle="modal" data-bs-target="#infoModal">
+                            <div class="info-image-text"><i class="bi bi-info-circle"></i> Read Bio</div>
+                        </div>
+
                         <div class="content mt-3">
                             <h4 class="title mb-0">Sermisha Narayana</h4>
                             <small class="text-muted">Energy Systems Modeller</small>
@@ -457,7 +564,11 @@
 
                 <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
                     <div class="team text-center rounded p-3 py-4">
-                        <img src="assets/img/people/kristijan_faust_cropped.jpg" class="img-fluid avatar avatar-medium shadow rounded-pill" alt="">
+                        <div class="info-image">
+                            <img src="assets\img\people\kristijan_faust_cropped.jpg" class="img-fluid avatar avatar-medium shadow rounded-pill" alt="" data-bs-toggle="modal" data-bs-target="#infoModal">
+                            <div class="info-image-text"><i class="bi bi-info-circle"></i> Read Bio</div>
+                        </div>
+
                         <div class="content mt-3">
                             <h4 class="title mb-0">Kristijan Faust</h4>
                             <small class="text-muted">Software Engineer</small>
@@ -472,7 +583,10 @@
 
                 <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
                     <div class="team text-center rounded p-3 py-4">
-                        <img src="assets/img/people/marthasnoopy_cropped.jpg" class="img-fluid avatar avatar-medium shadow rounded-pill" alt="">
+                        <div class="info-image">
+                            <img src="assets\img\people\marthasnoopy_cropped.jpg" class="img-fluid avatar avatar-medium shadow rounded-pill" alt="" data-bs-toggle="modal" data-bs-target="#infoModal">
+                            <div class="info-image-text"><i class="bi bi-info-circle"></i> Read Bio</div>
+                        </div>
                         <div class="content mt-3">
                             <h4 class="title mb-0">Snoopy</h4>
                             <small class="text-muted">Visionary and Head of Wellbeing</small>
@@ -485,6 +599,84 @@
             </div><!--end row-->
         </div>
     </section>
+
+    <script>
+        // Function to change modal content dynamically
+        function changeModalContent(content) {
+          document.getElementById('modalContent').innerHTML = content;
+        }
+
+        // Add event listeners to all images with the "info-image" class
+        document.querySelectorAll('.info-image').forEach(function(image, index) {
+            image.addEventListener('click', function() {
+            // Change modal content based on the clicked image
+            if (index === 0) {
+                changeModalHeader("About Max")
+                changeModalContent("<i class='bi bi-mortarboard-fill'></i> PhD in Energy System Modelling (University of Edinburgh) <br> <i class='bi bi-mortarboard-fill'></i> M.Sc. in Sustainable Energy Systems (University of Edinburgh)<br> <br> <p align='justify'>Max Parzen, co-founder and CEO of Open Energy Transition (OET), is a notable figure in energy system modeling. He is a key creator of the globally recognized PyPSA-Earth model and a significant contributor to open-source energy optimization projects with high-tier journal articles. <br><be> As leading advocate for open data and source in energy modeling, Max has authored influential campaigns and articles, significantly advancing the field. His articles on optimization solvers secured significant funding for open-source solvers, and his advocacy for CC-BY-4.0 licenses in energy system descriptions led to increased open data adoption. <br><be> Max's expertise is regularly sought at prestigious forums such as openmod, Linux Foundation Energy, and the World Bank. His discovery of the HiGHS open-source solver's efficiency has profoundly impacted energy system modeling, leading to its broad adoption. <br><be> In addition to his OET role, Max co-directs the PyPSA meets Earth initiative, dedicated to global, open, and free energy system modeling and data. His PhD research in Energy System Modeling and Energy Storage, focusing on the value of energy storage in decarbonization pathways, underpins his contributions to the sector.</p>");
+            } else if (index === 1) {
+                changeModalHeader("About Martha")
+                changeModalContent("<i class='bi bi-mortarboard-fill'></i> PhD in Energy Informatics (Karlsruhe Institute of Technology)<br> <i class='bi bi-mortarboard-fill'></i> M.Sc. in Mathematics (Univeryity of Erlangen-Nuremberg) <br> <br> <p align='justify'> Driven by a passion for mathematics, physics and the environment, Martha completed her award-winning PhD thesis in energy system modeling under the guidance of Prof. Tom Brown. Her research explores the role of spatial scale in electricity system optimization models in highly renewable scenarios, where her work has contributed to the United Nations Sustainable Development Goals, helping to tackle some of the world's greatest challenges. While working on her PhD, she became an integral part of the PyPSA core development team, contributing to numerous methods to enhance the capabilities of the modeling toolbox, far beyond the scope of her PhD. Inspired by sustainable and transparent energy system modeling using open-source solutions, she co-founded Open Energy Transition after graduation, where she currently serves as the Head of the Modeling Team.<br> <br> Prior to her career in energy systems, Martha earned her Master's Degree in Mathematics from the University of Erlangen-Nuremberg, specializing in Simulation, Modeling, and Optimization. Her final thesis, conducted at the University of Zurich, focused on researching the impact of discontinuities in the coefficient of the Helmholtz equation.<br> </p>");
+            } else if (index === 2) {
+                changeModalHeader("About Victor")
+                changeModalContent("")
+            } else if (index === 3) {
+                changeModalHeader("About Ekaterina")
+                changeModalContent("<i class='bi bi-mortarboard-fill'></i> PhD in Thermal Physics (Moscow Power Engineering Institute)<br> <i class='bi bi-mortarboard-fill'></i> Engineer's degree in Thermal Physics (Bauman Moscow State Technical University) <br> <i class='bi bi-mortarboard-fill'></i> Patent Examiner (National Patent Office) <br> <br>")
+            } else if (index === 4) {
+                changeModalHeader("About Fabian")
+                changeModalContent("<i class='bi bi-mortarboard-fill'></i> PhD in Theoretical and Mathematical Physics (Goethe University Frankfurt) <br> <i class='bi bi-mortarboard-fill'></i> M.Sc. in Physics (Goethe University Frankfurt)")
+            } else if (index === 5) {
+                changeModalHeader("About Oleg")
+                changeModalContent("")
+            } else if (index === 6) {
+                changeModalHeader("About Davide")
+                changeModalContent("<i class='bi bi-mortarboard-fill'></i> PhD (University of Pisa) <br> <i class='bi bi-mortarboard-fill'></i> M.Eng. Electrical Engineering (University of Pisa) <br>")
+            } else if (index === 7) {
+                changeModalHeader("About Sid")
+                changeModalContent("")
+            } else if (index === 8) {
+                changeModalHeader("About Fabrizio")
+                changeModalContent("")
+            } else if (index === 9) {
+                changeModalHeader("About Mario")
+                changeModalContent("")
+            } else if (index === 10) {
+                changeModalHeader("About Lukas")
+                changeModalContent("")
+            } else if (index === 11) {
+                changeModalHeader("About Yerbol")
+                changeModalContent("<i class='bi bi-mortarboard-fill'></i> M.Sc. in Electrical and Electronics Engineering (Nazarbayev University) <br> <i class='bi bi-mortarboard-fill'></i> B.Eng. in Electrical and Electronic Engineering (Nazarbayev University)")
+            } else if (index === 12) {
+                changeModalHeader("About Akshat")
+                changeModalContent("")
+            } else if (index === 13) {
+                changeModalHeader("About Hazem")
+                changeModalContent("")
+            } else if (index === 14) {
+                changeModalHeader("About Emmanuel")
+                changeModalContent("")
+            } else if (index === 15) {
+                changeModalHeader("About Bryan")
+                changeModalContent("")
+            } else if (index === 16) {
+                changeModalHeader("About Sermisha")
+                changeModalContent("")
+            } else if (index === 17) {
+                changeModalHeader("About Kristijan")
+                changeModalContent("")
+            } else if (index === 18) {
+                changeModalHeader("About Snoopy")
+                changeModalContent("<i class='bi bi-mortarboard-fill'></i> Canine Therapeutic Specialist (Barkford University)<br><br> <p align='justify'>Motivated by the pursuit of the finest cuisine, Snoopy consistently generates innovative ideas to ensure the team takes sufficient breaks and enjoys walks, ensuring high efficiency levels and maintaining a healthy work-life balance.<br> <br> In addition to his technical pursuits, Snoopy is a true people-lover, making a dedicated effort to ensure everyone in the team is content and cheerful - eventually leading to a good tummy pet.</p>");
+            }
+          });
+        });
+
+
+        // Function to change modal header dynamically
+        function changeModalHeader(header) {
+            document.getElementById('modalHeader').innerHTML = header;
+        }
+</script>
 
     <section class="py-1" id="contributors">
     <div class="row">
@@ -704,6 +896,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
    -->
+
 </body>
 
 </html>
