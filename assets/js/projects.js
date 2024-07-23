@@ -46,6 +46,23 @@ document.addEventListener('DOMContentLoaded', function() {
               partner: 'The International Council on Clean Transportation',
             },
             {
+              category: ['consultancy', 'software development', 'study'],
+              status: 'ongoing',
+              imageUrl: 'assets/img/projects/Project-Innerspace-logo.webp',
+              title: 'Sector Coupled Modelling of Geothermal Resources',
+              subtitle: 'Geothermal Modeling Enhancements and its Viability in the U.S.',
+              description: 
+              'Project InnerSpace (IS) is seeking assistance from Open Energy Transition (OET) to integrate \
+              enhanced and hydrothermal geothermal systems into an open source PyPSA model (either PyPSA-USA \
+              or PyPSA-Earth), a leading global open integrated energy system model, which allows power system \
+              co-optimization of investment and operation of power and thermal assets at different temperatures, \
+              relevant for the study. This collaborative project between IS and OET holds significant potential for \
+              advancing the energy transition in the US and beyond, providing valuable insights for policy makers, \
+              and contributing to the promotion of geothermal energy to support net-zero objectives.',
+              date: '2024-07-01',
+              partner: 'Project InnerSpace',
+            },
+            {
               category: ['software development', 'study'],
               status: 'ongoing',
               imageUrl: 'assets/img/projects/open-source-solvers-comparison-to-commercial-solver-Gurobi.png',
@@ -65,23 +82,6 @@ document.addEventListener('DOMContentLoaded', function() {
               commitment to fostering transparent, data-driven decision-making in energy policy and planning.',
               date: '2024-06-06',
               partner: 'Breakthrough Energy',
-            },
-            {
-              category: ['consultancy', 'software development', 'study'],
-              status: 'ongoing',
-              imageUrl: 'assets/img/projects/Project-Innerspace-logo.png',
-              title: 'Sector Coupled Modelling of Geothermal Resources',
-              subtitle: 'Geothermal Modeling Enhancements and its Viability in the U.S.',
-              description: 
-              'Project InnerSpace (IS) is seeking assistance from Open Energy Transition (OET) to integrate \
-              enhanced and hydrothermal geothermal systems into an open source PyPSA model (either PyPSA-USA \
-              or PyPSA-Earth), a leading global open integrated energy system model, which allows power system \
-              co-optimization of investment and operation of power and thermal assets at different temperatures, \
-              relevant for the study. This collaborative project between IS and OET holds significant potential for \
-              advancing the energy transition in the US and beyond, providing valuable insights for policy makers, \
-              and contributing to the promotion of geothermal energy to support net-zero objectives.',
-              date: '2024-07-01',
-              partner: 'Project InnerSpace',
             },
             {
               category: ['consultancy', 'software development', 'support and training'],
