@@ -31,6 +31,59 @@ document.addEventListener('DOMContentLoaded', function() {
             // Example:
             // category: 'consultancy', 'software development', 'support and training'],
             {
+              category: ['consultancy', 'study'],
+              status: 'ongoing',
+              imageUrl: 'assets/img/projects/ICCT.jpeg',
+              title: 'Synthetic Fuels',
+              subtitle: 'Grid Modeling to Assess Electrofuels Supply Potential',
+              description: 
+              'The International Council on Clean Transportation (ICCT) is seeking research and modeling to quantify \
+              the cost and potential of electrofuels produced from grid-connected renewable electricity. This research \
+              will combine an assessment of renewable resource potential and cost with optimized capacity expansion \
+              modeling that accounts for existing grid resources, evolving electricity system needs, and the interactions \
+              between electrofuels production and other sources of electricity demand.',
+              date: '2024-09-01',
+              partner: 'The International Council on Clean Transportation',
+            },
+            {
+              category: ['consultancy', 'software development', 'study'],
+              status: 'ongoing',
+              imageUrl: 'assets/img/projects/Project-Innerspace-logo.webp',
+              title: 'Sector Coupled Modelling of Geothermal Resources',
+              subtitle: 'Geothermal Modeling Enhancements and its Viability in the U.S.',
+              description: 
+              'Project InnerSpace (IS) is seeking assistance from Open Energy Transition (OET) to integrate \
+              enhanced and hydrothermal geothermal systems into an open source PyPSA model (either PyPSA-USA \
+              or PyPSA-Earth), a leading global open integrated energy system model, which allows power system \
+              co-optimization of investment and operation of power and thermal assets at different temperatures, \
+              relevant for the study. This collaborative project between IS and OET holds significant potential for \
+              advancing the energy transition in the US and beyond, providing valuable insights for policy makers, \
+              and contributing to the promotion of geothermal energy to support net-zero objectives.',
+              date: '2024-07-01',
+              partner: 'Project InnerSpace',
+            },
+            {
+              category: ['software development', 'study'],
+              status: 'ongoing',
+              imageUrl: 'assets/img/projects/open-source-solvers-comparison-to-commercial-solver-Gurobi.png',
+              title: 'Solver Benchmark',
+              subtitle: 'Solver Benchmark for Energy System Planning Optimization Problems',
+              description: 
+              'In response to the challenges posed by having no benchmark available to track the advancements of \
+              open-source solvers for energy planning problems, Open Energy Transition (OET) proposes the \
+              development of an open-source solver benchmark platform tailored to energy planning problems. This \
+              initiative aims to address accessibility issues and limitations in large-scale computations crucial for \
+              sustainable energy transitions. \
+              The benchmark platform will evaluate various open-source solvers on speed, memory consumption, and \
+              solvability across different energy planning models, featuring continuous updates and a publicly \
+              accessible website for comprehensive comparison and improvement.By offering a robust benchmarking \
+              tool, accessible using the platform\'s website, this project supports the global transition towards \
+              sustainable energy solutions, embodying OET\'s \
+              commitment to fostering transparent, data-driven decision-making in energy policy and planning.',
+              date: '2024-06-06',
+              partner: 'Breakthrough Energy',
+            },
+            {
               category: ['consultancy', 'software development', 'support and training'],
               status: 'ongoing',
               imageUrl: 'assets/img/projects/blog9-handshake.png',
