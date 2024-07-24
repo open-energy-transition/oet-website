@@ -34,8 +34,8 @@ document.addEventListener('DOMContentLoaded', function() {
               category: ['consultancy', 'study'],
               status: 'ongoing',
               imageUrl: 'assets/img/projects/ICCT.jpeg',
-              title: 'Synthetic Fuels',
-              subtitle: 'Grid Modeling to Assess Electrofuels Supply Potential',
+              title: 'Synthetic Fuels for Clean Transportation in the U.S.',
+              subtitle: 'Assessment of the Electrofuels Supply Potential Using Grid Modeling',
               description: 
               'The International Council on Clean Transportation (ICCT) is seeking research and modeling to quantify \
               the cost and potential of electrofuels produced from grid-connected renewable electricity. This research \
@@ -49,8 +49,8 @@ document.addEventListener('DOMContentLoaded', function() {
               category: ['consultancy', 'software development', 'study'],
               status: 'ongoing',
               imageUrl: 'assets/img/projects/Project-Innerspace-logo.webp',
-              title: 'Sector Coupled Modelling of Geothermal Resources',
-              subtitle: 'Geothermal Modeling Enhancements and its Viability in the U.S.',
+              title: 'Exploring the Geothermal Resource Potential in the U.S.',
+              subtitle: 'Viability Assessment of Geothermal Using Integrated Energy Planning',
               description: 
               'Project InnerSpace (IS) is seeking assistance from Open Energy Transition (OET) to integrate \
               enhanced and hydrothermal geothermal systems into an open source PyPSA model (either PyPSA-USA \
@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function() {
               category: ['consultancy', 'software development', 'support and training'],
               status: 'ongoing',
               imageUrl: 'assets/img/projects/blog9-handshake.png',
-              title: 'Collaborative Energy Modeling with TSO',
+              title: 'Collaborative Energy Modeling with System Operators',
               subtitle: 'Enhancing TransnetBW’s Model compatibility',
               description: 
               'The project, led by Open Energy Transition, plans to update TransnetBW\'s model by changing its \

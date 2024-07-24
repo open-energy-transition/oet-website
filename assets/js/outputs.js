@@ -27,13 +27,13 @@ document.addEventListener('DOMContentLoaded', function() {
           // Card data goes here
           // Example:
           {
-            category: ["energy", "anniversary"],
+            category: ['software', 'research'],
             title:
-              "Celebrating one year of Open Energy Transition: Key achievements and growth in team and projects",
-            date: "2024-05-07",
-            author: "Open Energy Transition",
+              'Methodology for Flexibility Needs Assessments Workshop: Max Parzen presents <em>Open energy planning for better flexibility needs assessment</em>',
+            date: "2024-09-24",
+            author: 'Energy Storage Coalition',
             source:
-              "https://www.linkedin.com/posts/open-energy-transition_opensource-pypsa-opensource-activity-7192433046443184128-tTXV?utm_source=share&utm_medium=member_desktop",
+              'https://energystoragecoalition.eu/worskhop-on-methodology-for-flexibility-needs-assessments/',
           },
           {
             category: ["media", "software"],
@@ -79,6 +79,15 @@ document.addEventListener('DOMContentLoaded', function() {
             author: "Maximilian Parzen",
             source:
               'https://www.linkedin.com/posts/maximilian-parzen-b047a1126_london-open-energy-ugcPost-7212093301422768128-8_MT?utm_source=share&utm_medium=member_desktop',
+          },
+          {
+            category: ["energy", "anniversary"],
+            title:
+              "Celebrating one year of Open Energy Transition: Key achievements and growth in team and projects",
+            date: "2024-05-07",
+            author: "Open Energy Transition",
+            source:
+              "https://www.linkedin.com/posts/open-energy-transition_opensource-pypsa-opensource-activity-7192433046443184128-tTXV?utm_source=share&utm_medium=member_desktop",
           },
           {
             category: ["employment", "software development", "energy"],
