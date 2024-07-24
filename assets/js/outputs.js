@@ -27,6 +27,60 @@ document.addEventListener('DOMContentLoaded', function() {
           // Card data goes here
           // Example:
           {
+            category: ['software', 'research'],
+            title:
+              'Methodology for Flexibility Needs Assessments Workshop: Max Parzen presents <em>Open energy planning for better flexibility needs assessment</em>',
+            date: "2024-09-24",
+            author: 'Energy Storage Coalition',
+            source:
+              'https://energystoragecoalition.eu/worskhop-on-methodology-for-flexibility-needs-assessments/',
+          },
+          {
+            category: ["media", "software"],
+            title:
+              '2nd PyPSA User Meeting - Martha Frysztacki presents <em>Enhancing Energy System Analysis: OET\’s Role in Supporting PyPSA Workflows and Development</em>',
+            date: "2024-05-27",
+            author: "Bobby Xiong and Caspar Schauß",
+            source:
+              'https://forum.openmod.org/t/2nd-pypsa-user-meeting-on-may-27-2024-3-pm-6-pm-cest/4675',
+          },
+          {
+            category: ["research", "software"],
+            title:
+              'ECEEE SummerStudy2024 - Martha Frysztacki presents <em>Flattening the Peak Demand Curve through Energy Efficient Buildings</em>',
+            date: "2024-06-11",
+            author: "Eurima",
+            source:
+              'https://www.linkedin.com/posts/european-insul-manufact-eurima-_summerstudy2024-climateneutrality-energyefficiency-activity-7204131956962279425-NxI0?utm_source=share&utm_medium=member_desktop',
+          },
+          {
+            category: ["media", "software"],
+            title:
+              'HiGHS Workshop 2024 - Max Parzen presents <em>The Role of Open-Source Solvers for Energy System Planning</em>',
+            date: "2024-06-26",
+            author: "HiGHS",
+            source:
+              'https://workshop24.highs.dev/schedule',
+          },
+          {
+            category: ["software", "research"],
+            title:
+              'International Renewable Energy Agency (IRENA): The 42nd edition of International Energy Workshop',
+            date: "2024-06-24",
+            author: "Maximilian Parzen",
+            source:
+              'https://www.linkedin.com/posts/maximilian-parzen-b047a1126_great-meeting-with-old-friends-from-the-international-activity-7211412106737307650-U4yN?utm_source=share&utm_medium=member_desktop',
+          },
+          {
+            category: ["media", "software"],
+            title:
+              ' Breakthrough Energy summit in London officially launched the open energy planning platform',
+            date: "2024-06-25",
+            author: "Maximilian Parzen",
+            source:
+              'https://www.linkedin.com/posts/maximilian-parzen-b047a1126_london-open-energy-ugcPost-7212093301422768128-8_MT?utm_source=share&utm_medium=member_desktop',
+          },
+          {
             category: ["energy", "anniversary"],
             title:
               "Celebrating one year of Open Energy Transition: Key achievements and growth in team and projects",
