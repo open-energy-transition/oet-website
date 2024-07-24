@@ -38,29 +38,20 @@ document.addEventListener('DOMContentLoaded', function() {
           {
             category: ["media", "software"],
             title:
-              '2nd PyPSA User Meeting - Martha Frysztacki presents <em>Enhancing Energy System Analysis: OET\’s Role in Supporting PyPSA Workflows and Development</em>',
-            date: "2024-05-27",
-            author: "Bobby Xiong and Caspar Schauß",
-            source:
-              'https://forum.openmod.org/t/2nd-pypsa-user-meeting-on-may-27-2024-3-pm-6-pm-cest/4675',
-          },
-          {
-            category: ["research", "software"],
-            title:
-              'ECEEE SummerStudy2024 - Martha Frysztacki presents <em>Flattening the Peak Demand Curve through Energy Efficient Buildings</em>',
-            date: "2024-06-11",
-            author: "Eurima",
-            source:
-              'https://www.linkedin.com/posts/european-insul-manufact-eurima-_summerstudy2024-climateneutrality-energyefficiency-activity-7204131956962279425-NxI0?utm_source=share&utm_medium=member_desktop',
-          },
-          {
-            category: ["media", "software"],
-            title:
               'HiGHS Workshop 2024 - Max Parzen presents <em>The Role of Open-Source Solvers for Energy System Planning</em>',
             date: "2024-06-26",
             author: "HiGHS",
             source:
               'https://workshop24.highs.dev/schedule',
+          },
+          {
+            category: ["media", "software"],
+            title:
+              ' Breakthrough Energy summit in London officially launched the open energy planning platform',
+            date: "2024-06-25",
+            author: "Maximilian Parzen",
+            source:
+              'https://www.linkedin.com/posts/maximilian-parzen-b047a1126_london-open-energy-ugcPost-7212093301422768128-8_MT?utm_source=share&utm_medium=member_desktop',
           },
           {
             category: ["software", "research"],
@@ -72,13 +63,22 @@ document.addEventListener('DOMContentLoaded', function() {
               'https://www.linkedin.com/posts/maximilian-parzen-b047a1126_great-meeting-with-old-friends-from-the-international-activity-7211412106737307650-U4yN?utm_source=share&utm_medium=member_desktop',
           },
           {
+            category: ["research", "software"],
+            title:
+              'ECEEE SummerStudy2024 - Martha Maria F. presents <em>Flattening the Peak Demand Curve through Energy Efficient Buildings</em>',
+            date: "2024-06-11",
+            author: "Eurima",
+            source:
+              'https://www.linkedin.com/posts/european-insul-manufact-eurima-_summerstudy2024-climateneutrality-energyefficiency-activity-7204131956962279425-NxI0?utm_source=share&utm_medium=member_desktop',
+          },
+          {
             category: ["media", "software"],
             title:
-              ' Breakthrough Energy summit in London officially launched the open energy planning platform',
-            date: "2024-06-25",
-            author: "Maximilian Parzen",
+              '2nd PyPSA User Meeting - Martha Maria F. presents <em>Enhancing Energy System Analysis: OET\’s Role in Supporting PyPSA Workflows and Development</em>',
+            date: "2024-05-27",
+            author: "Bobby Xiong and Caspar Schauß",
             source:
-              'https://www.linkedin.com/posts/maximilian-parzen-b047a1126_london-open-energy-ugcPost-7212093301422768128-8_MT?utm_source=share&utm_medium=member_desktop',
+              'https://forum.openmod.org/t/2nd-pypsa-user-meeting-on-may-27-2024-3-pm-6-pm-cest/4675',
           },
           {
             category: ["energy", "anniversary"],
@@ -90,49 +90,13 @@ document.addEventListener('DOMContentLoaded', function() {
               "https://www.linkedin.com/posts/open-energy-transition_opensource-pypsa-opensource-activity-7192433046443184128-tTXV?utm_source=share&utm_medium=member_desktop",
           },
           {
-            category: ["media", "software"],
+            category: ["energy", "innovation", "summit"],
             title:
-              '2nd PyPSA User Meeting - Martha Frysztacki presents <em>Enhancing Energy System Analysis: OET\’s Role in Supporting PyPSA Workflows and Development</em>',
-            date: "2024-05-27",
-            author: "Bobby Xiong and Caspar Schauß",
+              "Martha Maria F. and Fabian Hofmann share insights from their experience at the Energy Innovation Summit.",
+            date: "2024-04-14",
+            author: "Martha Maria F.",
             source:
-              'https://forum.openmod.org/t/2nd-pypsa-user-meeting-on-may-27-2024-3-pm-6-pm-cest/4675',
-          },
-          {
-            category: ["research", "software"],
-            title:
-              'ECEEE SummerStudy2024 - Martha Frysztacki presents <em>Flattening the Peak Demand Curve through Energy Efficient Buildings</em>',
-            date: "2024-06-11",
-            author: "Eurima",
-            source:
-              'https://www.linkedin.com/posts/european-insul-manufact-eurima-_summerstudy2024-climateneutrality-energyefficiency-activity-7204131956962279425-NxI0?utm_source=share&utm_medium=member_desktop',
-          },
-          {
-            category: ["media", "software"],
-            title:
-              'HiGHS Workshop 2024 - Max Parzen presents <em>The Role of Open-Source Solvers for Energy System Planning</em>',
-            date: "2024-06-26",
-            author: "HiGHS",
-            source:
-              'https://workshop24.highs.dev/schedule',
-          },
-          {
-            category: ["software", "research"],
-            title:
-              'International Renewable Energy Agency (IRENA): The 42nd edition of International Energy Workshop',
-            date: "2024-06-24",
-            author: "Maximilian Parzen",
-            source:
-              'https://www.linkedin.com/posts/maximilian-parzen-b047a1126_great-meeting-with-old-friends-from-the-international-activity-7211412106737307650-U4yN?utm_source=share&utm_medium=member_desktop',
-          },
-          {
-            category: ["media", "software"],
-            title:
-              ' Breakthrough Energy summit in London officially launched the open energy planning platform',
-            date: "2024-06-25",
-            author: "Maximilian Parzen",
-            source:
-              'https://www.linkedin.com/posts/maximilian-parzen-b047a1126_london-open-energy-ugcPost-7212093301422768128-8_MT?utm_source=share&utm_medium=member_desktop',
+              "https://www.linkedin.com/posts/open-energy-transition_energyinnovationsummit-operationalefficiency-activity-7174298297556205568-LhYT?utm_source=share&utm_medium=member_desktop",
           },
           {
             category: ["employment", "software development", "energy"],
@@ -169,15 +133,6 @@ document.addEventListener('DOMContentLoaded', function() {
             author: "Hazem Abdelkhalek",
             source:
               "https://www.linkedin.com/posts/hazemakhalek_energytransition-energiewende-sectorcoupling-ugcPost-7171167731965124612-DSRo?utm_source=share&utm_medium=member_desktop",
-          },
-          {
-            category: ["energy", "innovation", "summit"],
-            title:
-              "Martha Maria F. and Fabian Hofmann share insights from their experience at the Energy Innovation Summit.",
-            date: "2024-04-14",
-            author: "Martha Maria F.",
-            source:
-              "https://www.linkedin.com/posts/open-energy-transition_energyinnovationsummit-operationalefficiency-activity-7174298297556205568-LhYT?utm_source=share&utm_medium=member_desktop",
           },
           {
             category: ["energy", "research", "sustainability"],
