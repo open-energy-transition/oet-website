@@ -36,6 +36,15 @@ document.addEventListener('DOMContentLoaded', function() {
               'https://energystoragecoalition.eu/worskhop-on-methodology-for-flexibility-needs-assessments/',
           },
           {
+          category: ['media', 'research', 'software'],
+          title:
+            '<em>Modeling the Integration of Hydropower into Modern Energy Systems for Africa</em> Course, with Max Parzen and Martha Maria F. presenting the integration of hydropower into energy systems using PyPSA',
+          date: "2024-08-19",
+          author: 'International Centre for Hydropower',
+          source:
+            'https://ich.no/modeling-the-integration-of-hydropower-into-modern-energy-systems-for-africa/',
+          },
+          {
             category: ["media", "software"],
             title:
               'HiGHS Workshop 2024 - Max Parzen presents <em>The Role of Open-Source Solvers for Energy System Planning</em>',
