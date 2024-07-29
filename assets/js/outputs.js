@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
           {
           category: ['media', 'research', 'software'],
           title:
-            '<em>Modeling the Integration of Hydropower into Modern Energy Systems for Africa</em> Course, with Max Parzen and Martha Maria F. presenting the integration of hydropower into energy systems using PyPSA',
+            '<em>Modeling the Integration of Hydropower into Modern Energy Systems for Africa</em> Course, with Ekaterina Fedotova and Emmanuel Bolarinwa presenting the integration of hydropower into energy systems using PyPSA',
           date: "2024-08-19",
           author: 'International Centre for Hydropower',
           source:
