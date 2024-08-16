@@ -91,15 +91,15 @@ document.addEventListener('DOMContentLoaded', function() {
               subtitle: 'Modelling Ukraine’s energy system',
               description: 
               'The Ukrainian government is committed to investing into the new nuclear generation as the most\
-              cost-efficient path forward, and going for the the half-nuclear and half-renewable generation\
-              by 2050. The continuing Russian bombing, of the Ukrainian power sector, chips away its remaining\
+              cost-efficient path forward, and going for the half-nuclear and half-renewable generation\
+              by 2050. The continuing Russian bombing of the Ukrainian power sector chips away its remaining\
               flexible coal and hydro capacities. With rising electricity prices, consumers are crowding for\
               small-scale solar for self-consumption, which provides lucrative savings on the bills. With these\
               given circumstances the Ukrainian power system faces major challenges in maintaining flexibility\
               over the coming years. Understanding and addressing these limitations is crucial for ensuring the\
               reliability and stability of the grid. This project aims to extend the PyPSA-Eur model to analyse\
-              the long-term flexibility constraints within the Ukrainian power system over a five to seven-year horizon.\
-              By considering the inflexibility of the supply side, and the growing presence of residential PV,\
+              the long-term flexibility constraints within the Ukrainian power system over the next five to seven-year horizon.\
+              With the consideration of the inflexibility of the supply side, and the growing presence of residential PV,\
               this project seeks to identify the key bottlenecks and develop strategies for optimising asset\
               management and system expansion.',
               date: '2024-02-01',
