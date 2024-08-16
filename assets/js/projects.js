@@ -76,12 +76,26 @@ document.addEventListener('DOMContentLoaded', function() {
               sustainable energy transitions. \
               The benchmark platform will evaluate various open-source solvers on speed, memory consumption, and \
               solvability across different energy planning models, featuring continuous updates and a publicly \
-              accessible website for comprehensive comparison and improvement.By offering a robust benchmarking \
+              accessible website for comprehensive comparison and improvement. By offering a robust benchmarking \
               tool, accessible using the platform\'s website, this project supports the global transition towards \
               sustainable energy solutions, embodying OET\'s \
-              commitment to fostering transparent, data-driven decision-making in energy policy and planning.',
+              commitment to transparency, data-driven decision-making in energy policy and planning.',
               date: '2024-06-06',
               partner: 'Breakthrough Energy',
+            },
+            {
+              category: ['consultancy', 'study'],
+              status: 'past',
+              imageUrl: 'assets/img/projects/PyPSA-UA_Instrat_project.jpg',
+              title: 'Instrat Ukraine',
+              subtitle: 'Modelling Ukraine’s energy system',
+              description: 
+              'The Ukrainian government is doubling down on investments into new nuclear generation as the most cost-efficient path forward, and pushing the half-nuclear and half-renewable generation by 2050. The continuing Russian bombing campaign of the Ukrainian power sector chips away its remaining flexible coal and hydro capacities. The Ukrainian power system faces significant challenges in maintaining flexibility over the coming years, With increasing penetration of residential photovoltaic (PV) installations, understanding and addressing these limitations is crucial for ensuring the reliability and stability of the grid. This project aims to extend the PyPSA-Eur model to analyse the long-term flexibility constraints within the Ukrainian power system over a five to seven-year horizon.\
+              By considering the inflexibility of the supply side, and the growing presence of residential PV, this project seeks to identify the key bottlenecks and develop strategies for optimising asset management and system expansion. Additionally, the management of PV assets, based on their connection points to the grid (utility level, distribution system operator (DSO), or behind-the-meter), will be explored to determine their impact on system flexibility and reliability.\
+              We believe that insights from the model itself and research could lead to policy analysis,\
+              enhance modelling expertise on the ground, and lay the groundwork for future expansion of the power system.',
+              date: '2024-02-01',
+              partner: 'Instrat, Clean Energy Lab',
             },
             {
               category: ['consultancy', 'software development', 'support and training'],
