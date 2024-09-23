@@ -33,6 +33,28 @@ document.addEventListener('DOMContentLoaded', function() {
             {
               category: ['consultancy', 'study'],
               status: 'ongoing',
+              imageUrl: 'assets/img/projects/form_energy.png',
+              title: 'System Benefits of Energy Storage in Germany',
+              subtitle: 'Quantification of energy storage benefits in reducing carbon emissions \
+              in the German electricity system',
+              description: 
+              'Form Energy seeks to quantify the system benefits of energy storage in Germany. \
+              Energy storage technologies hold significant promise for reducing \
+              carbon emissions. While short-duration storage is popular today, the system benefits for long \
+              duration storage are rather hidden and require more effort to receive policy attention. \
+              This project aims to reveal the hidden benefits of multi-day energy storage through the \
+              analysis of energy system models. The primary objectives are to develop a policy relevant \
+              validated energy system model with a focus on Germany, and integrate various representations \
+              of short to long-duration energy storage into the model. Then, optimization runs are conducted \
+              to explore various scenarios to inform policy-makers about the benefits of various types of energy \
+              storage. The project will culminate in a detailed report and the full model open-source code to support \
+              global research efforts',
+              date: '2024-09-22',
+              partner: 'Form Energy',
+            },
+            {
+              category: ['consultancy', 'study'],
+              status: 'ongoing',
               imageUrl: 'assets/img/projects/ICCT.jpeg',
               title: 'Synthetic Fuels for Clean Transportation in the U.S.',
               subtitle: 'Assessment of the Electrofuels Supply Potential Using Grid Modeling',
