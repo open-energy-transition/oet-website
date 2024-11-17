@@ -1637,4 +1637,62 @@ canvas {
         margin-bottom: 2rem;
     }
 
- 
+/* Job board */
+
+#full-height-div {
+  min-height: 70vh;
+  margin-left: 5vw;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: start; 
+}
+
+.contentjob {
+  color: #1C1C2C;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 10px 20px;
+  display: inline-block; 
+  text-align: left; 
+ margin-right:19vw 
+
+}
+
+.subcontent {
+  color: #1C1C2C;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 10px 20px; 
+  display: inline-block; 
+  text-align: left;
+  margin-top: 10px; 
+ margin-right:30vw 
+}
+
+.startred{
+  color: #E41E3C;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+  padding: 10px 20px; 
+
+}
+
+.buttonjob{
+  display: inline-flex;
+padding: 16px 24px;
+align-items: flex-end;
+gap: 16px;
+background: #E41E3C;
+color: #FFFFFF;
+margin-top: 3vh;
+margin-bottom: 3vh;
+  padding: 10px 20px; 
+
+}
