@@ -1686,7 +1686,6 @@ line-height: normal;
 
 .buttonjob{
   display: inline-flex;
-padding: 16px 24px;
 align-items: flex-end;
 gap: 16px;
 background: #E41E3C;
@@ -1694,5 +1693,5 @@ color: #FFFFFF;
 margin-top: 3vh;
 margin-bottom: 3vh;
   padding: 10px 20px; 
-
+border:none;
 }
