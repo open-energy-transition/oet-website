@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
               status: 'past',
               imageUrl: 'assets/img/projects/eurelectri.jpeg',
               title: 'Comprehensive PyPSA Training Session',
-              subtitle: 'Equipping energy enthusiasts with essential skills for open energy modeling',
+              subtitle: 'Equipping energy professionals with advanced skills of open source energy modeling',
               description: 
               'In December 2024, an in-depth PyPSA training session equipped participants with essential \
               energy modeling skills. The training included five sessions: basic PyPSA concepts, installation \
