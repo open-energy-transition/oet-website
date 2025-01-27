@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
               to deliver a transformative workshop on Modeling the Integration of Hydropower into Modern Energy Systems \
               for Africa. Held in Nairobi, Kenya, from August 19–23, 2024, the program brought together 23 professionals \
               from Eswatini, Ghana, Kenya, Nigeria, South Africa, Tanzania, and Zambia. \
-              Participants gained hands-on experience with Python-based energy modeling tools, PyPSA, and PyPSA-Earth, \
+              Delegates gained hands-on experience with Python-based energy modeling tools, PyPSA, and PyPSA-Earth, \
               exploring renewable integration, hydropower systems, and uncertainty modeling through Monte Carlo simulations. \
               This initiative empowers African energy experts to drive sustainable, reliable energy transitions across the continent.',
               date: '2024-08-26',
