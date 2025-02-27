@@ -31,6 +31,23 @@ document.addEventListener('DOMContentLoaded', function() {
             // Example:
             // category: 'consultancy', 'software development', 'support and training'],
             {
+              category: ['support and training'],
+              status: 'past',
+              imageUrl: 'assets/img/projects/eurelectri.jpeg',
+              title: 'Comprehensive PyPSA Training Session',
+              subtitle: 'Equipping energy professionals with advanced skills of open source energy modeling',
+              description: 
+              'In December 2024, an in-depth PyPSA training session equipped participants with essential \
+              advanced energy modeling skills. The training included five sessions: basic PyPSA concepts, installation \
+              tutorials, demo model building, an overview of the PyPSA ecosystem, and an introduction to PyPSA-Eur. \
+              Participants learned PyPSA fundamentals, installed necessary tools like Conda and Jupyter Notebook, \
+              and built a demo model through live coding. They explored ecosystem tools, datasets, and community resources, \
+              and gained insights into PyPSA-Eur’s capabilities, data, and installation. Hands-on tutorials and Q&A sessions \
+              ensured practical knowledge, empowering attendees to effectively use PyPSA for power system modeling.',
+              date: '2024-11-12',
+              partner: 'Eurelectric',
+            },
+            {
               category: ['consultancy', 'study'],
               status: 'ongoing',
               imageUrl: 'assets/img/projects/form_energy.png',
@@ -66,6 +83,23 @@ document.addEventListener('DOMContentLoaded', function() {
               between electrofuels production and other sources of electricity demand.',
               date: '2024-09-01',
               partner: 'The International Council on Clean Transportation',
+            },
+            {
+              category: ['support and training'],
+              status: 'past',
+              imageUrl: 'assets/img/projects/ich.jpeg',
+              title: 'Advancing Hydropower Integration in Africa with PyPSA',
+              subtitle: 'Equipping Energy Professionals to Lead Africa’s Renewable Energy Transition',
+              description: 
+              'Open Energy Transition (OET) recently collaborated with the International Centre for Hydropower (ICH) \
+              to deliver a transformative workshop on Modeling the Integration of Hydropower into Modern Energy Systems \
+              for Africa. Held in Nairobi, Kenya, from August 19–23, 2024, the program brought together 23 professionals \
+              from Eswatini, Ghana, Kenya, Nigeria, South Africa, Tanzania, and Zambia. \
+              Delegates gained hands-on experience with Python-based energy modeling tools, PyPSA, and PyPSA-Earth, \
+              exploring renewable integration, hydropower systems, and uncertainty modeling through Monte Carlo simulations. \
+              This initiative empowers African energy experts to drive sustainable, reliable energy transitions across the continent.',
+              date: '2024-08-26',
+              partner: 'The International Centre for Hydropower (ICH)',
             },
             {
               category: ['consultancy', 'software development', 'study'],
