@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // category: 'consultancy', 'software development', 'training and capacity building'],
             {
               category: ['software development', 'consultancy'],
-              status: 'past',
+              status: 'ongoing',
               imageUrl: '',
               title: 'Interfacing Open Energy System Planning with ENTSO models and contributing to the TYNDP',
               subtitle: 'Innovation project on open-source tool for the TYNDP process',
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
             },            
             {
               category: ['training and capacity building'],
-              status: 'past',
+              status: 'completed',
               imageUrl: 'assets/img/projects/eurelectri.jpeg',
               title: 'Comprehensive PyPSA Training Session',
               subtitle: 'Equipping energy professionals with advanced skills of open source energy modeling',
