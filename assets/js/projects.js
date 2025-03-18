@@ -447,7 +447,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 "software development",
                 "training and capacity building",
               ],
-              status: "past",
+              status: 'past',
               imageUrl: "assets/img/projects/blog5.jpg",
               title:
                 "Multi-Country Electricity Transition Potential and Challenges Project",
