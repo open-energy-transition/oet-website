@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
               title: 'Comprehensive PyPSA Training Session',
               subtitle: 'Equipping energy professionals with advanced skills of open source energy modeling',
               description: 
-              'In December 2024, an in-depth PyPSA training session equipped participants with essential \
+              'In December 2024, an in-depth PyPSA training session equipped participants with essentials \
               advanced energy modeling skills. The training included five sessions: basic PyPSA concepts, installation \
               tutorials, demo model building, an overview of the PyPSA ecosystem, and an introduction to PyPSA-Eur. \
               Participants learned PyPSA fundamentals, installed necessary tools like Conda and Jupyter Notebook, \
