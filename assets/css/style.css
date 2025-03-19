@@ -100,8 +100,10 @@ h4 {
 }
 
 .tool-image {
-  width: 15%; /* Adjusts the width of each image */
-  height: auto; /* Maintains aspect ratio */
+  width: 15%; /* Set to 50% of the parent container's width */
+  height: 15%; /* Maintain aspect ratio */
+  max-width: 500px; /* Optional: Set a maximum width */
+  max-height: 400px;
 }
 
 
