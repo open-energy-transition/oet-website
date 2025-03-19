@@ -93,6 +93,18 @@ h4 {
   margin-bottom: 0.0rem; /* Adjust the value to control the spacing */
 }
 
+.image-row {
+  display: flex;
+  justify-content: space-between; /* Adjusts spacing between images */
+  margin-top: 20px; /* Adds some space above the images */
+}
+
+.tool-image {
+  width: 15%; /* Set to 50% of the parent container's width */
+  height: 15%; /* Maintain aspect ratio */
+  max-width: 500px; /* Optional: Set a maximum width */
+  max-height: 400px;
+}
 
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
