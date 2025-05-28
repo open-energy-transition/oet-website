@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // category: 'consultancy', 'software development', 'training and capacity building'],
             {
               category: ["software development", "consultancy"],
-              status: "past",
+              status: "ongoing",
               imageUrl: "assets/img/projects/tyndp_picture_for_website.png",
               title:
                 "Interfacing Open Energy System Planning with ENTSO models and contributing to the TYNDP",
