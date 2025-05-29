@@ -26,6 +26,42 @@ document.addEventListener('DOMContentLoaded', function() {
         const cardData = [
           // Card data goes here
           // Example:
+            {
+            category: ['media', 'summit'],
+            title:
+              'Open Energy Transition is co-hosting <em>Energy Innovation Summit</em> with Gurobi Optimization in Berlin 24-26 June, 2025./',
+            date: "2025-03-05",
+            author: 'Gurobi Optimization/',
+            source:
+              'https://www.gurobi.com/microsite/2025-energy-innovation-summit/',
+          },
+            {
+            category: ['media', 'research'],
+            title:
+              'Article based on study for the campaign Your Home Our Future: <em>Climbing Europe’s Energy Demand Peak</em>./',
+            date: "2024-10-16",
+            author: 'Dimitar Kolichev, Eurima (European Insulation Manufacturers Association)/',
+            source:
+              'https://www.euractiv.com/section/eet/opinion/climbing-europes-energy-demand-peak/',
+          },
+           {
+            category: ['media', 'research'],
+            title:
+              'Article based on study for the campaign Your Home Our Future: <em>Efficient buildings offer significant peak demand cuts, making energy transition affordable – study</em>./',
+            date: "2024-10-15",
+            author: 'European Council for Energy Efficient Economy',
+            source:
+              'https://www.eceee.org/all-news/news/news-2024/efficient-buildings-offer-significant-peak-demand-cuts-making-energy-transition-affordable-study/',
+          },
+            {
+            category: ['software', 'research'],
+            title:
+              '<em>Flattening the Peak Demand</em> study and techincal report for the Your Home Our Future Campaign by European Insulation Manufactureres Association (Eurima) and International Copper Associaltion Europe./',
+            date: "2024-10-10",
+            author: 'European Insulation Manufactureres Association (Eurima) and International Copper Associaltion Europe',
+            source:
+              'https://www.yourhomeourfuture.eu/resources/',
+          },
           {
             category: ['software', 'research'],
             title:
