@@ -30,9 +30,59 @@ document.addEventListener('DOMContentLoaded', function() {
             // Card data goes here
             // Example:
             // category: 'consultancy', 'software development', 'training and capacity building'],
-            {
+              {
+              category: ["software development", "data", "training and capacity building"],
+              status: "ongoing",
+              imageUrl: "assets/img/projects/ohmygrid logo.png",
+              title:
+                "OhMyGrid",
+              subtitle:
+                "Empowering individuals, communities and nations around the world to map the electrical grid with open data",
+              description:
+                "Electric grids around the world need increasing development to accelerate the clean energy transition. \
+                  OhMyGrid is an open-source, community-driven initiative that aims to make the world's electricity \
+                  transmission network fully and accurately available in OpenStreetMap (OSM) through collaborative \
+                  mapping, enabling planners, researchers, and local communities to design a faster energy transition.\
+                  Launched in 2025 by Open Energy Transition in partnership with data-for-good specialists \
+                  Datactivist, Dynartio, Jungle Bus, and Infrageomatics, the initiative provides tools, training, and \
+                  support to crowdsource mapping of power lines, towers, substations, and plants worldwide.\
+                  Reliable grid data is essential for energy planning and investment, serving academia, institutions, \
+                  local authorities, and private organizations globally. Open models like PyPSA-Earth also depend on open \
+                  data, and machine learning alone cannot fill existing data gaps. A community-driven approach delivers \
+                  superior results, particularly in regions where data is scarce.\
+                  The OhMyGrid Initiative and its community aim to expand global coverage of high-voltage transmission grids \
+                  in OpenStreetMap from approximately 70% to 98% over the next three years by providing the tools, training, \
+                  and data stewardship needed to map this vital infrastructure.\
+                  By making transmission networks visible everywhere, this initiative enables fairer, faster energy \
+                  transitions and electrification, empowering local communities, guiding research, and accelerating climate \
+                  action. \
+                  More info at: https://ohmygrid.org/",
+              date: "2025-01-01",
+              partner:
+                "Datactivist, Dynartio, Jungle Bus and Infrageomatics",
+            },
+              {
+              category: ["software development", "consulancy"],
+              status: "ongoing",
+              imageUrl: "assets/img/projects/supporting acer project.png",
+              title:
+                "ACER’s EU-wide Flexibility Assessment Platform",
+              description:
+                "Europe’s evolving energy landscape calls for smarter, more adaptive tools to support a reliable \
+                  and sustainable energy future. To support ACER’s work, Open Energy Transition is developing the EU-Flex Platform — an \
+                  EU-wide flexibility assessment tool built on the open-source PyPSA framework. The EU-Flex \
+                  Platform will offer a fully functional solution for assessing system flexibility across \
+                  deeper insights into supply-demand dynamics and grid reliability. Through advanced open-source \
+                  modelling approaches, the platform will enhance energy planning capabilities and foster \
+                  long-term sustainability via capacity-building and knowledge transfer. This initiative represents \
+                  a meaningful step toward greater resilience and cooperation in the European energy system.",
+              date: "2024-12-01",
+              partner:
+                "European Union Agency for the Cooperation of Energy Regulators",
+            },
+              {
               category: ["software development", "consultancy"],
-              status: "past",
+              status: "ongoing",
               imageUrl: "assets/img/projects/tyndp_picture_for_website.png",
               title:
                 "Interfacing Open Energy System Planning with ENTSO models and contributing to the TYNDP",
@@ -200,7 +250,7 @@ document.addEventListener('DOMContentLoaded', function() {
             },
             {
               category: ["consultancy"],
-              status: "completed",
+              status: "past",
               imageUrl: "assets/img/projects/PyPSA-UA_Instrat_project.jpg",
               title: "Instrat Ukraine",
               subtitle: "Modelling Ukraine’s energy system",
@@ -295,7 +345,7 @@ document.addEventListener('DOMContentLoaded', function() {
             },
             {
               category: ["consultancy", "software development"],
-              status: "completed",
+              status: "past",
               imageUrl:
                 "assets/img/projects/blog6-riccardo-annandale-unsplash.jpg",
               title: "Flattening the Energy Curve",
@@ -325,7 +375,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 "software development",
                 "training and capacity building",
               ],
-              status: "ongoing",
+              status: "past",
               imageUrl: "assets/img/projects/blog1.jpg",
               title: "Coal-exit modelling in Jharkhand, India",
               subtitle: "Supporting the most important coal exit on Earth!",
@@ -351,7 +401,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 "software development",
                 "training and capacity building",
               ],
-              status: "ongoing",
+              status: "past",
               imageUrl: "assets/img/projects/blog2.jpg",
               title: "Sustainable Hydrogen and Power-to-X ramp-up in Africa",
               subtitle: "Exploring opportunities of green fuels in Africa",
