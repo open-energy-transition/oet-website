@@ -26,6 +26,42 @@ document.addEventListener('DOMContentLoaded', function() {
         const cardData = [
           // Card data goes here
           // Example:
+           {
+            category: ['summit', 'innovation'],
+            title:
+              'Open Energy Transition is announced as co-hosting Energy Innovation Summit, Berlin, 2025.',
+            date: "2025-03-05",
+            author: 'Gurobi Optimization',
+            source:
+              'https://www.gurobi.com/microsite/2025-energy-innovation-summit/',
+          },
+          {
+            category: ['media', 'research', 'report'],
+            title:
+              'Article "Climbing Europe’s Energy Demand Peak" in Euractiv about study <em>Flattening the Peak Demand</em> and the campaign Your Home Our Future.',
+            date: "2024-10-16",
+            author: 'Dimitar Kolichev, Eurima (European Insulation Manufacturers Association)',
+            source:
+              'https://www.euractiv.com/section/eet/opinion/climbing-europes-energy-demand-peak/',
+          },
+          {
+            category: ['media', 'research', 'report'],
+            title:
+              'Article "Efficient buildings offer significant peak demand cuts, making energy transition affordable – study" about study <em>Flattening the Peak Demand</em> and the campaign Your Home Our Future.',
+            date: "2024-10-15",
+            author: 'European Council for Energy Efficient Economy',
+            source:
+              'https://www.eceee.org/all-news/news/news-2024/efficient-buildings-offer-significant-peak-demand-cuts-making-energy-transition-affordable-study/',
+          },
+          {
+            category: ['media', 'research', 'report'],
+            title:
+              'Report <em>Flattening the Peak Demand</em> is the technical foundation of the campaign Your Home Our Future by European Insulation Manufactoreres Association (Eurima) and the International Copper Association Europe. Supported by the European Climate Foundation',
+            date: "2024-10-01",
+            author: 'European Insulation Manufactoreres Association (Eurima), the International Copper Association Europe, the European Climate Foundation',
+            source:
+              'https://www.yourhomeourfuture.eu/',
+          },
           {
             category: ['software', 'research'],
             title:
