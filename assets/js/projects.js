@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
               {
               category: ["software development", "data", "training and capacity building"],
               status: "ongoing",
-              imageUrl: "assets/img/projects/ohmygrid logo.png",
+              imageUrl: "assets/img/projects/ohmygrid-logo.png",
               title:
                 "OhMyGrid",
               subtitle:
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
               {
               category: ["software development", "consulancy"],
               status: "ongoing",
-              imageUrl: "assets/img/projects/supporting acer project.png",
+              imageUrl: "assets/img/projects/supporting-acer-project.png",
               title:
                 "ACER’s EU-wide Flexibility Assessment Platform",
               description:
