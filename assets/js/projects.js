@@ -1,3 +1,4 @@
+import { renderLinkList, renderListHorizontal } from './utils.js';
 
 document.addEventListener('DOMContentLoaded', function() {
     const categoryFilter = document.getElementById('categoryFilter');
@@ -31,11 +32,72 @@ document.addEventListener('DOMContentLoaded', function() {
             // Example:
             // category: 'consultancy', 'software development', 'training and capacity building'],
             {
+              category: ["software development", "data", "training and capacity building"],
+              status: "ongoing",
+              imageUrl: "assets/img/projects/ohmygrid-logo.png",
+              title:
+                "OhMyGrid",
+              subtitle:
+                "Empowering individuals, communities and nations around the world to map the electrical grid with open data",
+              description:
+                "Electric grids around the world need increasing development to accelerate the clean energy transition. \
+                  OhMyGrid is an open-source, community-driven initiative that aims to make the world's electricity \
+                  transmission network fully and accurately available in OpenStreetMap (OSM) through collaborative \
+                  mapping, enabling planners, researchers, and local communities to design a faster energy transition.\
+                  Launched in 2025 by Open Energy Transition in partnership with data-for-good specialists \
+                  Datactivist, Dynartio, Jungle Bus, and Infrageomatics, the initiative provides tools, training, and \
+                  support to crowdsource mapping of power lines, towers, substations, and plants worldwide.\
+                  Reliable grid data is essential for energy planning and investment, serving academia, institutions, \
+                  local authorities, and private organizations globally. Open models like PyPSA-Earth also depend on open \
+                  data, and machine learning alone cannot fill existing data gaps. A community-driven approach delivers \
+                  superior results, particularly in regions where data is scarce.\
+                  The OhMyGrid Initiative and its community aim to expand global coverage of high-voltage transmission grids \
+                  in OpenStreetMap from approximately 70% to 98% over the next three years by providing the tools, training, \
+                  and data stewardship needed to map this vital infrastructure.\
+                  By making transmission networks visible everywhere, this initiative enables fairer, faster energy \
+                  transitions and electrification, empowering local communities, guiding research, and accelerating climate \
+                  action. \
+                  More info at: https://ohmygrid.org/",
+              date: "2025-01-01",
+              outcome: [
+                {
+                  title: "Check out the website",
+                  link: "https://ohmygrid.org/",
+                },
+                {
+                  title: "Explore the Github repository for the website",
+                  link: "https://github.com/open-energy-transition/Oh-my-Grid",
+                },
+                {
+                  title: "Explore the Github repository for the starter kit",
+                  link: "https://github.com/open-energy-transition/grid-mapping-starter-kit",
+                },
+              ],
+              partner: [
+                {
+                  title: "Datactivist",
+                  link: "https://datactivist.coop/en/"
+                },
+                {
+                  title: "Jungle Bus",
+                  link: "https://junglebus.io/"
+                },
+                {
+                  title: "Dynartio",
+                  link: "https://dynartio.com/"
+                },
+                {
+                  title: "Infrageomatics",
+                  link: "https://www.infrageomatics.com/"
+                },
+              ],
+            },
+            {
               category: ["software development", "consultancy"],
               status: "past",
               imageUrl: "assets/img/projects/tyndp_picture_for_website.png",
               title:
-                "Interfacing Open Energy System Planning with ENTSO models and contributing to the TYNDP",
+                "Interfacing Open Energy System Planning with ENTSO models and contributing to the TYNDP - ENTSOE",
               subtitle:
                 "Innovation project on open-source tool for the TYNDP process",
               description:
@@ -51,10 +113,32 @@ document.addEventListener('DOMContentLoaded', function() {
               reproducible and adaptable, fostering faster, more collaborative,  andmore efficient energy planning to \
               support a sustainable energy infrastructure for Europe.",
               date: "2024-09-01",
-              client:
-                "Breakthrough Energy, Google, European Climate Foundation",
-              partner:
-                "European Network of Transmission System Operators for Electricity (ENTSO-E)",
+              client: [
+                {
+                  title: "European Climate Foundation",
+                  link: "https://europeanclimate.org/",
+                },
+                {
+                  title: "Breakthrough Energy",
+                  link: "https://www.breakthroughenergy.org/",
+                },
+                {
+                  title: "Google.org",
+                  link: "https://www.google.org/",
+                },
+              ],
+              outcome: [
+                {
+                  title: "Explore the Github repository",
+                  link: "https://github.com/open-energy-transition/open-tyndp",
+                },
+              ],
+              partner: [
+                {
+                  title: "European Network of Transmission System Operators for Electricity (ENTSO-E)",
+                  link: "https://www.entsoe.eu/"
+                },
+              ],
             },
             {
               category: ["training and capacity building"],
@@ -78,7 +162,7 @@ document.addEventListener('DOMContentLoaded', function() {
               category: ["consultancy"],
               status: "completed",
               imageUrl: "assets/img/projects/form_energy.png",
-              title: "System Benefits of Energy Storage in Germany",
+              title: "System Benefits of Energy Storage in Germany - Form Energy",
               subtitle:
                 "Quantification of energy storage benefits in reducing carbon emissions \
               in the German electricity system",
@@ -100,7 +184,22 @@ document.addEventListener('DOMContentLoaded', function() {
               the optimization of energy systems, contributing to a more resilient, sustainable, and decarbonized \
               energy future globally.",
               date: "2024-09-22",
-              partner: "Form Energy",
+              partner: [
+                {
+                  title: "Form Energy",
+                  link: "https://formenergy.com/"
+                }
+              ],
+              outcome: [
+                {
+                  title: "See the project results",
+                  link: "https://zenodo.org/records/15323663",
+                },
+                {
+                  title: "Explore the Github repository",
+                  link: "https://github.com/open-energy-transition/form-energy-storage"
+                },
+              ]
             },
             {
               category: ["consultancy"],
@@ -149,7 +248,7 @@ document.addEventListener('DOMContentLoaded', function() {
               category: ["consultancy", "software development"],
               status: "ongoing",
               imageUrl: "assets/img/projects/Project-Innerspace-logo.webp",
-              title: "Exploring the Geothermal Resource Potential in the U.S.",
+              title: "Exploring the Geothermal Resource Potential in the U.S. - project innerspace",
               subtitle:
                 "Viability Assessment of Geothermal Using Integrated Energy Planning",
               description:
@@ -168,14 +267,25 @@ document.addEventListener('DOMContentLoaded', function() {
               for future investments and contributing to the promotion of geothermal energy as a key player in achieving \
               global net-zero targets.",
               date: "2024-07-01",
-              partner: "Project InnerSpace",
+              outcome: [
+                {
+                  title: "Explore the Github repository",
+                  link: "https://github.com/open-energy-transition/geothermal-modelling",
+                }
+              ],
+              partner: [
+                {
+                  title: "Project Innerspace",
+                  link: "https://projectinnerspace.org/"
+                },
+              ],
             },
             {
               category: ["software development"],
               status: "ongoing",
               imageUrl:
                 "assets/img/projects/open-source-solvers-comparison-to-commercial-solver-Gurobi.png",
-              title: "Solver Benchmark",
+              title: "Solver Benchmark - BE",
               subtitle:
                 "Solver Benchmark for Energy System Planning Optimization Problems",
               description:
@@ -196,13 +306,27 @@ document.addEventListener('DOMContentLoaded', function() {
               the transition to sustainable energy systems.",
               date: "2024-06-06",
               client: "Breakthrough Energy",
-              partner: "Gurobi Optimization",
+              outcome: [
+                {
+                  title: "The website will be launched soon",
+                },
+                {
+                  title: "Explore the Github repository",
+                  link: "https://github.com/open-energy-transition/solver-benchmark",
+                }
+              ],
+              partner: [
+                {
+                  title: "Breakthrough Energy",
+                  link: "https://www.breakthroughenergy.org/"
+                },
+              ],
             },
             {
               category: ["consultancy"],
               status: "completed",
               imageUrl: "assets/img/projects/PyPSA-UA_Instrat_project.jpg",
-              title: "Instrat Ukraine",
+              title: "Instrat Ukraine - Instrat",
               subtitle: "Modelling Ukraine’s energy system",
               description:
                 "The Ukrainian government is committed to investing in new nuclear generation, aiming for a future energy \
@@ -221,7 +345,26 @@ document.addEventListener('DOMContentLoaded', function() {
               the current conflict. It will guide future energy strategies, ensuring that the Ukrainian grid can adapt to both current \
               challenges and long-term energy goals.",
               date: "2024-02-01",
-              partner: "Instrat, Clean Energy Lab",
+              outcome: [
+                {
+                  title: "Read the report",
+                  link: "https://instrat.pl/en/ukraine-against-darkness/",
+                },
+              ],
+              partner: [
+                {
+                  title: "Fundacja Instrat",
+                  link: "https://instrat.pl/en/"
+                },
+                {
+                  title: "Clean Energy Lab",
+                  link: "https://cel.com.ua/en/"
+                },
+                {
+                  title: "European Climate Foundation",
+                  link: "https://europeanclimate.org/"
+                },
+              ],
             },
             {
               category: [
@@ -298,7 +441,7 @@ document.addEventListener('DOMContentLoaded', function() {
               status: "completed",
               imageUrl:
                 "assets/img/projects/blog6-riccardo-annandale-unsplash.jpg",
-              title: "Flattening the Energy Curve",
+              title: "Flattening the Energy Curve - Eurima, ECF, etc",
               subtitle:
                 "An assessment of efficiency measures and their impact on the European energy system",
               description:
@@ -317,8 +460,34 @@ document.addEventListener('DOMContentLoaded', function() {
               measures’ benefits, this research will support a more sustainable, cost-effective, and socially equitable \
               energy transition across Europe.",
               date: "2023-09-01",
-              partner:
-                "European Climate Foundation (ECF), European Insulation Manufacturers Association (EURIMA), European Copper Institute (ECI)",
+              outcome: [
+                {
+                  title: "Read the report",
+                  link: "https://www.yourhomeourfuture.eu/resources/",
+                },
+                {
+                  title: "Check out the website",
+                  link: "https://www.yourhomeourfuture.eu/",
+                },
+                {
+                  title: "Explore the Github repository",
+                  link: "https://github.com/open-energy-transition/heat-demand-peaks/",
+                },
+              ],
+              partner: [
+                {
+                  title: "European Insulation Manufacturers Association (Eurima)",
+                  link: "https://www.eurima.org/"
+                },
+                {
+                  title: "International Copper Association Europe",
+                  link: "https://internationalcopper.org/regional-hubs/europe/ "
+                },
+                {
+                  title: "European Climate Foundation",
+                  link: "https://europeanclimate.org/"
+                },
+              ]
             },
             {
               category: [
@@ -408,7 +577,7 @@ document.addEventListener('DOMContentLoaded', function() {
               ],
               status: "past",
               imageUrl: "assets/img/projects/blog4.jpg",
-              title: "Energy Transition Kazakhstan",
+              title: "Energy Transition Kazakhstan - Agora",
               subtitle:
                 "Exploring more ambitious energy transition pathways for Kazakhstan",
               description:
@@ -422,7 +591,18 @@ document.addEventListener('DOMContentLoaded', function() {
               renewable energy targets, supporting decision-making, and facilitating the transition to a more \
               sustainable energy sector in Kazakhstan.",
               date: "2023-05-01",
-              partner: "Agora Energiewende",
+              outcome: [
+                {
+                  title: "Read the report",
+                  link: "https://www.agora-energiewende.org/publications/modernising-kazakhstans-coal-dependent-power-sector-through-renewables",
+                },
+              ],
+              partner: [
+                {
+                  title: "Agora Energiewende",
+                  link: "https://www.agora-energiewende.org/"
+                },
+              ],
             },
             {
               category: "software development",
@@ -517,16 +697,16 @@ document.addEventListener('DOMContentLoaded', function() {
     
       // Render the cards for the current page
       cardsForPage.forEach(function(card) {
-        const { imageUrl, title, subtitle, description, category, date, status, partner } = card;
-        const cardElement = createCard(imageUrl, title, subtitle, description, category, date, status, partner);
+        const { imageUrl, title, subtitle, description, category, date, status, partner, outcome, client } = card;
+        const cardElement = createCard(imageUrl, title, subtitle, description, category, date, status, partner, outcome, client);
         cardContainer.appendChild(cardElement);
       });
     
       // Render the pagination buttons
       renderPagination(totalPages);
     }
-    
-    function createCard(imageUrl, title, subtitle, description, category, date, status, partner) {
+
+    function createCard(imageUrl, title, subtitle, description, category, date, status, partner, outcome, client) {
       const cardCol = document.createElement('div');
       cardCol.className = 'col-md-4';
 
@@ -543,7 +723,9 @@ document.addEventListener('DOMContentLoaded', function() {
           <p class="card-text-custom"><small class="text-muted"><strong>Service:</strong> ${category}</small></p>
           <p class="card-text-custom"><small class="text-muted"><strong>Start:</strong> ${date}</small></p>
           <p class="card-text-custom"><small class="text-muted"><strong>Status:</strong> ${status}</small></p>
-          <p class="card-text-custom"><small class="text-muted"><strong>Partner:</strong> ${partner}</small></p>
+          ${renderListHorizontal('Partner', partner)}
+          ${renderLinkList('Outcome', outcome)}
+          ${renderLinkList('Client', client)}
         </div>
       `;
 
