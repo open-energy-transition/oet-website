@@ -92,9 +92,28 @@ document.addEventListener('DOMContentLoaded', function() {
                 },
               ],
             },
+             {
+              category: ["software development", "consulancy"],
+              status: "ongoing",
+              imageUrl: "assets/img/projects/supporting-acer-project.png",
+              title:
+                "ACER’s EU-wide Flexibility Assessment Platform",
+              description:
+                "Europe’s evolving energy landscape calls for smarter, more adaptive tools to support a reliable \
+                  and sustainable energy future. To support ACER’s work, Open Energy Transition is developing the EU-Flex Platform — an \
+                  EU-wide flexibility assessment tool built on the open-source PyPSA framework. The EU-Flex \
+                  Platform will offer a fully functional solution for assessing system flexibility across \
+                  deeper insights into supply-demand dynamics and grid reliability. Through advanced open-source \
+                  modelling approaches, the platform will enhance energy planning capabilities and foster \
+                  long-term sustainability via capacity-building and knowledge transfer. This initiative represents \
+                  a meaningful step toward greater resilience and cooperation in the European energy system.",
+              date: "2024-12-01",
+              partner:
+                "European Union Agency for the Cooperation of Energy Regulators",
+            },
             {
               category: ["software development", "consultancy"],
-              status: "past",
+              status: "ongoing",
               imageUrl: "assets/img/projects/tyndp_picture_for_website.png",
               title:
                 "Interfacing Open Energy System Planning with ENTSO models and contributing to the TYNDP - ENTSOE",
@@ -324,7 +343,7 @@ document.addEventListener('DOMContentLoaded', function() {
             },
             {
               category: ["consultancy"],
-              status: "completed",
+              status: "past",
               imageUrl: "assets/img/projects/PyPSA-UA_Instrat_project.jpg",
               title: "Instrat Ukraine - Instrat",
               subtitle: "Modelling Ukraine’s energy system",
@@ -438,7 +457,7 @@ document.addEventListener('DOMContentLoaded', function() {
             },
             {
               category: ["consultancy", "software development"],
-              status: "completed",
+              status: "past",
               imageUrl:
                 "assets/img/projects/blog6-riccardo-annandale-unsplash.jpg",
               title: "Flattening the Energy Curve - Eurima, ECF, etc",
@@ -494,7 +513,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 "software development",
                 "training and capacity building",
               ],
-              status: "ongoing",
+              status: "past",
               imageUrl: "assets/img/projects/blog1.jpg",
               title: "Coal-exit modelling in Jharkhand, India",
               subtitle: "Supporting the most important coal exit on Earth!",
@@ -520,7 +539,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 "software development",
                 "training and capacity building",
               ],
-              status: "ongoing",
+              status: "past",
               imageUrl: "assets/img/projects/blog2.jpg",
               title: "Sustainable Hydrogen and Power-to-X ramp-up in Africa",
               subtitle: "Exploring opportunities of green fuels in Africa",
