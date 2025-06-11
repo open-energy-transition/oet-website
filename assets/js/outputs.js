@@ -26,6 +26,49 @@ document.addEventListener('DOMContentLoaded', function() {
         const cardData = [
           // Card data goes here
           // Example:
+          
+          {
+            category: ['training'],
+            title: 'Hands-on <em>Modelling Regional Power Markets course</em> with open-source tools in Johannesburg',
+            date: "2025-06-04",
+            author: 'Open Energy Transition',
+            source: 'https://www.linkedin.com/feed/update/urn:li:activity:7335969629426626560',
+          },
+          {
+            category: ['media'],
+            title: 'OET mentioned as a example of good practice in open energy modeling in "It’s time for you to contribute to the Climate Commons"',
+            date: "2025-05-05",
+            author: 'Alex Stinson',
+            source: 'https://www.climatedrift.com/p/its-time-for-you-to-contribute-to',
+          },
+          {
+            category: ['summit'],
+            title: 'OET is co-hosting Energy Innovation Summit, Berlin, 2025',
+            date: "2025-03-05",
+            author: 'Gurobi Optimization',
+            source: 'https://www.gurobi.com/microsite/2025-energy-innovation-summit/',
+          },
+          {
+            category: ['study', 'media'],
+            title: '“Climbing Europe’s Energy Demand Peak” - Article based on campaign Your Home Our Future',
+            date: "2024-10-16",
+            author: 'Dimitar Kolichev, Eurima (European Insulation Manufacturers Association)',
+            source: 'https://www.euractiv.com/section/eet/opinion/climbing-europes-energy-demand-peak/',
+          },
+          {
+            category: ['study', 'media'],
+            title: 'Efficient buildings offer significant peak demand cuts, making energy transition affordable – study',
+            date: "2024-10-15",
+            author: 'European Council for Energy Efficient Economy',
+            source: 'https://www.eceee.org/all-news/news/news-2024/efficient-buildings-offer-significant-peak-demand-cuts-making-energy-transition-affordable-study/',
+          },
+          {
+            category: ['study', 'media'],
+            title: 'Report “Flattening the Peak Demand” published on campaign website Your Home Our Future. Campaign was a collaboration with Eurima and International Copper Association Europe, supported by the European Climate Foundation and ',
+            date: "2024-10-01",
+            author: 'European Insulation Manufacturers Association (Eurima), International Copper Association',
+            source: 'https://www.yourhomeourfuture.eu/resources/',
+          },
           {
             category: ['software', 'research'],
             title:

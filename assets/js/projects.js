@@ -31,6 +31,25 @@ document.addEventListener('DOMContentLoaded', function() {
             // Example:
             // category: 'consultancy', 'software development', 'training and capacity building'],
               {
+              category: ["training and capacity building"],
+              status: "past",
+              imageUrl: "assets/img/training-course-Johannesburg.jpg",
+              title:
+                "Regional Power Markets Course in Johannesburg",
+              subtitle:
+                "Hands-on Modelling Regional Power Markets course with open-source tools for 35 energy professionals",
+              description:
+                "Three of our energy modelers and trainers Priyesh Gosai, Ekaterina Fedotova, and Albert Chitandula delivered \
+                a hands-on course, giving all participants a detailed overview of the African \
+                power market landscape and open-source tools to model it. They equipped participants with practical Python \
+                skills and real-world examples of using Python for Power System Analysis (PyPSA).\
+                Participants came from 6 African countries, with diverse backgrounds including ministries, system operators, \
+                independent power producers, research councils, and consultancies. Throughout the training, they worked \
+                together to develop their individual modeling skills for later implementation in their professional practices.",
+              date: "2025-05-26",
+              partner: "International Centre for Hydropower, Bredesen Consulting",
+              },
+              {
               category: ["software development", "data", "training and capacity building"],
               status: "ongoing",
               imageUrl: "assets/img/projects/ohmygrid-logo.png",
