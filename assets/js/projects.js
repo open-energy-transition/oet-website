@@ -86,6 +86,8 @@ document.addEventListener('DOMContentLoaded', function() {
               imageUrl: "assets/img/projects/supporting-acer-project.png",
               title:
                 "ACER’s EU-wide Flexibility Assessment Platform",
+              subtitle:
+                "Supporting an adaptable assessment of generation variability, consumption patterns, and grid availability in Europe",
               description:
                 "Europe’s evolving energy landscape calls for smarter, more adaptive tools to support a reliable \
                   and sustainable energy future. To support ACER’s work, Open Energy Transition is developing the EU-Flex Platform — an \
