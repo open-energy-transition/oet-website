@@ -459,55 +459,46 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  function renderCards() {
-    const selectedCategory = categoryFilter.value;
-  
-    // Filter the cards based on the selected category
-    const filteredCards = cards.filter(function(card) {
-      return (
-        (selectedCategory === 'all' || card.category.includes(selectedCategory))
-      );
-    });
-  
-    // Calculate the total number of pages
-    const totalPages = Math.ceil(filteredCards.length / cardsPerPage);
-  
-    // Update the current page if it exceeds the total number of pages
-    if (currentPage > totalPages) {
-      currentPage = totalPages;
-    }
-  
-    // Calculate the start and end indices of the cards to be displayed on the current page
-    const startIndex = (currentPage - 1) * cardsPerPage;
-    let endIndex = startIndex + cardsPerPage;
-  
-    if (cardsPerPage === "all") {
-      endIndex = filteredCards.length; // Show all cards
-    } else {
-      endIndex = startIndex + parseInt(cardsPerPage);
-    
-      // Adjust the end index if it exceeds the total number of cards
-      if (endIndex > filteredCards.length) {
-        endIndex = filteredCards.length;
-      }
-    }
-  
-    // Get the subset of cards to be displayed on the current page
-    const cardsForPage = filteredCards.slice(startIndex, endIndex);
-  
-    // Clear the card container
-    cardContainer.innerHTML = '';
-  
-    // Render the cards for the current page
-    cardsForPage.forEach(function(card, index) {
-      const { title, category, date, author, source} = card;
-      const cardElement = createCard(startIndex + index + 1,  title, category, date, author, source);
-      cardContainer.appendChild(cardElement);
-    });
-  
-    // Render the pagination buttons
+function renderCards() {
+  const selectedCategory = categoryFilter.value;
+  const filteredCards = cards.filter(function(card) {
+    return (selectedCategory === 'all' || card.category.includes(selectedCategory));
+  });
+
+  if (filteredCards.length === 0) {
+    cardContainer.innerHTML = '<div>No results found.</div>';
+    paginationContainer.innerHTML = '';
+    return;
+  }
+
+  let actualCardsPerPage = cardsPerPage === "all" ? filteredCards.length : parseInt(cardsPerPage);
+  const totalPages = cardsPerPage === "all"
+    ? 1
+    : Math.ceil(filteredCards.length / actualCardsPerPage);
+
+  if (currentPage > totalPages) currentPage = totalPages;
+  if (currentPage < 1) currentPage = 1;
+
+  const startIndex = (currentPage - 1) * actualCardsPerPage;
+  const endIndex = cardsPerPage === "all"
+    ? filteredCards.length
+    : Math.min(startIndex + actualCardsPerPage, filteredCards.length);
+
+  const cardsForPage = filteredCards.slice(startIndex, endIndex);
+
+  cardContainer.innerHTML = '';
+  cardsForPage.forEach(function(card, index) {
+    const { title, category, date, author, source } = card;
+    const globalIndex = startIndex + index + 1;
+    cardContainer.appendChild(createCard(globalIndex, title, category, date, author, source));
+  });
+
+  if (cardsPerPage === "all") {
+    paginationContainer.innerHTML = '';
+  } else {
     renderPagination(totalPages);
   }
+}
   
   function createCard(index, title, category, date, author, source) {
     const cardCol = document.createElement('div');
