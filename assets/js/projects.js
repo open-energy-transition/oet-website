@@ -711,7 +711,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     
       // Get the subset of cards to be displayed on the current page
-      const cardsForPage = filteredCards.slice(startIndex, endIndex);
+      const cardsForPage = endIndex ? filteredCards.slice(startIndex, endIndex) : filteredCards;
     
       // Clear the card container
       cardContainer.innerHTML = '';
