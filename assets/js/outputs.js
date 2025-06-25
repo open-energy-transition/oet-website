@@ -493,7 +493,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   
     // Get the subset of cards to be displayed on the current page
-    const cardsForPage = filteredCards.slice(startIndex, endIndex);
+    const cardsForPage = endIndex ? filteredCards.slice(startIndex, endIndex) : filteredCards;
   
     // Clear the card container
     cardContainer.innerHTML = '';
@@ -501,7 +501,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Render the cards for the current page
     cardsForPage.forEach(function(card, index) {
       const { title, category, date, author, source} = card;
-      const cardElement = createCard(startIndex + index + 1,  title, category, date, author, source);
+      const cardElement = createCard((startIndex ? startIndex : 0) + index + 1,  title, category, date, author, source);
       cardContainer.appendChild(cardElement);
     });
   
