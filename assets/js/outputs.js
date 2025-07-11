@@ -26,104 +26,270 @@ document.addEventListener('DOMContentLoaded', function() {
         const cardData = [
           // Card data goes here
           // Example:
+          {
+            category: ["data"],
+            title: "<em>Awesome Grid Model Data</em> is an open licensed, curated catalogue of electricity grid model datasets",
+            date: "2025-07-10",
+            author: "Open Energy Transition",
+            source: "https://www.linkedin.com/feed/update/urn:li:activity:7348984399469686785",
+          },
+          {
+            category: ["study"],
+            title: "Daniel Ruedt (OET) presents the current status of the OpenTYNDP project at the 3rd PyPSA User Meeting",
+            date: "2025-07-02",
+            author: "Lukas Trippe",
+            source: "https://forum.openmod.org/t/3rd-pypsa-user-meeting-on-july-2-2025-10-am-12-30-pm-cest/5281",
+          },
+          {
+            category: ["conference"],
+            title: "Open Energy Transition at the Energy Innovation Summit 2025 conducting a training session on PyPSA and two keynotes",
+            date: "2025-07-01",
+            author: "Open Energy Transition",
+            source: "https://www.linkedin.com/feed/update/urn:li:activity:7345847897940226048",
+          },
+          {
+            category: ["software"],
+            title: "Open Energy Benchmark is a open-source, interactive, and reproducible platform to compare five open-source and commercial LP/MILP solvers",
+            date: "2025-06-24",
+            author: "Open Energy Transition",
+            source: "https://openenergybenchmark.org/",
+          },
+          {
+            category: ["conference"],
+            title: "Maximilian Parzen and Harry van der Weijde (OET) at IRENA Innovation Week in Bonn",
+            date: "2025-06-16",
+            author: "Open Energy Transition",
+            source: "https://www.linkedin.com/feed/update/urn:li:activity:7340304582977183745",
+          },
+          {
+            category: ["conference"],
+            title: "The team participating in the Energy Innovation Summit co-hosted with Gurobi Optimization",
+            date: "2025-06-13",
+            author: "Open Energy Transition",
+            source: "https://www.linkedin.com/feed/update/urn:li:activity:7339212158490046465",
+          },
+          {
+            category: ["conference"],
+            title: "Martha (OET) spoke at the OSEAS conference in the workshop <em>Advancing Mission 300 with Open Source</em>.",
+            date: "2025-06-11",
+            author: "Open Source in Energy Access Symposium",
+            source: "https://www.oseas.org/speakers",
+          },
+          {
+            category: ["conference"],
+            title: "David Diaz Ramos (OET) was at the launch of the Global Coalition for Energy Planning (GCEP) at the Latin America Energy Planning Summit in Brazil",
+            date: "2025-06-11",
+            author: "Open Energy Transition",
+            source: "https://www.linkedin.com/feed/update/urn:li:activity:7338490267651497986",
+          },
+          {
+            category: ["training"],
+            title: "Hands-on <em>Modelling Regional Power Markets course</em> with open-source tools in Johannesburg",
+            date: "2025-06-04",
+            author: "Open Energy Transition",
+            source: "https://www.linkedin.com/feed/update/urn:li:activity:7335969629426626560",
+          },
+          {
+            category: ["conferencec", "research"],
+            title: "Martha Frysztacki (OET) and Dimitar Kolichev (Eurima) present the study <em>Flattening the peak demand curve through efficient buildings</em> at C4E Forum",
+            date: "2025-05-22",
+            author: "Eurima (European Insulation Manufacturers Association)",
+            source: "https://www.linkedin.com/feed/update/urn:li:activity:7328813526263791617",
+          },
+          {
+            category: ["study", "software"],
+            title: "Report <em>The Role of Energy Storage in Germany</em> on multi-day storage solutions in collaboration with Form Energy",
+            date: "2025-05-08",
+            author: "Open Energy Transition",
+            source: "https://zenodo.org/records/15323663",
+          },
+          {
+            category: ["software"],
+            title: "Launch of demo version of PowerNetZero",
+            date: "2025-05-07",
+            author: "Open Energy Transition",
+            source: "https://powernetzero.org/",
+          },
+          {
+            category: ["webinar"],
+            title: "Tobias Augspurger (OET) is speaking at Join Centre for Net Zero's (Octopus Energy) upcoming webinar on <em>Decarbonising Global Energy Systems</em>",
+            date: "2025-04-15",
+            author: "Open Energy Transition",
+            source: "https://www.linkedin.com/feed/update/urn:li:activity:7317878706432098304",
+          },
            {
-            category: ['summit', 'innovation'],
-            title:
-              'Open Energy Transition is announced as co-hosting Energy Innovation Summit, Berlin, 2025.',
+            category: ["energy", "anniversary"],
+            title: "Celebrating Open Energy Transition's 2nd anniversary: Key achievements and growth",
+            date: "2024-04-10",
+            author: "Maximilian Parzen",
+            source: "https://www.linkedin.com/feed/update/urn:li:activity:7316115056146984960",
+          },
+          {
+            category: ["study"],
+            title: "OET is collaborating with the EU Agency for the Cooperation of Energy Regulators (ACER) on developing a tool for flexibility assessments.",
+            date: "2024-04-09",
+            author: "Open Energy Transition",
+            source: "https://www.linkedin.com/feed/update/urn:li:activity:7315629576150310932",
+          },
+          {
+            category: ["training"],
+            title: "Open Energy Transition is delivering a course on Power System Flexible Operation at University of Cape Town.",
+            date: "2025-03-06",
+            author: "Priyesh Gosai",
+            source: "https://www.linkedin.com/feed/update/urn:li:activity:7303325326560944129",
+          },
+          {
+            category: ["conference"],
+            title: "OET is co-hosting Energy Innovation Summit, Berlin, 2025",
+            date: "2025-03-05",
+            author: "Gurobi Optimization",
+            source: "https://www.gurobi.com/microsite/2025-energy-innovation-summit/",
+          },
+          {
+            category: ["policy brief"],
+            title: "New policy brief from OET - <em>Free the models: How open energy system modelling unlocks the energy transition</em>",
+            date: "2025-03-05",
+            author: "Open Energy Transition",
+            source: "https://zenodo.org/records/15006926",
+          },
+           {
+            category: ["webinar"],
+            title: "Webinar: Interoperability in Integrated Energy System Planning: Hype or Real Value?",
+            date: "2025-02-24",
+            author: "Open Energy Transition",
+            source: "https://www.youtube.com/watch?v=vhKxLMLZdSs",
+          },
+           {
+            category: ["study"],
+            title: "ENTSO-E collaborates with OET on open-source tools for energy planning",
+            date: "2025-02-18",
+            author: "European Network of Transmission System Operators for Electricity (ENTSO-E)",
+            source: "https://www.linkedin.com/posts/entso-e_energytransition-opensource-innovation-activity-7293296246813851649-2ynL?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAVQ2RoBXzOE8KqS8FR7jSQHNtOlOApbDgA",
+          },
+          {
+            category: ["study", "report"],
+            title: "Report on PyPSA-UA (built on the PyPSA-Eur framework with simulatation of the Ukrainian power grid from the present to 2030.",
+            date: "2024-11-26",
+            author: "Fundacja Instrat and Clean Energy Lab (CEL)",
+            source: "https://instrat.pl/en/ukraine-against-darkness/",
+          },
+          {
+            category: ["study", "media"],
+            title: "<em>Climbing Europe's Energy Demand Peak</em> - Article based on campaign Your Home Our Future",
+            date: "2024-10-16",
+            author: "Dimitar Kolichev, Eurima (European Insulation Manufacturers Association)",
+            source: "https://www.euractiv.com/section/eet/opinion/climbing-europes-energy-demand-peak/",
+          },
+          {
+            category: ["study", "media"],
+            title: "Efficient buildings offer significant peak demand cuts, making energy transition affordable - study",
+            date: "2024-10-15",
+            author: "European Council for Energy Efficient Economy",
+            source: "https://www.eceee.org/all-news/news/news-2024/efficient-buildings-offer-significant-peak-demand-cuts-making-energy-transition-affordable-study/",
+          },
+          {
+            category: ["study", "media"],
+            title: "Report “Flattening the Peak Demand” published on campaign website Your Home Our Future. Campaign was a collaboration with Eurima and International Copper Association Europe, supported by the European Climate Foundation",
+            date: "2024-10-01",
+            author: "Eurima (European Insulation Manufacturers Association), International Copper Association",
+            source: "https://www.yourhomeourfuture.eu/resources/",
+          },
+          {
+            category: ["software", "research"],
+            title: "Methodology for Flexibility Needs Assessments Workshop: Max Parzen presents <em>Open energy planning for better flexibility needs assessment</em>.",
+            date: "2024-09-24",
+            author: "Energy Storage Coalition",
+            source: "https://energystoragecoalition.eu/worskhop-on-methodology-for-flexibility-needs-assessments/",
+            },  
+          { 
+            category: ["'summit", "innovation"],
+            title:"Open Energy Transition is announced as co-hosting Energy Innovation Summit, Berlin, 2025.",
             date: "2025-03-05",
             author: 'Gurobi Optimization',
             source:
               'https://www.gurobi.com/microsite/2025-energy-innovation-summit/',
           },
           {
-            category: ['media', 'research', 'report'],
+            category: ["media", "research", "report"],
             title:
-              'Article "Climbing Europe’s Energy Demand Peak" in Euractiv about study <em>Flattening the Peak Demand</em> and the campaign Your Home Our Future.',
+              "Article <em>Climbing Europe's Energy Demand Peak</em> in Euractiv about study <em>Flattening the Peak Demand</em> for the campaign Your Home Our Future.",
             date: "2024-10-16",
             author: 'Dimitar Kolichev, Eurima (European Insulation Manufacturers Association)',
             source:
               'https://www.euractiv.com/section/eet/opinion/climbing-europes-energy-demand-peak/',
           },
           {
-            category: ['media', 'research', 'report'],
+            category: ["media", "research", "report"],
             title:
-              'Article "Efficient buildings offer significant peak demand cuts, making energy transition affordable – study" about study <em>Flattening the Peak Demand</em> and the campaign Your Home Our Future.',
+              "Article <em>Efficient buildings offer significant peak demand cuts, making energy transition affordable - study</em> about study <em>Flattening the Peak Demand</em> for the campaign Your Home Our Future.",
             date: "2024-10-15",
-            author: 'European Council for Energy Efficient Economy',
+            author: "European Council for Energy Efficient Economy",
             source:
-              'https://www.eceee.org/all-news/news/news-2024/efficient-buildings-offer-significant-peak-demand-cuts-making-energy-transition-affordable-study/',
+              "https://www.eceee.org/all-news/news/news-2024/efficient-buildings-offer-significant-peak-demand-cuts-making-energy-transition-affordable-study/",
           },
           {
-            category: ['media', 'research', 'report'],
-            title:
-              'Report <em>Flattening the Peak Demand</em> is the technical foundation of the campaign Your Home Our Future by European Insulation Manufactoreres Association (Eurima) and the International Copper Association Europe. Supported by the European Climate Foundation',
+            category: ["media", "research", "report"],
+            title: "Report <em>Flattening the Peak Demand</em> is the technical foundation of the campaign Your Home Our Future by European Insulation Manufactoreres Association (Eurima) and the International Copper Association Europe. Supported by the European Climate Foundation.",
             date: "2024-10-01",
-            author: 'European Insulation Manufactoreres Association (Eurima), the International Copper Association Europe, the European Climate Foundation',
-            source:
-              'https://www.yourhomeourfuture.eu/',
+            author: "European Insulation Manufactoreres Association (Eurima), the International Copper Association Europe, the European Climate Foundation",
+            source: "https://www.yourhomeourfuture.eu/",
           },
           {
-            category: ['software', 'research'],
-            title:
-              'Methodology for Flexibility Needs Assessments Workshop: Max Parzen presents <em>Open energy planning for better flexibility needs assessment</em>',
+            category: ["software", "research"],
+            title: "Methodology for Flexibility Needs Assessments Workshop: Max Parzen presents <em>Open energy planning for better flexibility needs assessment</em>.",
             date: "2024-09-24",
-            author: 'Energy Storage Coalition',
-            source:
-              'https://energystoragecoalition.eu/worskhop-on-methodology-for-flexibility-needs-assessments/',
+            author: "Energy Storage Coalition",
+            source: "https://energystoragecoalition.eu/worskhop-on-methodology-for-flexibility-needs-assessments/",
           },
           {
-          category: ['media', 'research', 'software'],
-          title:
-            '<em>Modeling the Integration of Hydropower into Modern Energy Systems for Africa</em> Course, with Ekaterina Fedotova and Emmanuel Bolarinwa presenting the integration of hydropower into energy systems using PyPSA',
+          category: ["media", "research", "software"],
+          title: "<em>Modeling the Integration of Hydropower into Modern Energy Systems for Africa</em> Course, with Ekaterina Fedotova and Emmanuel Bolarinwa (OET) presenting the integration of hydropower into energy systems using PyPSA",
           date: "2024-08-19",
-          author: 'International Centre for Hydropower',
-          source:
-            'https://ich.no/modeling-the-integration-of-hydropower-into-modern-energy-systems-for-africa/',
+          author: "International Centre for Hydropower",
+          source: "https://ich.no/modeling-the-integration-of-hydropower-into-modern-energy-systems-for-africa/",
           },
           {
             category: ["media", "software"],
-            title:
-              'HiGHS Workshop 2024 - Max Parzen presents <em>The Role of Open-Source Solvers for Energy System Planning</em>',
+            title: "HiGHS Workshop 2024 - Max Parzen (OET) presents <em>The Role of Open-Source Solvers for Energy System Planning</em>.",
             date: "2024-06-26",
             author: "HiGHS",
-            source:
-              'https://workshop24.highs.dev/schedule',
+            source: "https://workshop24.highs.dev/schedule",
           },
           {
             category: ["media", "software"],
             title:
-              ' Breakthrough Energy summit in London officially launched the open energy planning platform',
+              "Breakthrough Energy summit in London officially launched the open energy planning platform",
             date: "2024-06-25",
             author: "Maximilian Parzen",
             source:
-              'https://www.linkedin.com/posts/maximilian-parzen-b047a1126_london-open-energy-ugcPost-7212093301422768128-8_MT?utm_source=share&utm_medium=member_desktop',
+              "https://www.linkedin.com/posts/maximilian-parzen-b047a1126_london-open-energy-ugcPost-7212093301422768128-8_MT?utm_source=share&utm_medium=member_desktop",
           },
           {
             category: ["software", "research"],
             title:
-              'International Renewable Energy Agency (IRENA): The 42nd edition of International Energy Workshop',
+              "International Renewable Energy Agency (IRENA): The 42nd edition of International Energy Workshop",
             date: "2024-06-24",
             author: "Maximilian Parzen",
             source:
-              'https://www.linkedin.com/posts/maximilian-parzen-b047a1126_great-meeting-with-old-friends-from-the-international-activity-7211412106737307650-U4yN?utm_source=share&utm_medium=member_desktop',
+              "https://www.linkedin.com/posts/maximilian-parzen-b047a1126_great-meeting-with-old-friends-from-the-international-activity-7211412106737307650-U4yN?utm_source=share&utm_medium=member_desktop",
           },
           {
             category: ["research", "software"],
             title:
-              'ECEEE SummerStudy2024 - Martha Maria F. presents <em>Flattening the Peak Demand Curve through Energy Efficient Buildings</em>',
+              "ECEEE SummerStudy2024 - Martha Maria F. (OET) presents <em>Flattening the Peak Demand Curve through Energy Efficient Buildings</em>",
             date: "2024-06-11",
             author: "Eurima",
             source:
-              'https://www.linkedin.com/posts/european-insul-manufact-eurima-_summerstudy2024-climateneutrality-energyefficiency-activity-7204131956962279425-NxI0?utm_source=share&utm_medium=member_desktop',
+              "https://www.linkedin.com/posts/european-insul-manufact-eurima-_summerstudy2024-climateneutrality-energyefficiency-activity-7204131956962279425-NxI0?utm_source=share&utm_medium=member_desktop",
           },
           {
             category: ["media", "software"],
             title:
-              '2nd PyPSA User Meeting - Martha Maria F. presents <em>Enhancing Energy System Analysis: OET\’s Role in Supporting PyPSA Workflows and Development</em>',
+              "2nd PyPSA User Meeting - Martha Maria F. (OET) presents <em>Enhancing Energy System Analysis: OET's Role in Supporting PyPSA Workflows and Development</em>.",
             date: "2024-05-27",
             author: "Bobby Xiong and Caspar Schauß",
             source:
-              'https://forum.openmod.org/t/2nd-pypsa-user-meeting-on-may-27-2024-3-pm-6-pm-cest/4675',
+              "https://forum.openmod.org/t/2nd-pypsa-user-meeting-on-may-27-2024-3-pm-6-pm-cest/4675",
           },
           {
             category: ["energy", "anniversary"],
