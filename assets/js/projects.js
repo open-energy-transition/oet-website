@@ -36,12 +36,12 @@ document.addEventListener('DOMContentLoaded', function() {
               status: "ongoing",
               imageUrl: "assets/img/projects/ohmygrid-logo.png",
               title:
-                "OhMyGrid",
+                "MapYourGrid",
               subtitle:
                 "Empowering individuals, communities and nations around the world to map the electrical grid with open data",
               description:
                 "Electric grids around the world need increasing development to accelerate the clean energy transition. \
-                  OhMyGrid is an open-source, community-driven initiative that aims to make the world's electricity \
+                  MapYourGrid is an open-source, community-driven initiative that aims to make the world's electricity \
                   transmission network fully and accurately available in OpenStreetMap (OSM) through collaborative \
                   mapping, enabling planners, researchers, and local communities to design a faster energy transition.\
                   Launched in 2025 by Open Energy Transition in partnership with data-for-good specialists \
@@ -51,22 +51,22 @@ document.addEventListener('DOMContentLoaded', function() {
                   local authorities, and private organizations globally. Open models like PyPSA-Earth also depend on open \
                   data, and machine learning alone cannot fill existing data gaps. A community-driven approach delivers \
                   superior results, particularly in regions where data is scarce.\
-                  The OhMyGrid Initiative and its community aim to expand global coverage of high-voltage transmission grids \
+                  The MapYourGrid Initiative and its community aim to expand global coverage of high-voltage transmission grids \
                   in OpenStreetMap from approximately 70% to 98% over the next three years by providing the tools, training, \
                   and data stewardship needed to map this vital infrastructure.\
                   By making transmission networks visible everywhere, this initiative enables fairer, faster energy \
                   transitions and electrification, empowering local communities, guiding research, and accelerating climate \
                   action. \
-                  More info at: https://ohmygrid.org/",
+                  More info at: https://mapyourgrid.org/",
               date: "2025-01-01",
               outcome: [
                 {
                   title: "Check out the website",
-                  link: "https://ohmygrid.org/",
+                  link: "https://mapyourgrid.org/",
                 },
                 {
                   title: "Explore the Github repository for the website",
-                  link: "https://github.com/open-energy-transition/Oh-my-Grid",
+                  link: "https://github.com/open-energy-transition/MapYourGrid",
                 },
                 {
                   title: "Explore the Github repository for the starter kit",
