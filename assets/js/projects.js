@@ -43,17 +43,17 @@ document.addEventListener('DOMContentLoaded', function() {
                 "Electric grids around the world need increasing development to accelerate the clean energy transition. \
                   MapYourGrid is an open-source, community-driven initiative that aims to make the world's electricity \
                   transmission network fully and accurately available in OpenStreetMap (OSM) through collaborative \
-                  mapping, enabling planners, researchers, and local communities to design a faster energy transition.\
+                  mapping, enabling planners, researchers, and local communities to design a faster energy transition. \
                   Launched in 2025 by Open Energy Transition in partnership with data-for-good specialists \
                   Datactivist, Dynartio, Jungle Bus, and Infrageomatics, the initiative provides tools, training, and \
-                  support to crowdsource mapping of power lines, towers, substations, and plants worldwide.\
+                  support to crowdsource mapping of power lines, towers, substations, and plants worldwide. \
                   Reliable grid data is essential for energy planning and investment, serving academia, institutions, \
                   local authorities, and private organizations globally. Open models like PyPSA-Earth also depend on open \
                   data, and machine learning alone cannot fill existing data gaps. A community-driven approach delivers \
-                  superior results, particularly in regions where data is scarce.\
+                  superior results, particularly in regions where data is scarce. \
                   The MapYourGrid Initiative and its community aim to expand global coverage of high-voltage transmission grids \
                   in OpenStreetMap from approximately 70% to 98% over the next three years by providing the tools, training, \
-                  and data stewardship needed to map this vital infrastructure.\
+                  and data stewardship needed to map this vital infrastructure. \
                   By making transmission networks visible everywhere, this initiative enables fairer, faster energy \
                   transitions and electrification, empowering local communities, guiding research, and accelerating climate \
                   action. \
@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function() {
                   a meaningful step toward greater resilience and cooperation in the European energy system.",
               date: "2024-12-01",
               partner:
-                "European Union Agency for the Cooperation of Energy Regulators",
+                "European Union Agency for the Cooperation of Energy Regulators (ACER)",
             },
             {
               category: ["software development", "consultancy"],
@@ -124,14 +124,14 @@ document.addEventListener('DOMContentLoaded', function() {
               description:
                 "The Ten-Year Network Development Plan (TYNDP) is essential for shaping the future of European energy. \
               However, the process used by 40 system operators to align national energy strategies and investment \
-              priorities is often complex and difficult to replicate.\
+              priorities is often complex and difficult to replicate. \
               This complexity can hinder collaboration, slow down the integration of new technologies, and make it \
               harder for stakeholders to make informed, data-driven decisions. This, in turn, impacts the transition \
-              to a more sustainable and interconnected European energy system.\
+              to a more sustainable and interconnected European energy system. \
               This innovation project, in collaboration with ENTSO-E, aims to address these challenges by developing a \
-              PyPSA-based open-source toolelectricity network expansion model for scenario building and cost-benefit \
-              analysis, which is fully compatible with the TYNDP workflow. This tool will make TYNDP results easily \
-              reproducible and adaptable, fostering faster, more collaborative,  andmore efficient energy planning to \
+              PyPSA-based open-source electricity network expansion model for Scenario Building and Cost-Benefit \
+              Analysis, which is fully compatible with the TYNDP workflow. This tool will make TYNDP results easily \
+              reproducible and adaptable, fostering faster, more collaborative, and more efficient energy planning to \
               support a sustainable energy infrastructure for Europe.",
               date: "2024-09-01",
               client: [
