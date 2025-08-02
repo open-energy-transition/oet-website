@@ -814,8 +814,18 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add top margin to page selection buttons
     const pageButtons = paginationContainer.querySelectorAll('.page-link');
     pageButtons.forEach(function(button) {
-      button.style.backgroundColor = '#E31937'; // Set the desired color
+      button.style.marginTop = '1rem';
+      button.style.backgroundColor = '#fff'; // Unselected: white background
       button.style.borderColor = '#E31937';
+      button.style.color = '#E31937'; // Unselected: red text
+      button.style.fontWeight = 'normal';
+      button.style.textDecoration = 'none';
     });
+    const activePage = paginationContainer.querySelector('.page-item.active .page-link');
+    if (activePage) {
+      activePage.style.backgroundColor = '#E31937'; // Selected: red background
+      activePage.style.color = '#fff'; // Selected: white text
+      activePage.style.textDecoration = 'none'; // No underline
+    }
     }
   });
