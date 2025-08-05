@@ -27,6 +27,20 @@ document.addEventListener('DOMContentLoaded', function() {
           // Card data goes here
           // Example:
           {
+            category: ["study"],
+            title: "MapYouGrid is an open-source and collaborative initiative to map the world's electricity grids",
+            date: "2025-08-05",
+            author: "Open Energy Transition",
+            source: "https://www.linkedin.com/feed/update/urn:li:activity:7358409072397770753",
+          },
+          {
+            category: ["study"],
+            title: "Open-TYNDP release of version 0.2",
+            date: "2025-07-24",
+            author: "Open Energy Transition",
+            source: "https://www.linkedin.com/feed/update/urn:li:activity:7354118168010731522",
+          },
+          {
             category: ["data"],
             title: "<em>Awesome Grid Model Data</em> is an open licensed, curated catalogue of electricity grid model datasets",
             date: "2025-07-10",
