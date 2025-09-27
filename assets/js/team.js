@@ -65,6 +65,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const container = document.getElementById("team-container");
         container.innerHTML += renderMemberHtml(element);
         console.log(element);
-      })
+      }),
     );
 });

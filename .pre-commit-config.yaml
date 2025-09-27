@@ -1,0 +1,16 @@
+repos:
+  - repo: https://github.com/codespell-project/codespell
+    rev: v2.4.1
+    hooks:
+      - id: codespell
+        args: ['--ignore-regex="(\b[A-Z]+\b)"', '--ignore-words=.codespell.ignore']
+        files: \.(js|html)$
+
+  - repo: local
+    hooks:
+      - id: prettier-js-html
+        name: Prettier – format JS & HTML
+        entry: bash -c 'npx prettier --write "$@"' --
+        language: system
+        files: \.(js|html)$
+        stages: [ commit ]
