@@ -1,140 +1,118 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const categoryFilter = document.getElementById("categoryFilter");
-  const cardsPerPageSelect = document.getElementById("cardsPerPage");
-  const cardContainer = document.getElementById("cardContainer");
-  const paginationContainer = document.getElementById("pagination");
+document.addEventListener('DOMContentLoaded', function() {
+  const categoryFilter = document.getElementById('categoryFilter');
+  const cardsPerPageSelect = document.getElementById('cardsPerPage');
+  const cardContainer = document.getElementById('cardContainer');
+  const paginationContainer = document.getElementById('pagination');
 
   let cards = []; // Array to store the card elements
   let currentPage = 1;
   let cardsPerPage = parseInt(cardsPerPageSelect.value);
 
   // Handle filter form submission
-  categoryFilter.addEventListener("change", handleFilterFormSubmit);
-  cardsPerPageSelect.addEventListener("change", handleCardsPerPageChange);
-
+  categoryFilter.addEventListener('change', handleFilterFormSubmit);
+  cardsPerPageSelect.addEventListener('change', handleCardsPerPageChange);
+  
   // Simulate card data retrieval
   // Replace this with actual card data fetching from an API or other data source
-  fetchCardData().then(function (cardData) {
+  fetchCardData().then(function(cardData) {
     cards = cardData;
     renderCards();
   });
 
   function fetchCardData() {
     // Simulated asynchronous card data fetching
-    return new Promise(function (resolve) {
-      setTimeout(function () {
+    return new Promise(function(resolve) {
+      setTimeout(function() {
         const cardData = [
           // Card data goes here
           // Example:
           {
             category: ["study"],
-            title:
-              "MapYouGrid is an open-source and collaborative initiative to map the world's electricity grids",
+            title: "MapYouGrid is an open-source and collaborative initiative to map the world's electricity grids",
             date: "2025-08-05",
             author: "Open Energy Transition",
-            source:
-              "https://www.linkedin.com/feed/update/urn:li:activity:7358409072397770753",
+            source: "https://www.linkedin.com/feed/update/urn:li:activity:7358409072397770753",
           },
           {
             category: ["study"],
             title: "Open-TYNDP release of version 0.2",
             date: "2025-07-24",
             author: "Open Energy Transition",
-            source:
-              "https://www.linkedin.com/feed/update/urn:li:activity:7354118168010731522",
+            source: "https://www.linkedin.com/feed/update/urn:li:activity:7354118168010731522",
           },
           {
             category: ["data"],
-            title:
-              "<em>Awesome Grid Model Data</em> is an open licensed, curated catalogue of electricity grid model datasets",
+            title: "<em>Awesome Grid Model Data</em> is an open licensed, curated catalogue of electricity grid model datasets",
             date: "2025-07-10",
             author: "Open Energy Transition",
-            source:
-              "https://www.linkedin.com/feed/update/urn:li:activity:7348984399469686785",
+            source: "https://www.linkedin.com/feed/update/urn:li:activity:7348984399469686785",
           },
           {
             category: ["study"],
-            title:
-              "Daniel Ruedt (OET) presents the current status of the OpenTYNDP project at the 3rd PyPSA User Meeting",
+            title: "Daniel Ruedt (OET) presents the current status of the OpenTYNDP project at the 3rd PyPSA User Meeting",
             date: "2025-07-02",
             author: "Lukas Trippe",
-            source:
-              "https://forum.openmod.org/t/3rd-pypsa-user-meeting-on-july-2-2025-10-am-12-30-pm-cest/5281",
+            source: "https://forum.openmod.org/t/3rd-pypsa-user-meeting-on-july-2-2025-10-am-12-30-pm-cest/5281",
           },
           {
             category: ["conference"],
-            title:
-              "Open Energy Transition at the Energy Innovation Summit 2025 conducting a training session on PyPSA and two keynotes",
+            title: "Open Energy Transition at the Energy Innovation Summit 2025 conducting a training session on PyPSA and two keynotes",
             date: "2025-07-01",
             author: "Open Energy Transition",
-            source:
-              "https://www.linkedin.com/feed/update/urn:li:activity:7345847897940226048",
+            source: "https://www.linkedin.com/feed/update/urn:li:activity:7345847897940226048",
           },
           {
             category: ["software"],
-            title:
-              "Open Energy Benchmark is a open-source, interactive, and reproducible platform to compare five open-source and commercial LP/MILP solvers",
+            title: "Open Energy Benchmark is a open-source, interactive, and reproducible platform to compare five open-source and commercial LP/MILP solvers",
             date: "2025-06-24",
             author: "Open Energy Transition",
             source: "https://openenergybenchmark.org/",
           },
           {
             category: ["conference"],
-            title:
-              "Maximilian Parzen and Harry van der Weijde (OET) at IRENA Innovation Week in Bonn",
+            title: "Maximilian Parzen and Harry van der Weijde (OET) at IRENA Innovation Week in Bonn",
             date: "2025-06-16",
             author: "Open Energy Transition",
-            source:
-              "https://www.linkedin.com/feed/update/urn:li:activity:7340304582977183745",
+            source: "https://www.linkedin.com/feed/update/urn:li:activity:7340304582977183745",
           },
           {
             category: ["conference"],
-            title:
-              "The team participating in the Energy Innovation Summit co-hosted with Gurobi Optimization",
+            title: "The team participating in the Energy Innovation Summit co-hosted with Gurobi Optimization",
             date: "2025-06-13",
             author: "Open Energy Transition",
-            source:
-              "https://www.linkedin.com/feed/update/urn:li:activity:7339212158490046465",
+            source: "https://www.linkedin.com/feed/update/urn:li:activity:7339212158490046465",
           },
           {
             category: ["conference"],
-            title:
-              "Martha (OET) spoke at the OSEAS conference in the workshop <em>Advancing Mission 300 with Open Source</em>.",
+            title: "Martha (OET) spoke at the OSEAS conference in the workshop <em>Advancing Mission 300 with Open Source</em>.",
             date: "2025-06-11",
             author: "Open Source in Energy Access Symposium",
             source: "https://www.oseas.org/speakers",
           },
           {
             category: ["conference"],
-            title:
-              "David Diaz Ramos (OET) was at the launch of the Global Coalition for Energy Planning (GCEP) at the Latin America Energy Planning Summit in Brazil",
+            title: "David Diaz Ramos (OET) was at the launch of the Global Coalition for Energy Planning (GCEP) at the Latin America Energy Planning Summit in Brazil",
             date: "2025-06-11",
             author: "Open Energy Transition",
-            source:
-              "https://www.linkedin.com/feed/update/urn:li:activity:7338490267651497986",
+            source: "https://www.linkedin.com/feed/update/urn:li:activity:7338490267651497986",
           },
           {
             category: ["training"],
-            title:
-              "Hands-on <em>Modelling Regional Power Markets course</em> with open-source tools in Johannesburg",
+            title: "Hands-on <em>Modelling Regional Power Markets course</em> with open-source tools in Johannesburg",
             date: "2025-06-04",
             author: "Open Energy Transition",
-            source:
-              "https://www.linkedin.com/feed/update/urn:li:activity:7335969629426626560",
+            source: "https://www.linkedin.com/feed/update/urn:li:activity:7335969629426626560",
           },
           {
             category: ["conferencec", "research"],
-            title:
-              "Martha Frysztacki (OET) and Dimitar Kolichev (Eurima) present the study <em>Flattening the peak demand curve through efficient buildings</em> at C4E Forum",
+            title: "Martha Frysztacki (OET) and Dimitar Kolichev (Eurima) present the study <em>Flattening the peak demand curve through efficient buildings</em> at C4E Forum",
             date: "2025-05-22",
             author: "Eurima (European Insulation Manufacturers Association)",
-            source:
-              "https://www.linkedin.com/feed/update/urn:li:activity:7328813526263791617",
+            source: "https://www.linkedin.com/feed/update/urn:li:activity:7328813526263791617",
           },
           {
             category: ["study", "software"],
-            title:
-              "Report <em>The Role of Energy Storage in Germany</em> on multi-day storage solutions in collaboration with Form Energy",
+            title: "Report <em>The Role of Energy Storage in Germany</em> on multi-day storage solutions in collaboration with Form Energy",
             date: "2025-05-08",
             author: "Open Energy Transition",
             source: "https://zenodo.org/records/15323663",
@@ -148,137 +126,111 @@ document.addEventListener("DOMContentLoaded", function () {
           },
           {
             category: ["webinar"],
-            title:
-              "Tobias Augspurger (OET) is speaking at Join Centre for Net Zero's (Octopus Energy) upcoming webinar on <em>Decarbonising Global Energy Systems</em>",
+            title: "Tobias Augspurger (OET) is speaking at Join Centre for Net Zero's (Octopus Energy) upcoming webinar on <em>Decarbonising Global Energy Systems</em>",
             date: "2025-04-15",
             author: "Open Energy Transition",
-            source:
-              "https://www.linkedin.com/feed/update/urn:li:activity:7317878706432098304",
+            source: "https://www.linkedin.com/feed/update/urn:li:activity:7317878706432098304",
           },
-          {
+           {
             category: ["energy", "anniversary"],
-            title:
-              "Celebrating Open Energy Transition's 2nd anniversary: Key achievements and growth",
+            title: "Celebrating Open Energy Transition's 2nd anniversary: Key achievements and growth",
             date: "2024-04-10",
             author: "Maximilian Parzen",
-            source:
-              "https://www.linkedin.com/feed/update/urn:li:activity:7316115056146984960",
+            source: "https://www.linkedin.com/feed/update/urn:li:activity:7316115056146984960",
           },
           {
             category: ["study"],
-            title:
-              "OET is collaborating with the EU Agency for the Cooperation of Energy Regulators (ACER) on developing a tool for flexibility assessments.",
+            title: "OET is collaborating with the EU Agency for the Cooperation of Energy Regulators (ACER) on developing a tool for flexibility assessments.",
             date: "2024-04-09",
             author: "Open Energy Transition",
-            source:
-              "https://www.linkedin.com/feed/update/urn:li:activity:7315629576150310932",
+            source: "https://www.linkedin.com/feed/update/urn:li:activity:7315629576150310932",
           },
           {
             category: ["training"],
-            title:
-              "Open Energy Transition is delivering a course on Power System Flexible Operation at University of Cape Town.",
+            title: "Open Energy Transition is delivering a course on Power System Flexible Operation at University of Cape Town.",
             date: "2025-03-06",
             author: "Priyesh Gosai",
-            source:
-              "https://www.linkedin.com/feed/update/urn:li:activity:7303325326560944129",
+            source: "https://www.linkedin.com/feed/update/urn:li:activity:7303325326560944129",
           },
           {
             category: ["conference"],
             title: "OET is co-hosting Energy Innovation Summit, Berlin, 2025",
             date: "2025-03-05",
             author: "Gurobi Optimization",
-            source:
-              "https://www.gurobi.com/microsite/2025-energy-innovation-summit/",
+            source: "https://www.gurobi.com/microsite/2025-energy-innovation-summit/",
           },
           {
             category: ["policy brief"],
-            title:
-              "New policy brief from OET - <em>Free the models: How open energy system modelling unlocks the energy transition</em>",
+            title: "New policy brief from OET - <em>Free the models: How open energy system modelling unlocks the energy transition</em>",
             date: "2025-03-05",
             author: "Open Energy Transition",
             source: "https://zenodo.org/records/15006926",
           },
-          {
+           {
             category: ["webinar"],
-            title:
-              "Webinar: Interoperability in Integrated Energy System Planning: Hype or Real Value?",
+            title: "Webinar: Interoperability in Integrated Energy System Planning: Hype or Real Value?",
             date: "2025-02-24",
             author: "Open Energy Transition",
             source: "https://www.youtube.com/watch?v=vhKxLMLZdSs",
           },
-          {
+           {
             category: ["study"],
-            title:
-              "ENTSO-E collaborates with OET on open-source tools for energy planning",
+            title: "ENTSO-E collaborates with OET on open-source tools for energy planning",
             date: "2025-02-18",
-            author:
-              "European Network of Transmission System Operators for Electricity (ENTSO-E)",
-            source:
-              "https://www.linkedin.com/posts/entso-e_energytransition-opensource-innovation-activity-7293296246813851649-2ynL?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAVQ2RoBXzOE8KqS8FR7jSQHNtOlOApbDgA",
+            author: "European Network of Transmission System Operators for Electricity (ENTSO-E)",
+            source: "https://www.linkedin.com/posts/entso-e_energytransition-opensource-innovation-activity-7293296246813851649-2ynL?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAVQ2RoBXzOE8KqS8FR7jSQHNtOlOApbDgA",
           },
           {
             category: ["study", "report"],
-            title:
-              "Report on PyPSA-UA (built on the PyPSA-Eur framework with simulatation of the Ukrainian power grid from the present to 2030.",
+            title: "Report on PyPSA-UA (built on the PyPSA-Eur framework with simulatation of the Ukrainian power grid from the present to 2030.",
             date: "2024-11-26",
             author: "Fundacja Instrat and Clean Energy Lab (CEL)",
             source: "https://instrat.pl/en/ukraine-against-darkness/",
           },
           {
             category: ["study", "media"],
-            title:
-              "<em>Climbing Europe's Energy Demand Peak</em> - Article based on campaign Your Home Our Future",
+            title: "<em>Climbing Europe's Energy Demand Peak</em> - Article based on campaign Your Home Our Future",
             date: "2024-10-16",
-            author:
-              "Dimitar Kolichev, Eurima (European Insulation Manufacturers Association)",
-            source:
-              "https://www.euractiv.com/section/eet/opinion/climbing-europes-energy-demand-peak/",
+            author: "Dimitar Kolichev, Eurima (European Insulation Manufacturers Association)",
+            source: "https://www.euractiv.com/section/eet/opinion/climbing-europes-energy-demand-peak/",
           },
           {
             category: ["study", "media"],
-            title:
-              "Efficient buildings offer significant peak demand cuts, making energy transition affordable - study",
+            title: "Efficient buildings offer significant peak demand cuts, making energy transition affordable - study",
             date: "2024-10-15",
             author: "European Council for Energy Efficient Economy",
-            source:
-              "https://www.eceee.org/all-news/news/news-2024/efficient-buildings-offer-significant-peak-demand-cuts-making-energy-transition-affordable-study/",
+            source: "https://www.eceee.org/all-news/news/news-2024/efficient-buildings-offer-significant-peak-demand-cuts-making-energy-transition-affordable-study/",
           },
           {
             category: ["study", "media"],
-            title:
-              "Report “Flattening the Peak Demand” published on campaign website Your Home Our Future. Campaign was a collaboration with Eurima and International Copper Association Europe, supported by the European Climate Foundation",
+            title: "Report “Flattening the Peak Demand” published on campaign website Your Home Our Future. Campaign was a collaboration with Eurima and International Copper Association Europe, supported by the European Climate Foundation",
             date: "2024-10-01",
-            author:
-              "Eurima (European Insulation Manufacturers Association), International Copper Association",
+            author: "Eurima (European Insulation Manufacturers Association), International Copper Association",
             source: "https://www.yourhomeourfuture.eu/resources/",
           },
           {
             category: ["software", "research"],
-            title:
-              "Methodology for Flexibility Needs Assessments Workshop: Max Parzen presents <em>Open energy planning for better flexibility needs assessment</em>.",
+            title: "Methodology for Flexibility Needs Assessments Workshop: Max Parzen presents <em>Open energy planning for better flexibility needs assessment</em>.",
             date: "2024-09-24",
             author: "Energy Storage Coalition",
-            source:
-              "https://energystoragecoalition.eu/worskhop-on-methodology-for-flexibility-needs-assessments/",
-          },
-          {
+            source: "https://energystoragecoalition.eu/worskhop-on-methodology-for-flexibility-needs-assessments/",
+            },  
+          { 
             category: ["'summit", "innovation"],
-            title:
-              "Open Energy Transition is announced as co-hosting Energy Innovation Summit, Berlin, 2025.",
+            title:"Open Energy Transition is announced as co-hosting Energy Innovation Summit, Berlin, 2025.",
             date: "2025-03-05",
-            author: "Gurobi Optimization",
+            author: 'Gurobi Optimization',
             source:
-              "https://www.gurobi.com/microsite/2025-energy-innovation-summit/",
+              'https://www.gurobi.com/microsite/2025-energy-innovation-summit/',
           },
           {
             category: ["media", "research", "report"],
             title:
               "Article <em>Climbing Europe's Energy Demand Peak</em> in Euractiv about study <em>Flattening the Peak Demand</em> for the campaign Your Home Our Future.",
             date: "2024-10-16",
-            author:
-              "Dimitar Kolichev, Eurima (European Insulation Manufacturers Association)",
+            author: 'Dimitar Kolichev, Eurima (European Insulation Manufacturers Association)',
             source:
-              "https://www.euractiv.com/section/eet/opinion/climbing-europes-energy-demand-peak/",
+              'https://www.euractiv.com/section/eet/opinion/climbing-europes-energy-demand-peak/',
           },
           {
             category: ["media", "research", "report"],
@@ -291,35 +243,28 @@ document.addEventListener("DOMContentLoaded", function () {
           },
           {
             category: ["media", "research", "report"],
-            title:
-              "Report <em>Flattening the Peak Demand</em> is the technical foundation of the campaign Your Home Our Future by European Insulation Manufactoreres Association (Eurima) and the International Copper Association Europe. Supported by the European Climate Foundation.",
+            title: "Report <em>Flattening the Peak Demand</em> is the technical foundation of the campaign Your Home Our Future by European Insulation Manufactoreres Association (Eurima) and the International Copper Association Europe. Supported by the European Climate Foundation.",
             date: "2024-10-01",
-            author:
-              "European Insulation Manufactoreres Association (Eurima), the International Copper Association Europe, the European Climate Foundation",
+            author: "European Insulation Manufactoreres Association (Eurima), the International Copper Association Europe, the European Climate Foundation",
             source: "https://www.yourhomeourfuture.eu/",
           },
           {
             category: ["software", "research"],
-            title:
-              "Methodology for Flexibility Needs Assessments Workshop: Max Parzen presents <em>Open energy planning for better flexibility needs assessment</em>.",
+            title: "Methodology for Flexibility Needs Assessments Workshop: Max Parzen presents <em>Open energy planning for better flexibility needs assessment</em>.",
             date: "2024-09-24",
             author: "Energy Storage Coalition",
-            source:
-              "https://energystoragecoalition.eu/worskhop-on-methodology-for-flexibility-needs-assessments/",
+            source: "https://energystoragecoalition.eu/worskhop-on-methodology-for-flexibility-needs-assessments/",
           },
           {
-            category: ["media", "research", "software"],
-            title:
-              "<em>Modeling the Integration of Hydropower into Modern Energy Systems for Africa</em> Course, with Ekaterina Fedotova and Emmanuel Bolarinwa (OET) presenting the integration of hydropower into energy systems using PyPSA",
-            date: "2024-08-19",
-            author: "International Centre for Hydropower",
-            source:
-              "https://ich.no/modeling-the-integration-of-hydropower-into-modern-energy-systems-for-africa/",
+          category: ["media", "research", "software"],
+          title: "<em>Modeling the Integration of Hydropower into Modern Energy Systems for Africa</em> Course, with Ekaterina Fedotova and Emmanuel Bolarinwa (OET) presenting the integration of hydropower into energy systems using PyPSA",
+          date: "2024-08-19",
+          author: "International Centre for Hydropower",
+          source: "https://ich.no/modeling-the-integration-of-hydropower-into-modern-energy-systems-for-africa/",
           },
           {
             category: ["media", "software"],
-            title:
-              "HiGHS Workshop 2024 - Max Parzen (OET) presents <em>The Role of Open-Source Solvers for Energy System Planning</em>.",
+            title: "HiGHS Workshop 2024 - Max Parzen (OET) presents <em>The Role of Open-Source Solvers for Energy System Planning</em>.",
             date: "2024-06-26",
             author: "HiGHS",
             source: "https://workshop24.highs.dev/schedule",
@@ -688,7 +633,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ];
         // Sort cards by date in descending order (most recent on top)
         cardData.sort((a, b) => new Date(b.date) - new Date(a.date));
-
+        
         resolve(cardData);
       }, 1000);
     });
@@ -696,69 +641,60 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function renderCards() {
     const selectedCategory = categoryFilter.value;
-
+  
     // Filter the cards based on the selected category
-    const filteredCards = cards.filter(function (card) {
+    const filteredCards = cards.filter(function(card) {
       return (
-        selectedCategory === "all" || card.category.includes(selectedCategory)
+        (selectedCategory === 'all' || card.category.includes(selectedCategory))
       );
     });
-
+  
     // Calculate the total number of pages
     const totalPages = Math.ceil(filteredCards.length / cardsPerPage);
-
+  
     // Update the current page if it exceeds the total number of pages
     if (currentPage > totalPages) {
       currentPage = totalPages;
     }
-
+  
     // Calculate the start and end indices of the cards to be displayed on the current page
     const startIndex = (currentPage - 1) * cardsPerPage;
     let endIndex = startIndex + cardsPerPage;
-
+  
     if (cardsPerPage === "all") {
       endIndex = filteredCards.length; // Show all cards
     } else {
       endIndex = startIndex + parseInt(cardsPerPage);
-
+    
       // Adjust the end index if it exceeds the total number of cards
       if (endIndex > filteredCards.length) {
         endIndex = filteredCards.length;
       }
     }
-
+  
     // Get the subset of cards to be displayed on the current page
-    const cardsForPage = endIndex
-      ? filteredCards.slice(startIndex, endIndex)
-      : filteredCards;
-
+    const cardsForPage = endIndex ? filteredCards.slice(startIndex, endIndex) : filteredCards;
+  
     // Clear the card container
-    cardContainer.innerHTML = "";
-
+    cardContainer.innerHTML = '';
+  
     // Render the cards for the current page
-    cardsForPage.forEach(function (card, index) {
-      const { title, category, date, author, source } = card;
-      const cardElement = createCard(
-        (startIndex ? startIndex : 0) + index + 1,
-        title,
-        category,
-        date,
-        author,
-        source,
-      );
+    cardsForPage.forEach(function(card, index) {
+      const { title, category, date, author, source} = card;
+      const cardElement = createCard((startIndex ? startIndex : 0) + index + 1,  title, category, date, author, source);
       cardContainer.appendChild(cardElement);
     });
-
+  
     // Render the pagination buttons
     renderPagination(totalPages);
   }
-
+  
   function createCard(index, title, category, date, author, source) {
-    const cardCol = document.createElement("div");
-    cardCol.className = "col-md-12";
+    const cardCol = document.createElement('div');
+    cardCol.className = 'col-md-12';
 
-    const card = document.createElement("div");
-    card.className = "card-outputs";
+    const card = document.createElement('div');
+    card.className = 'card-outputs';
     card.innerHTML = `
     <div class="card-body">
       <h6 class="output-card-title"><a href="${source}">${index}. ${title}</a></h6>
@@ -775,7 +711,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function getSourceDomain(url) {
-    const parser = document.createElement("a");
+    const parser = document.createElement('a');
     parser.href = url;
     return parser.hostname;
   }
@@ -789,28 +725,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function handleCardsPerPageChange() {
     currentPage = 1;
-    cardsPerPage =
-      cardsPerPageSelect.value === "all"
-        ? "all"
-        : parseInt(cardsPerPageSelect.value);
+    cardsPerPage = cardsPerPageSelect.value === "all" ? "all" : parseInt(cardsPerPageSelect.value);
     renderCards();
   }
 
   function renderPagination(totalPages) {
-    paginationContainer.innerHTML = "";
+    paginationContainer.innerHTML = '';
 
     for (let i = 1; i <= totalPages; i++) {
-      const pageButton = document.createElement("li");
-      pageButton.className = "page-item";
-      const link = document.createElement("a");
-      link.className = "page-link";
-      link.href = "#";
+      const pageButton = document.createElement('li');
+      pageButton.className = 'page-item';
+      const link = document.createElement('a');
+      link.className = 'page-link';
+      link.href = '#';
       link.textContent = i;
       if (i === currentPage) {
-        pageButton.classList.add("active");
+        pageButton.classList.add('active');
       }
 
-      link.addEventListener("click", function () {
+      link.addEventListener('click', function() {
         currentPage = i;
         renderCards();
       });
@@ -819,22 +752,20 @@ document.addEventListener("DOMContentLoaded", function () {
       paginationContainer.appendChild(pageButton);
     }
     // Add top margin to page selection buttons
-    const pageButtons = paginationContainer.querySelectorAll(".page-link");
-    pageButtons.forEach(function (button) {
-      button.style.marginTop = "1rem";
-      button.style.backgroundColor = "#fff"; // Unselected: white background
-      button.style.borderColor = "#E31937";
-      button.style.color = "#E31937"; // Unselected: red text
-      button.style.fontWeight = "normal";
-      button.style.textDecoration = "none";
+    const pageButtons = paginationContainer.querySelectorAll('.page-link');
+    pageButtons.forEach(function(button) {
+      button.style.marginTop = '1rem';
+      button.style.backgroundColor = '#fff'; // Unselected: white background
+      button.style.borderColor = '#E31937';
+      button.style.color = '#E31937'; // Unselected: red text
+      button.style.fontWeight = 'normal';
+      button.style.textDecoration = 'none';
     });
-    const activePage = paginationContainer.querySelector(
-      ".page-item.active .page-link",
-    );
+    const activePage = paginationContainer.querySelector('.page-item.active .page-link');
     if (activePage) {
-      activePage.style.backgroundColor = "#E31937"; // Selected: red background
-      activePage.style.color = "#fff"; // Selected: white text
-      activePage.style.textDecoration = "none"; // No underline
+      activePage.style.backgroundColor = '#E31937'; // Selected: red background
+      activePage.style.color = '#fff'; // Selected: white text
+      activePage.style.textDecoration = 'none'; // No underline
     }
   }
 });

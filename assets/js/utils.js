@@ -4,8 +4,9 @@
  * @returns {string} HTML string containing the formatted section title
  */
 export function renderSectionTitle(sectionTitle) {
-  return `<p class="card-text-custom"><small class="text-muted"><strong>${sectionTitle}:</strong></small>`;
+    return `<p class="card-text-custom"><small class="text-muted"><strong>${sectionTitle}:</strong></small>`;
 }
+
 
 /**
  * Renders a horizontal list of links with a section title
@@ -14,25 +15,22 @@ export function renderSectionTitle(sectionTitle) {
  * @returns {string} HTML string containing the formatted horizontal list or empty string if no items
  */
 export function renderListHorizontal(sectionTitle, items) {
-  if (Array.isArray(items)) {
-    return `
+    if (Array.isArray(items)) {
+        return `
         ${renderSectionTitle(sectionTitle)}
         <span>
-            ${items
-              .map(
-                (item) => `
+            ${items.map(item => `
                 <a href="${item.link}" target="_blank">
                 <small class="link-primary text-underline">${item.title}</small>
                 </a>
-            `,
-              )
-              .join(",")}
+            `)
+                .join(',')}
         </span>
         </p>
     `;
-  }
-  if (typeof items === "string") {
-    return `
+    }
+    if (typeof items === 'string') {
+        return `
             ${renderSectionTitle(sectionTitle)}
             <span>
                 <small class="text-muted
@@ -40,9 +38,10 @@ export function renderListHorizontal(sectionTitle, items) {
                         </span>
                     </p>
             `;
-  }
-  return "";
+    }
+    return '';
 }
+
 
 /**
  * Renders a list of links with a section title
@@ -51,23 +50,20 @@ export function renderListHorizontal(sectionTitle, items) {
  * @returns {string} HTML string containing the formatted list or empty string if no items
  */
 export function renderLinkList(sectionTitle, items) {
-  if (Array.isArray(items)) {
-    return `
+    if (Array.isArray(items)) {
+        return `
             ${renderSectionTitle(sectionTitle)}
             <ul style="margin: 0;">
-            ${items
-              ?.map(
-                (item) => `
+            ${items?.map(item => `
                 <li class="card-text-custom">
-                <a href="${item.link ?? ""}" target="_blank">
-                    <small class="${item.link ? "link-primary text-underline" : "text-muted"}">${item.title}</small>
+                <a href="${item.link ?? ''}" target="_blank">
+                    <small class="${item.link ? 'link-primary text-underline' : 'text-muted'}">${item.title}</small>
                 </a>
                 </li>   
-            `,
-              )
-              .join("")}
+            `)
+                .join('')}
             </ul>
         `;
-  }
-  return "";
+    }
+    return '';
 }

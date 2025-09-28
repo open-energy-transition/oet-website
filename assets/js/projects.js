@@ -1,49 +1,46 @@
-import { renderLinkList, renderListHorizontal } from "./utils.js";
+import { renderLinkList, renderListHorizontal } from './utils.js';
 
-document.addEventListener("DOMContentLoaded", function () {
-  const categoryFilter = document.getElementById("categoryFilter");
-  const statusFilter = document.getElementById("statusFilter");
-  const cardsPerPageSelect = document.getElementById("cardsPerPage");
-  const cardContainer = document.getElementById("cardContainer");
-  const paginationContainer = document.getElementById("pagination");
+document.addEventListener('DOMContentLoaded', function() {
+    const categoryFilter = document.getElementById('categoryFilter');
+    const statusFilter = document.getElementById('statusFilter');
+    const cardsPerPageSelect = document.getElementById('cardsPerPage');
+    const cardContainer = document.getElementById('cardContainer');
+    const paginationContainer = document.getElementById('pagination');
 
-  let cards = []; // Array to store the card elements
-  let currentPage = 1;
-  let cardsPerPage = parseInt(cardsPerPageSelect.value);
+    let cards = []; // Array to store the card elements
+    let currentPage = 1;
+    let cardsPerPage = parseInt(cardsPerPageSelect.value);
 
-  // Handle filter form submission
-  categoryFilter.addEventListener("change", handleFilterFormSubmit);
-  statusFilter.addEventListener("change", handleFilterFormSubmit);
-  cardsPerPageSelect.addEventListener("change", handleCardsPerPageChange);
+    // Handle filter form submission
+    categoryFilter.addEventListener('change', handleFilterFormSubmit);
+    statusFilter.addEventListener('change', handleFilterFormSubmit);
+    cardsPerPageSelect.addEventListener('change', handleCardsPerPageChange);
+    
+    // Simulate card data retrieval
+    // Replace this with actual card data fetching from an API or other data source
+    fetchCardData().then(function(cardData) {
+      cards = cardData;
+      renderCards();
+    });
 
-  // Simulate card data retrieval
-  // Replace this with actual card data fetching from an API or other data source
-  fetchCardData().then(function (cardData) {
-    cards = cardData;
-    renderCards();
-  });
-
-  function fetchCardData() {
-    // Simulated asynchronous card data fetching
-    return new Promise(function (resolve) {
-      setTimeout(function () {
-        const cardData = [
-          // Card data goes here
-          // Example:
-          // category: 'consultancy', 'software development', 'training and capacity building'],
-          {
-            category: [
-              "software development",
-              "data",
-              "training and capacity building",
-            ],
-            status: "ongoing",
-            imageUrl: "assets/img/projects/ohmygrid-logo.png",
-            title: "MapYourGrid",
-            subtitle:
-              "Empowering individuals, communities and nations around the world to map the electrical grid with open data",
-            description:
-              "Electric grids around the world need increasing development to accelerate the clean energy transition. \
+    function fetchCardData() {
+      // Simulated asynchronous card data fetching
+      return new Promise(function(resolve) {
+        setTimeout(function() {
+          const cardData = [
+            // Card data goes here
+            // Example:
+            // category: 'consultancy', 'software development', 'training and capacity building'],
+            {
+              category: ["software development", "data", "training and capacity building"],
+              status: "ongoing",
+              imageUrl: "assets/img/projects/ohmygrid-logo.png",
+              title:
+                "MapYourGrid",
+              subtitle:
+                "Empowering individuals, communities and nations around the world to map the electrical grid with open data",
+              description:
+                "Electric grids around the world need increasing development to accelerate the clean energy transition. \
                   MapYourGrid is an open-source, community-driven initiative that aims to make the world's electricity \
                   transmission network fully and accurately available in OpenStreetMap (OSM) through collaborative \
                   mapping, enabling planners, researchers, and local communities to design a faster energy transition. \
@@ -61,49 +58,50 @@ document.addEventListener("DOMContentLoaded", function () {
                   transitions and electrification, empowering local communities, guiding research, and accelerating climate \
                   action. \
                   More info at: https://mapyourgrid.org/",
-            date: "2025-01-01",
-            outcome: [
-              {
-                title: "Check out the website",
-                link: "https://mapyourgrid.org/",
-              },
-              {
-                title: "Explore the Github repository for the website",
-                link: "https://github.com/open-energy-transition/MapYourGrid",
-              },
-              {
-                title: "Explore the Github repository for the starter kit",
-                link: "https://github.com/open-energy-transition/grid-mapping-starter-kit",
-              },
-            ],
-            partner: [
-              {
-                title: "Datactivist",
-                link: "https://datactivist.coop/en/",
-              },
-              {
-                title: "Jungle Bus",
-                link: "https://junglebus.io/",
-              },
-              {
-                title: "Dynartio",
-                link: "https://dynartio.com/",
-              },
-              {
-                title: "Infrageomatics",
-                link: "https://www.infrageomatics.com/",
-              },
-            ],
-          },
-          {
-            category: ["software development", "consultancy"],
-            status: "ongoing",
-            imageUrl: "assets/img/projects/supporting-acer-project.png",
-            title: "ACER’s EU-wide Flexibility Assessment Platform",
-            subtitle:
-              "Supporting an adaptable assessment of generation variability, consumption patterns, and grid availability in Europe",
-            description:
-              "Europe’s evolving energy landscape calls for smarter, more adaptive tools to support a reliable \
+              date: "2025-01-01",
+              outcome: [
+                {
+                  title: "Check out the website",
+                  link: "https://mapyourgrid.org/",
+                },
+                {
+                  title: "Explore the Github repository for the website",
+                  link: "https://github.com/open-energy-transition/MapYourGrid",
+                },
+                {
+                  title: "Explore the Github repository for the starter kit",
+                  link: "https://github.com/open-energy-transition/grid-mapping-starter-kit",
+                },
+              ],
+              partner: [
+                {
+                  title: "Datactivist",
+                  link: "https://datactivist.coop/en/"
+                },
+                {
+                  title: "Jungle Bus",
+                  link: "https://junglebus.io/"
+                },
+                {
+                  title: "Dynartio",
+                  link: "https://dynartio.com/"
+                },
+                {
+                  title: "Infrageomatics",
+                  link: "https://www.infrageomatics.com/"
+                },
+              ],
+            },
+             {
+              category: ["software development", "consultancy"],
+              status: "ongoing",
+              imageUrl: "assets/img/projects/supporting-acer-project.png",
+              title:
+                "ACER’s EU-wide Flexibility Assessment Platform",
+              subtitle:
+                "Supporting an adaptable assessment of generation variability, consumption patterns, and grid availability in Europe",
+              description:
+                "Europe’s evolving energy landscape calls for smarter, more adaptive tools to support a reliable \
                   and sustainable energy future. To support ACER’s work, Open Energy Transition is developing the EU-Flex Platform — an \
                   EU-wide flexibility assessment tool built on the open-source PyPSA framework. The EU-Flex \
                   Platform will offer a fully functional solution for assessing system flexibility across \
@@ -111,20 +109,20 @@ document.addEventListener("DOMContentLoaded", function () {
                   modelling approaches, the platform will enhance energy planning capabilities and foster \
                   long-term sustainability via capacity-building and knowledge transfer. This initiative represents \
                   a meaningful step toward greater resilience and cooperation in the European energy system.",
-            date: "2024-12-01",
-            partner:
-              "European Union Agency for the Cooperation of Energy Regulators (ACER)",
-          },
-          {
-            category: ["software development", "consultancy"],
-            status: "ongoing",
-            imageUrl: "assets/img/projects/tyndp_picture_for_website.png",
-            title:
-              "Interfacing Open Energy System Planning with ENTSO models and contributing to the TYNDP - ENTSOE",
-            subtitle:
-              "Innovation project on open-source tool for the TYNDP process",
-            description:
-              "The Ten-Year Network Development Plan (TYNDP) is essential for shaping the future of European energy. \
+              date: "2024-12-01",
+              partner:
+                "European Union Agency for the Cooperation of Energy Regulators (ACER)",
+            },
+            {
+              category: ["software development", "consultancy"],
+              status: "ongoing",
+              imageUrl: "assets/img/projects/tyndp_picture_for_website.png",
+              title:
+                "Interfacing Open Energy System Planning with ENTSO models and contributing to the TYNDP - ENTSOE",
+              subtitle:
+                "Innovation project on open-source tool for the TYNDP process",
+              description:
+                "The Ten-Year Network Development Plan (TYNDP) is essential for shaping the future of European energy. \
               However, the process used by 40 system operators to align national energy strategies and investment \
               priorities is often complex and difficult to replicate. \
               This complexity can hinder collaboration, slow down the integration of new technologies, and make it \
@@ -135,63 +133,62 @@ document.addEventListener("DOMContentLoaded", function () {
               Analysis, which is fully compatible with the TYNDP workflow. This tool will make TYNDP results easily \
               reproducible and adaptable, fostering faster, more collaborative, and more efficient energy planning to \
               support a sustainable energy infrastructure for Europe.",
-            date: "2024-09-01",
-            client: [
-              {
-                title: "European Climate Foundation",
-                link: "https://europeanclimate.org/",
-              },
-              {
-                title: "Breakthrough Energy",
-                link: "https://www.breakthroughenergy.org/",
-              },
-              {
-                title: "Google.org",
-                link: "https://www.google.org/",
-              },
-            ],
-            outcome: [
-              {
-                title: "Explore the Github repository",
-                link: "https://github.com/open-energy-transition/open-tyndp",
-              },
-            ],
-            partner: [
-              {
-                title:
-                  "European Network of Transmission System Operators for Electricity (ENTSO-E)",
-                link: "https://www.entsoe.eu/",
-              },
-            ],
-          },
-          {
-            category: ["training and capacity building"],
-            status: "past",
-            imageUrl: "assets/img/projects/eurelectri.jpeg",
-            title: "Comprehensive PyPSA Training Session",
-            subtitle:
-              "Equipping energy professionals with advanced skills of open source energy modeling",
-            description:
-              "In December 2024, an in-depth PyPSA training session equipped participants with vital \
+              date: "2024-09-01",
+              client: [
+                {
+                  title: "European Climate Foundation",
+                  link: "https://europeanclimate.org/",
+                },
+                {
+                  title: "Breakthrough Energy",
+                  link: "https://www.breakthroughenergy.org/",
+                },
+                {
+                  title: "Google.org",
+                  link: "https://www.google.org/",
+                },
+              ],
+              outcome: [
+                {
+                  title: "Explore the Github repository",
+                  link: "https://github.com/open-energy-transition/open-tyndp",
+                },
+              ],
+              partner: [
+                {
+                  title: "European Network of Transmission System Operators for Electricity (ENTSO-E)",
+                  link: "https://www.entsoe.eu/"
+                },
+              ],
+            },
+            {
+              category: ["training and capacity building"],
+              status: "past",
+              imageUrl: "assets/img/projects/eurelectri.jpeg",
+              title: "Comprehensive PyPSA Training Session",
+              subtitle:
+                "Equipping energy professionals with advanced skills of open source energy modeling",
+              description:
+                "In December 2024, an in-depth PyPSA training session equipped participants with vital \
               advanced energy modeling skills. The training included five sessions: basic PyPSA concepts, installation \
               tutorials, demo model building, an overview of the PyPSA ecosystem, and an introduction to PyPSA-Eur. \
               Participants learned PyPSA fundamentals, installed necessary tools like Conda and Jupyter Notebook, \
               and built a demo model through live coding. They explored ecosystem tools, datasets, and community resources, \
               and gained insights into PyPSA-Eur’s capabilities, data, and installation. Hands-on tutorials and Q&A sessions \
               ensured practical knowledge, empowering attendees to effectively use PyPSA for power system modeling.",
-            date: "2024-11-12",
-            partner: "Eurelectric",
-          },
-          {
-            category: ["consultancy"],
-            status: "completed",
-            imageUrl: "assets/img/projects/form_energy.png",
-            title: "System Benefits of Energy Storage in Germany - Form Energy",
-            subtitle:
-              "Quantification of energy storage benefits in reducing carbon emissions \
+              date: "2024-11-12",
+              partner: "Eurelectric",
+            },
+            {
+              category: ["consultancy"],
+              status: "completed",
+              imageUrl: "assets/img/projects/form_energy.png",
+              title: "System Benefits of Energy Storage in Germany - Form Energy",
+              subtitle:
+                "Quantification of energy storage benefits in reducing carbon emissions \
               in the German electricity system",
-            description:
-              "Energy storage technologies are essential in low-carbon energy systems, but there \
+              description:
+                "Energy storage technologies are essential in low-carbon energy systems, but there \
               is an imbalance in attention given to different types of storage. While short-duration \
               storage is increasingly popular, the system value of long-duration storage is less well studied. \
               This gap in knowledge limits the potential for fully optimizing energy systems. Multi-day energy storage, \
@@ -207,33 +204,33 @@ document.addEventListener("DOMContentLoaded", function () {
               reshape energy policies, guiding future investments in storage technologies. It will also support \
               the optimization of energy systems, contributing to a more resilient, sustainable, and decarbonized \
               energy future globally.",
-            date: "2024-09-22",
-            partner: [
-              {
-                title: "Form Energy",
-                link: "https://formenergy.com/",
-              },
-            ],
-            outcome: [
-              {
-                title: "See the project results",
-                link: "https://zenodo.org/records/15323663",
-              },
-              {
-                title: "Explore the Github repository",
-                link: "https://github.com/open-energy-transition/form-energy-storage",
-              },
-            ],
-          },
-          {
-            category: ["consultancy"],
-            status: "ongoing",
-            imageUrl: "assets/img/projects/ICCT.jpeg",
-            title: "Synthetic Fuels for Clean Transportation in the U.S.",
-            subtitle:
-              "Assessment of the Electrofuels Supply Potential Using Grid Modeling",
-            description:
-              "Electrofuels have the potential to significantly reduce greenhouse gas emissions compared to \
+              date: "2024-09-22",
+              partner: [
+                {
+                  title: "Form Energy",
+                  link: "https://formenergy.com/"
+                }
+              ],
+              outcome: [
+                {
+                  title: "See the project results",
+                  link: "https://zenodo.org/records/15323663",
+                },
+                {
+                  title: "Explore the Github repository",
+                  link: "https://github.com/open-energy-transition/form-energy-storage"
+                },
+              ]
+            },
+            {
+              category: ["consultancy"],
+              status: "ongoing",
+              imageUrl: "assets/img/projects/ICCT.jpeg",
+              title: "Synthetic Fuels for Clean Transportation in the U.S.",
+              subtitle:
+                "Assessment of the Electrofuels Supply Potential Using Grid Modeling",
+              description:
+                "Electrofuels have the potential to significantly reduce greenhouse gas emissions compared to \
               petroleum, especially when produced using low-carbon, grid-connected renewable electricity. As the \
               transport sector seeks to decarbonize, these alternative fuels present a promising solution.\
               Despite their potential, the production and integration of electrofuels into existing systems require a detailed \
@@ -247,37 +244,36 @@ document.addEventListener("DOMContentLoaded", function () {
               the energy system, helping policymakers and industry leaders make informed decisions about their role in achieving \
               transport sector decarbonization. This will contribute to shaping sustainable energy strategies and support global efforts \
               to reduce carbon emissions in transportation.",
-            date: "2024-09-01",
-            client: "The International Council on Clean Transportation",
-          },
-          {
-            category: ["training and capacity building"],
-            status: "past",
-            imageUrl: "assets/img/projects/ich.jpeg",
-            title: "Advancing Hydropower Integration in Africa with PyPSA",
-            subtitle:
-              "Equipping Energy Professionals to Lead Africa’s Renewable Energy Transition",
-            description:
-              "Open Energy Transition (OET) recently collaborated with the International Centre for Hydropower (ICH) \
+              date: "2024-09-01",
+              client: "The International Council on Clean Transportation",
+            },
+            {
+              category: ["training and capacity building"],
+              status: "past",
+              imageUrl: "assets/img/projects/ich.jpeg",
+              title: "Advancing Hydropower Integration in Africa with PyPSA",
+              subtitle:
+                "Equipping Energy Professionals to Lead Africa’s Renewable Energy Transition",
+              description:
+                "Open Energy Transition (OET) recently collaborated with the International Centre for Hydropower (ICH) \
               to deliver a transformative workshop on Modeling the Integration of Hydropower into Modern Energy Systems \
               for Africa. Held in Nairobi, Kenya, from August 19–23, 2024, the program brought together 23 professionals \
               from Eswatini, Ghana, Kenya, Nigeria, South Africa, Tanzania, and Zambia. \
               Delegates gained hands-on experience with Python-based energy modeling tools, PyPSA, and PyPSA-Earth, \
               exploring renewable integration, hydropower systems, and uncertainty modeling through Monte Carlo simulations. \
               This initiative empowers African energy experts to drive sustainable, reliable energy transitions across the continent.",
-            date: "2024-08-26",
-            partner: "The International Centre for Hydropower (ICH)",
-          },
-          {
-            category: ["consultancy", "software development"],
-            status: "ongoing",
-            imageUrl: "assets/img/projects/Project-Innerspace-logo.webp",
-            title:
-              "Exploring the Geothermal Resource Potential in the U.S. - project innerspace",
-            subtitle:
-              "Viability Assessment of Geothermal Using Integrated Energy Planning",
-            description:
-              "Geothermal energy has vast potential to provide baseload power for the global power and heating sectors. \
+              date: "2024-08-26",
+              partner: "The International Centre for Hydropower (ICH)",
+            },
+            {
+              category: ["consultancy", "software development"],
+              status: "ongoing",
+              imageUrl: "assets/img/projects/Project-Innerspace-logo.webp",
+              title: "Exploring the Geothermal Resource Potential in the U.S. - project innerspace",
+              subtitle:
+                "Viability Assessment of Geothermal Using Integrated Energy Planning",
+              description:
+                "Geothermal energy has vast potential to provide baseload power for the global power and heating sectors. \
               Despite this, it currently contributes only 0.4% to the United States energy mix and 0.5% globally, which \
               highlights a significant untapped opportunity.\
               While geothermal energy offers a stable, low-carbon source of power, its integration into energy systems \
@@ -291,30 +287,30 @@ document.addEventListener("DOMContentLoaded", function () {
               into modern energy systems. It will support the U.S. and global energy transition, offering guidance \
               for future investments and contributing to the promotion of geothermal energy as a key player in achieving \
               global net-zero targets.",
-            date: "2024-07-01",
-            outcome: [
-              {
-                title: "Explore the Github repository",
-                link: "https://github.com/open-energy-transition/geothermal-modelling",
-              },
-            ],
-            partner: [
-              {
-                title: "Project Innerspace",
-                link: "https://projectinnerspace.org/",
-              },
-            ],
-          },
-          {
-            category: ["software development"],
-            status: "ongoing",
-            imageUrl:
-              "assets/img/projects/open-source-solvers-comparison-to-commercial-solver-Gurobi.png",
-            title: "Solver Benchmark - BE",
-            subtitle:
-              "Solver Benchmark for Energy System Planning Optimization Problems",
-            description:
-              "Currently, there is no benchmark available to track the advancements of open-source solvers for \
+              date: "2024-07-01",
+              outcome: [
+                {
+                  title: "Explore the Github repository",
+                  link: "https://github.com/open-energy-transition/geothermal-modelling",
+                }
+              ],
+              partner: [
+                {
+                  title: "Project Innerspace",
+                  link: "https://projectinnerspace.org/"
+                },
+              ],
+            },
+            {
+              category: ["software development"],
+              status: "ongoing",
+              imageUrl:
+                "assets/img/projects/open-source-solvers-comparison-to-commercial-solver-Gurobi.png",
+              title: "Solver Benchmark - BE",
+              subtitle:
+                "Solver Benchmark for Energy System Planning Optimization Problems",
+              description:
+                "Currently, there is no benchmark available to track the advancements of open-source solvers for \
               energy planning problems. This gap creates challenges for energy planners trying to evaluate and compare \
               different solvers effectively, and for solver developers trying to assess how well their solvers can \
               handle typical energy problems.\
@@ -329,32 +325,32 @@ document.addEventListener("DOMContentLoaded", function () {
               modeling, enabling more efficient and informed decision-making. By providing continuous updates and \
               facilitating comparisons, it will drive the development of more powerful and scalable solvers, accelerating \
               the transition to sustainable energy systems.",
-            date: "2024-06-06",
-            client: "Breakthrough Energy",
-            outcome: [
-              {
-                title: "The website will be launched soon",
-              },
-              {
-                title: "Explore the Github repository",
-                link: "https://github.com/open-energy-transition/solver-benchmark",
-              },
-            ],
-            partner: [
-              {
-                title: "Breakthrough Energy",
-                link: "https://www.breakthroughenergy.org/",
-              },
-            ],
-          },
-          {
-            category: ["consultancy"],
-            status: "past",
-            imageUrl: "assets/img/projects/PyPSA-UA_Instrat_project.jpg",
-            title: "Instrat Ukraine - Instrat",
-            subtitle: "Modelling Ukraine’s energy system",
-            description:
-              "The Ukrainian government is committed to investing in new nuclear generation, aiming for a future energy \
+              date: "2024-06-06",
+              client: "Breakthrough Energy",
+              outcome: [
+                {
+                  title: "The website will be launched soon",
+                },
+                {
+                  title: "Explore the Github repository",
+                  link: "https://github.com/open-energy-transition/solver-benchmark",
+                }
+              ],
+              partner: [
+                {
+                  title: "Breakthrough Energy",
+                  link: "https://www.breakthroughenergy.org/"
+                },
+              ],
+            },
+            {
+              category: ["consultancy"],
+              status: "past",
+              imageUrl: "assets/img/projects/PyPSA-UA_Instrat_project.jpg",
+              title: "Instrat Ukraine - Instrat",
+              subtitle: "Modelling Ukraine’s energy system",
+              description:
+                "The Ukrainian government is committed to investing in new nuclear generation, aiming for a future energy \
               mix of 50% nuclear and 50% renewable by 2050. However, due to the ongoing Russian-Ukraine conflict, the Ukrainian \
               power sector is losing its remaining flexible coal and hydro capacities. With rising electricity prices, more \
               consumers are turning to small-scale solar for self-consumption, resulting in significant savings on their energy bills.\
@@ -369,40 +365,40 @@ document.addEventListener("DOMContentLoaded", function () {
               advocacy efforts, helping to build a more resilient and sustainable energy sector in Ukraine during and after \
               the current conflict. It will guide future energy strategies, ensuring that the Ukrainian grid can adapt to both current \
               challenges and long-term energy goals.",
-            date: "2024-02-01",
-            outcome: [
-              {
-                title: "Read the report",
-                link: "https://instrat.pl/en/ukraine-against-darkness/",
-              },
-            ],
-            partner: [
-              {
-                title: "Fundacja Instrat",
-                link: "https://instrat.pl/en/",
-              },
-              {
-                title: "Clean Energy Lab",
-                link: "https://cel.com.ua/en/",
-              },
-              {
-                title: "European Climate Foundation",
-                link: "https://europeanclimate.org/",
-              },
-            ],
-          },
-          {
-            category: [
-              "consultancy",
-              "software development",
-              "training and capacity building",
-            ],
-            status: "ongoing",
-            imageUrl: "assets/img/projects/blog9-handshake.png",
-            title: "Collaborative Energy Modeling with System Operators",
-            subtitle: "Enhancing TransnetBW’s Model compatibility",
-            description:
-              "In today’s fast-paced energy sector, there’s a growing need for faster updates, improved quality, and cost-effective \
+              date: "2024-02-01",
+              outcome: [
+                {
+                  title: "Read the report",
+                  link: "https://instrat.pl/en/ukraine-against-darkness/",
+                },
+              ],
+              partner: [
+                {
+                  title: "Fundacja Instrat",
+                  link: "https://instrat.pl/en/"
+                },
+                {
+                  title: "Clean Energy Lab",
+                  link: "https://cel.com.ua/en/"
+                },
+                {
+                  title: "European Climate Foundation",
+                  link: "https://europeanclimate.org/"
+                },
+              ],
+            },
+            {
+              category: [
+                "consultancy",
+                "software development",
+                "training and capacity building",
+              ],
+              status: "ongoing",
+              imageUrl: "assets/img/projects/blog9-handshake.png",
+              title: "Collaborative Energy Modeling with System Operators",
+              subtitle: "Enhancing TransnetBW’s Model compatibility",
+              description:
+                "In today’s fast-paced energy sector, there’s a growing need for faster updates, improved quality, and cost-effective \
               solutions without compromising data security.\
               By updating German TSO TransnetBW’s in-house energy planning model and making it compatible with the current \
               open-source version of the PyPSA-Eur model, the project will help to streamline updates, involve the user community \
@@ -414,18 +410,18 @@ document.addEventListener("DOMContentLoaded", function () {
               This update will significantly enhanceTransnetBW’s modeling process by enabling quicker, more accurate updates, reducing \
               costs, and fostering a more collaborative environment. It will also set a new standard for how energy systems are modeled \
               at theTSOs, driving efficiency and innovation while ensuring data security.",
-            date: "2023-12-06",
-            partner: "TransnetBW GmbH",
-          },
-          {
-            category: ["training and capacity building"],
-            status: "past",
-            imageUrl: "assets/img/projects/blog7-stanford-training.jpg",
-            title: "Exclusive Stanford University Training",
-            subtitle:
-              "Helping to create the next generation of open energy modellers and supporting the Stanford network",
-            description:
-              "On November 10th, 2023, Stanford hosted an elite PyPSA training session. Led by industry \
+              date: "2023-12-06",
+              partner: "TransnetBW GmbH",
+            },
+            {
+              category: ["training and capacity building"],
+              status: "past",
+              imageUrl: "assets/img/projects/blog7-stanford-training.jpg",
+              title: "Exclusive Stanford University Training",
+              subtitle:
+                "Helping to create the next generation of open energy modellers and supporting the Stanford network",
+              description:
+                "On November 10th, 2023, Stanford hosted an elite PyPSA training session. Led by industry \
               experts including Maximilian Parzen (CEO at OET) and Martha Maria Frystacki (Head of Energy \
               Modelling at OET), attendees honed skills in power systems analysis using tools like \
               PyPSA, Linopy, and Atlite. The training demystified open-source practices, emphasizing \
@@ -433,18 +429,19 @@ document.addEventListener("DOMContentLoaded", function () {
               the Stanford open energy planning network. Participants brought basic Python knowledge; \
               prior power system experience, though beneficial, wasn't mandatory. All attendees \
               received exclusive resources and software access.",
-            date: "2023-11-10",
-            partner: "Stanford University and Carnegie Institution for Science",
-          },
-          {
-            category: ["training and capacity building"],
-            status: "past",
-            imageUrl: "assets/img/projects/blog8-openmod-meets-usa.jpg",
-            title: "Openmod meets USA 2023",
-            subtitle:
-              "Organising the largest open energy modelling conference in North America",
-            description:
-              "In November 2023, the Open Energy Transition (OET) team successfully co-organized \
+              date: "2023-11-10",
+              partner:
+                "Stanford University and Carnegie Institution for Science",
+            },
+            {
+              category: ["training and capacity building"],
+              status: "past",
+              imageUrl: "assets/img/projects/blog8-openmod-meets-usa.jpg",
+              title: "Openmod meets USA 2023",
+              subtitle:
+                "Organising the largest open energy modelling conference in North America",
+              description:
+                "In November 2023, the Open Energy Transition (OET) team successfully co-organized \
               the \"openmod-meets-usa-2023\" workshop at Stanford University. Held in \
               collaboration with Stanford's Bits & Watts Initiative, this event reignited the \
               passion for open energy modelling, a domain where openmod has been a pioneering \
@@ -456,19 +453,20 @@ document.addEventListener("DOMContentLoaded", function () {
               This free event not only upheld openmod's tradition but also showcased OET's \
               commitment to advancing energy planning and collaborative innovation. Link to the event: \
               https://forum.openmod.org/t/openmod-meets-usa-2023/4148#openmod-meets-usa-2023-workshop-details-1",
-            date: "2023-11-13",
-            partner: "Stanford University and their Bits and Watts Initiative",
-          },
-          {
-            category: ["consultancy", "software development"],
-            status: "past",
-            imageUrl:
-              "assets/img/projects/blog6-riccardo-annandale-unsplash.jpg",
-            title: "Flattening the Energy Curve - Eurima, ECF, etc",
-            subtitle:
-              "An assessment of efficiency measures and their impact on the European energy system",
-            description:
-              "To achieve the EU’s ambitious target of a 90–95% emissions reduction by 2040, energy affordability, social and \
+              date: "2023-11-13",
+              partner:
+                "Stanford University and their Bits and Watts Initiative",
+            },
+            {
+              category: ["consultancy", "software development"],
+              status: "past",
+              imageUrl:
+                "assets/img/projects/blog6-riccardo-annandale-unsplash.jpg",
+              title: "Flattening the Energy Curve - Eurima, ECF, etc",
+              subtitle:
+                "An assessment of efficiency measures and their impact on the European energy system",
+              description:
+                "To achieve the EU’s ambitious target of a 90–95% emissions reduction by 2040, energy affordability, social and \
               household impacts, and industrial considerations must be carefully addressed. Without effective measures, the \
               transition risks creating financial and structural challenges for consumers and industries alike.\
               Energy efficiency measures play a crucial role in reducing energy demand, stabilizing prices, and ensuring \
@@ -482,47 +480,47 @@ document.addEventListener("DOMContentLoaded", function () {
               implement the most effective strategies for emissions reduction. By offering a clear understanding of efficiency \
               measures’ benefits, this research will support a more sustainable, cost-effective, and socially equitable \
               energy transition across Europe.",
-            date: "2023-09-01",
-            outcome: [
-              {
-                title: "Read the report",
-                link: "https://www.yourhomeourfuture.eu/resources/",
-              },
-              {
-                title: "Check out the website",
-                link: "https://www.yourhomeourfuture.eu/",
-              },
-              {
-                title: "Explore the Github repository",
-                link: "https://github.com/open-energy-transition/heat-demand-peaks/",
-              },
-            ],
-            partner: [
-              {
-                title: "European Insulation Manufacturers Association (Eurima)",
-                link: "https://www.eurima.org/",
-              },
-              {
-                title: "International Copper Association Europe",
-                link: "https://internationalcopper.org/regional-hubs/europe/ ",
-              },
-              {
-                title: "European Climate Foundation",
-                link: "https://europeanclimate.org/",
-              },
-            ],
-          },
-          {
-            category: [
-              "software development",
-              "training and capacity building",
-            ],
-            status: "past",
-            imageUrl: "assets/img/projects/blog1.jpg",
-            title: "Coal-exit modelling in Jharkhand, India",
-            subtitle: "Supporting the most important coal exit on Earth!",
-            description:
-              "The Centre for Environment and Energy Development (CEED) has partnered \
+              date: "2023-09-01",
+              outcome: [
+                {
+                  title: "Read the report",
+                  link: "https://www.yourhomeourfuture.eu/resources/",
+                },
+                {
+                  title: "Check out the website",
+                  link: "https://www.yourhomeourfuture.eu/",
+                },
+                {
+                  title: "Explore the Github repository",
+                  link: "https://github.com/open-energy-transition/heat-demand-peaks/",
+                },
+              ],
+              partner: [
+                {
+                  title: "European Insulation Manufacturers Association (Eurima)",
+                  link: "https://www.eurima.org/"
+                },
+                {
+                  title: "International Copper Association Europe",
+                  link: "https://internationalcopper.org/regional-hubs/europe/ "
+                },
+                {
+                  title: "European Climate Foundation",
+                  link: "https://europeanclimate.org/"
+                },
+              ]
+            },
+            {
+              category: [
+                "software development",
+                "training and capacity building",
+              ],
+              status: "past",
+              imageUrl: "assets/img/projects/blog1.jpg",
+              title: "Coal-exit modelling in Jharkhand, India",
+              subtitle: "Supporting the most important coal exit on Earth!",
+              description:
+                "The Centre for Environment and Energy Development (CEED) has partnered \
               with Open Energy Transition (OET) to support energy transition in Jharkhand. \
               The collaboration aims to conduct cutting-edge research to enhance energy security \
               and low-carbon development in the state. CEED, which serves as a technical partner \
@@ -535,20 +533,20 @@ document.addEventListener("DOMContentLoaded", function () {
               the state governments initiatives on energy transition. OETs expertise and open \
               technology solutions will contribute to informed decision-making and efficient \
               planning for a low-carbon future.",
-            date: "2023-08-01",
-            partner: "Centre for Environment and Energy Development (CEED)",
-          },
-          {
-            category: [
-              "software development",
-              "training and capacity building",
-            ],
-            status: "past",
-            imageUrl: "assets/img/projects/blog2.jpg",
-            title: "Sustainable Hydrogen and Power-to-X ramp-up in Africa",
-            subtitle: "Exploring opportunities of green fuels in Africa",
-            description:
-              "The global hydrogen economy presents a major opportunity for several African countries, offering new \
+              date: "2023-08-01",
+              partner: "Centre for Environment and Energy Development (CEED)",
+            },
+            {
+              category: [
+                "software development",
+                "training and capacity building",
+              ],
+              status: "past",
+              imageUrl: "assets/img/projects/blog2.jpg",
+              title: "Sustainable Hydrogen and Power-to-X ramp-up in Africa",
+              subtitle: "Exploring opportunities of green fuels in Africa",
+              description:
+                "The global hydrogen economy presents a major opportunity for several African countries, offering new \
               economic prospects and advancing sustainable energy transitions. However, unlocking this potential requires \
               targeted strategies, knowledge transfer, and integrated energy system modeling to facilitate market development.\
               To successfully participate in this emerging market, African countries need robust infrastructure, policy \
@@ -565,21 +563,21 @@ document.addEventListener("DOMContentLoaded", function () {
                cross-border collaboration, and investment strategies, ensuring that Africa plays a crucial role in the global \
                hydrogen economy. As consultants and developers, Open Energy Transition (OET) will provide essential support in \
                software development, maintenance, and training, ensuring the long-term efficiency and usability of the developed tools.",
-            date: "2023-09-01",
-            partner: "H2Global meets Africa Consortium",
-          },
-          {
-            category: [
-              "software development",
-              "training and capacity building",
-            ],
-            status: "ongoing",
-            imageUrl: "assets/img/projects/blog3.jpg",
-            title: "Energy System Chef Zambia",
-            subtitle:
-              "The energy system implications of transitions to clean cooking in Zambia",
-            description:
-              "The Energy System Chef Zambia project explores the energy system implications \
+              date: "2023-09-01",
+              partner: "H2Global meets Africa Consortium",
+            },
+            {
+              category: [
+                "software development",
+                "training and capacity building",
+              ],
+              status: "ongoing",
+              imageUrl: "assets/img/projects/blog3.jpg",
+              title: "Energy System Chef Zambia",
+              subtitle:
+                "The energy system implications of transitions to clean cooking in Zambia",
+              description:
+                "The Energy System Chef Zambia project explores the energy system implications \
               of mass e-cooking adoption. It aims to develop implementation scenarios and a tangible roadmap \
               for a just energy transition in Zambia. With 90% of the population lacking clean cooking access, \
               this research is crucial. It analyzes the wider energy system implications of clean cooking, \
@@ -589,22 +587,22 @@ document.addEventListener("DOMContentLoaded", function () {
               software support, capacity building, and maintenance. OETs expertise ensures successful \
               implementation of project objectives and efficient functioning of developed software tools. \
               This project contributes to Zambias clean cooking transition and promotes a sustainable and just energy system.",
-            date: "2023-03-01",
-            partner: "University of Zambia, Climate Compatible Growth (CCG)",
-          },
-          {
-            category: [
-              "consultancy",
-              "software development",
-              "training and capacity building",
-            ],
-            status: "past",
-            imageUrl: "assets/img/projects/blog4.jpg",
-            title: "Energy Transition Kazakhstan - Agora",
-            subtitle:
-              "Exploring more ambitious energy transition pathways for Kazakhstan",
-            description:
-              "Agora Energiewende has commissioned OET to model the Kazakh power system, focusing on \
+              date: "2023-03-01",
+              partner: "University of Zambia, Climate Compatible Growth (CCG)",
+            },
+            {
+              category: [
+                "consultancy",
+                "software development",
+                "training and capacity building",
+              ],
+              status: "past",
+              imageUrl: "assets/img/projects/blog4.jpg",
+              title: "Energy Transition Kazakhstan - Agora",
+              subtitle:
+                "Exploring more ambitious energy transition pathways for Kazakhstan",
+              description:
+                "Agora Energiewende has commissioned OET to model the Kazakh power system, focusing on \
               significant increases in solar and wind energy generation beyond the official mid-term goal of 15% \
               renewable energy share by 2030. The project includes the incorporation of transmission system \
               infrastructure in the energy planning study. OET will validate the model, conduct workflow tests, \
@@ -613,164 +611,129 @@ document.addEventListener("DOMContentLoaded", function () {
               conducting a technical review. Through this project, OET aims to provide insights into surpassing \
               renewable energy targets, supporting decision-making, and facilitating the transition to a more \
               sustainable energy sector in Kazakhstan.",
-            date: "2023-05-01",
-            outcome: [
-              {
-                title: "Read the report",
-                link: "https://www.agora-energiewende.org/publications/modernising-kazakhstans-coal-dependent-power-sector-through-renewables",
-              },
-            ],
-            partner: [
-              {
-                title: "Agora Energiewende",
-                link: "https://www.agora-energiewende.org/",
-              },
-            ],
-          },
-          {
-            category: "software development",
-            status: "ongoing",
-            imageUrl: "assets/img/get_involved/tauritro-logo-small.png",
-            title: "Project Tauritron",
-            subtitle:
-              "An user focused open-source webinterface for executing and visualizing energy system models",
-            description:
-              "The open source project that CEO Maximilian Parzen was awarded as individual, \
+              date: "2023-05-01",
+              outcome: [
+                {
+                  title: "Read the report",
+                  link: "https://www.agora-energiewende.org/publications/modernising-kazakhstans-coal-dependent-power-sector-through-renewables",
+                },
+              ],
+              partner: [
+                {
+                  title: "Agora Energiewende",
+                  link: "https://www.agora-energiewende.org/"
+                },
+              ],
+            },
+            {
+              category: "software development",
+              status: "ongoing",
+              imageUrl: "assets/img/get_involved/tauritro-logo-small.png",
+              title: "Project Tauritron",
+              subtitle:
+                "An user focused open-source webinterface for executing and visualizing energy system models",
+              description:
+                "The open source project that CEO Maximilian Parzen was awarded as individual, \
               puts the human back at the center of energy planning decisions. This project will improve how people \
               interact with energy data, enable simple calculations and visualizations, promote public engagement, \
               and improve human-centered decision making. Specifically, the project aims to develop a graphical web \
               interface for the popular open-source energy system model, PyPSA, which is used in research and industry \
               worldwide. After successful development, the open-source developments can be adapted by any other tool.",
-            date: "2023-03-01",
-            partner:
-              "Prototype Fund, Federal Ministry of Education and Research Germany",
-          },
-          {
-            category: [
-              "software development",
-              "training and capacity building",
-            ],
-            status: "past",
-            imageUrl: "assets/img/projects/blog5.jpg",
-            title:
-              "Multi-Country Electricity Transition Potential and Challenges Project",
-            subtitle: "Training and supporting modelling teams in 10 countries",
-            description:
-              'OET joined the Multi-Country Electricity Transition Potential and Challenges Project (MCET) \
+              date: "2023-03-01",
+              partner:
+                "Prototype Fund, Federal Ministry of Education and Research Germany",
+            },
+            {
+              category: [
+                "software development",
+                "training and capacity building",
+              ],
+              status: 'past',
+              imageUrl: "assets/img/projects/blog5.jpg",
+              title:
+                "Multi-Country Electricity Transition Potential and Challenges Project",
+              subtitle:
+                "Training and supporting modelling teams in 10 countries",
+              description:
+                'OET joined the Multi-Country Electricity Transition Potential and Challenges Project (MCET) \
               as a model instructor for power system planning in deep decarbonization scenarios. The project aimed to \
               analyze barriers to decarbonization in individual countries and build capacity through monthly and ad-hoc \
               modeling trainings. OET provided training materials, "modeling kits," and technical assistance to modeling \
               teams for calibration, execution, and validation of decarbonization scenarios. The projects focus was on \
               delivering feasible decarbonization pathways for the electric power sector, contributing to the global \
               transition towards sustainable and low-carbon electricity systems.',
-            date: "2022-09-01",
-            partner: "Environmental Defense Fund (EDF)",
-          },
-          // Add more cards here
-        ];
-        // Sort cards by date in descending order (most recent on top)
-        cardData.sort((a, b) => new Date(b.date) - new Date(a.date));
-
-        resolve(cardData);
-      }, 1000);
-    });
-  }
-
-  function renderCards() {
-    const selectedCategory = categoryFilter.value;
-    const selectedStatus = statusFilter.value;
-
-    // Filter the cards based on the selected category and status
-    const filteredCards = cards.filter(function (card) {
-      return (
-        (selectedCategory === "all" ||
-          card.category.includes(selectedCategory)) &&
-        (selectedStatus === "all" || card.status === selectedStatus)
-      );
-    });
-
-    // Calculate the total number of pages
-    const totalPages = Math.ceil(filteredCards.length / cardsPerPage);
-
-    // Update the current page if it exceeds the total number of pages
-    if (currentPage > totalPages) {
-      currentPage = totalPages;
+              date: "2022-09-01",
+              partner: "Environmental Defense Fund (EDF)",
+            },
+            // Add more cards here
+          ];
+          // Sort cards by date in descending order (most recent on top)
+          cardData.sort((a, b) => new Date(b.date) - new Date(a.date));
+          
+          resolve(cardData);
+        }, 1000);
+      });
     }
 
-    // Calculate the start and end indices of the cards to be displayed on the current page
-    const startIndex = (currentPage - 1) * cardsPerPage;
-    let endIndex = startIndex + cardsPerPage;
-
-    if (cardsPerPage === "all") {
-      endIndex = filteredCards.length; // Show all cards
-    } else {
-      endIndex = startIndex + parseInt(cardsPerPage);
-
-      // Adjust the end index if it exceeds the total number of cards
-      if (endIndex > filteredCards.length) {
-        endIndex = filteredCards.length;
+    function renderCards() {
+      const selectedCategory = categoryFilter.value;
+      const selectedStatus = statusFilter.value;
+    
+      // Filter the cards based on the selected category and status
+      const filteredCards = cards.filter(function(card) {
+        return (
+          (selectedCategory === 'all' || card.category.includes(selectedCategory)) &&
+          (selectedStatus === 'all' || card.status === selectedStatus)
+        );
+      });
+    
+      // Calculate the total number of pages
+      const totalPages = Math.ceil(filteredCards.length / cardsPerPage);
+    
+      // Update the current page if it exceeds the total number of pages
+      if (currentPage > totalPages) {
+        currentPage = totalPages;
       }
+    
+      // Calculate the start and end indices of the cards to be displayed on the current page
+      const startIndex = (currentPage - 1) * cardsPerPage;
+      let endIndex = startIndex + cardsPerPage;
+    
+      if (cardsPerPage === "all") {
+        endIndex = filteredCards.length; // Show all cards
+      } else {
+        endIndex = startIndex + parseInt(cardsPerPage);
+      
+        // Adjust the end index if it exceeds the total number of cards
+        if (endIndex > filteredCards.length) {
+          endIndex = filteredCards.length;
+        }
+      }
+    
+      // Get the subset of cards to be displayed on the current page
+      const cardsForPage = endIndex ? filteredCards.slice(startIndex, endIndex) : filteredCards;
+    
+      // Clear the card container
+      cardContainer.innerHTML = '';
+    
+      // Render the cards for the current page
+      cardsForPage.forEach(function(card) {
+        const { imageUrl, title, subtitle, description, category, date, status, partner, outcome, client } = card;
+        const cardElement = createCard(imageUrl, title, subtitle, description, category, date, status, partner, outcome, client);
+        cardContainer.appendChild(cardElement);
+      });
+    
+      // Render the pagination buttons
+      renderPagination(totalPages);
     }
 
-    // Get the subset of cards to be displayed on the current page
-    const cardsForPage = endIndex
-      ? filteredCards.slice(startIndex, endIndex)
-      : filteredCards;
+    function createCard(imageUrl, title, subtitle, description, category, date, status, partner, outcome, client) {
+      const cardCol = document.createElement('div');
+      cardCol.className = 'col-md-4';
 
-    // Clear the card container
-    cardContainer.innerHTML = "";
-
-    // Render the cards for the current page
-    cardsForPage.forEach(function (card) {
-      const {
-        imageUrl,
-        title,
-        subtitle,
-        description,
-        category,
-        date,
-        status,
-        partner,
-        outcome,
-        client,
-      } = card;
-      const cardElement = createCard(
-        imageUrl,
-        title,
-        subtitle,
-        description,
-        category,
-        date,
-        status,
-        partner,
-        outcome,
-        client,
-      );
-      cardContainer.appendChild(cardElement);
-    });
-
-    // Render the pagination buttons
-    renderPagination(totalPages);
-  }
-
-  function createCard(
-    imageUrl,
-    title,
-    subtitle,
-    description,
-    category,
-    date,
-    status,
-    partner,
-    outcome,
-    client,
-  ) {
-    const cardCol = document.createElement("div");
-    cardCol.className = "col-md-4";
-
-    const card = document.createElement("div");
-    card.className = "card-projects";
-    card.innerHTML = `
+      const card = document.createElement('div');
+      card.className = 'card-projects';
+      card.innerHTML = `
         <div class="card-img-container">
           <img src="${imageUrl}" class="card-img" alt="Card Image">
         </div>
@@ -781,93 +744,88 @@ document.addEventListener("DOMContentLoaded", function () {
           <p class="card-text-custom"><small class="text-muted"><strong>Service:</strong> ${category}</small></p>
           <p class="card-text-custom"><small class="text-muted"><strong>Start:</strong> ${date}</small></p>
           <p class="card-text-custom"><small class="text-muted"><strong>Status:</strong> ${status}</small></p>
-          ${renderListHorizontal("Partner", partner)}
-          ${renderLinkList("Outcome", outcome)}
-          ${renderLinkList("Client", client)}
+          ${renderListHorizontal('Partner', partner)}
+          ${renderLinkList('Outcome', outcome)}
+          ${renderLinkList('Client', client)}
         </div>
       `;
 
-    const descriptionElement = card.querySelector(".card-text");
-    const readMoreButton = document.createElement("button");
-    readMoreButton.className = "btn btn-link";
-    readMoreButton.textContent = "Read More";
-    readMoreButton.addEventListener("click", function () {
-      // Expand the description to full length
-      descriptionElement.textContent = description;
-      // Remove the "Read More" button
-      card.querySelector(".btn-link").remove();
-    });
-
-    if (description.length > 100) {
-      // Truncate the description and add "Read More" button
-      descriptionElement.textContent = truncateDescription(description, 100);
-      descriptionElement.appendChild(readMoreButton);
-    }
-
-    cardCol.appendChild(card);
-    return cardCol;
-  }
-
-  function truncateDescription(description, maxLength) {
-    const truncated = description.slice(0, maxLength);
-    return truncated + (description.length > maxLength ? "..." : "");
-  }
-
-  function handleFilterFormSubmit(event) {
-    event.preventDefault();
-    currentPage = 1;
-    cardsPerPage = parseInt(cardsPerPageSelect.value);
-    renderCards();
-  }
-
-  function handleCardsPerPageChange() {
-    currentPage = 1;
-    cardsPerPage =
-      cardsPerPageSelect.value === "all"
-        ? "all"
-        : parseInt(cardsPerPageSelect.value);
-    renderCards();
-  }
-
-  function renderPagination(totalPages) {
-    paginationContainer.innerHTML = "";
-
-    for (let i = 1; i <= totalPages; i++) {
-      const pageButton = document.createElement("li");
-      pageButton.className = "page-item";
-      const link = document.createElement("a");
-      link.className = "page-link";
-      link.href = "#";
-      link.textContent = i;
-      if (i === currentPage) {
-        pageButton.classList.add("active");
+      const descriptionElement = card.querySelector('.card-text');
+      const readMoreButton = document.createElement('button');
+      readMoreButton.className = 'btn btn-link';
+      readMoreButton.textContent = 'Read More';
+      readMoreButton.addEventListener('click', function() {
+        // Expand the description to full length
+        descriptionElement.textContent = description;
+        // Remove the "Read More" button
+        card.querySelector('.btn-link').remove();
+      });
+    
+      if (description.length > 100) {
+        // Truncate the description and add "Read More" button
+        descriptionElement.textContent = truncateDescription(description, 100);
+        descriptionElement.appendChild(readMoreButton);
       }
 
-      link.addEventListener("click", function () {
-        currentPage = i;
-        renderCards();
-      });
+      cardCol.appendChild(card);
+      return cardCol;
+    }
 
-      pageButton.appendChild(link);
-      paginationContainer.appendChild(pageButton);
+    function truncateDescription(description, maxLength) {
+      const truncated = description.slice(0, maxLength);
+      return truncated + (description.length > maxLength ? '...' : '');
     }
+
+    function handleFilterFormSubmit(event) {
+      event.preventDefault();
+      currentPage = 1;
+      cardsPerPage = parseInt(cardsPerPageSelect.value);
+      renderCards();
+    }
+
+    function handleCardsPerPageChange() {
+      currentPage = 1;
+      cardsPerPage = cardsPerPageSelect.value === "all" ? "all" : parseInt(cardsPerPageSelect.value);
+      renderCards();
+    }
+
+    function renderPagination(totalPages) {
+      paginationContainer.innerHTML = '';
+
+      for (let i = 1; i <= totalPages; i++) {
+        const pageButton = document.createElement('li');
+        pageButton.className = 'page-item';
+        const link = document.createElement('a');
+        link.className = 'page-link';
+        link.href = '#';
+        link.textContent = i;
+        if (i === currentPage) {
+          pageButton.classList.add('active');
+        }
+
+        link.addEventListener('click', function() {
+          currentPage = i;
+          renderCards();
+        });
+
+        pageButton.appendChild(link);
+        paginationContainer.appendChild(pageButton);
+      }
     // Add top margin to page selection buttons
-    const pageButtons = paginationContainer.querySelectorAll(".page-link");
-    pageButtons.forEach(function (button) {
-      button.style.marginTop = "1rem";
-      button.style.backgroundColor = "#fff"; // Unselected: white background
-      button.style.borderColor = "#E31937";
-      button.style.color = "#E31937"; // Unselected: red text
-      button.style.fontWeight = "normal";
-      button.style.textDecoration = "none";
+    const pageButtons = paginationContainer.querySelectorAll('.page-link');
+    pageButtons.forEach(function(button) {
+      button.style.marginTop = '1rem';
+      button.style.backgroundColor = '#fff'; // Unselected: white background
+      button.style.borderColor = '#E31937';
+      button.style.color = '#E31937'; // Unselected: red text
+      button.style.fontWeight = 'normal';
+      button.style.textDecoration = 'none';
     });
-    const activePage = paginationContainer.querySelector(
-      ".page-item.active .page-link",
-    );
+    const activePage = paginationContainer.querySelector('.page-item.active .page-link');
     if (activePage) {
-      activePage.style.backgroundColor = "#E31937"; // Selected: red background
-      activePage.style.color = "#fff"; // Selected: white text
-      activePage.style.textDecoration = "none"; // No underline
+      activePage.style.backgroundColor = '#E31937'; // Selected: red background
+      activePage.style.color = '#fff'; // Selected: white text
+      activePage.style.textDecoration = 'none'; // No underline
     }
-  }
-});
+    }
+  });
