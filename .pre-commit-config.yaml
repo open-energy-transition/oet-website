@@ -1,0 +1,15 @@
+repos:
+  - repo: https://github.com/codespell-project/codespell
+    rev: v2.4.1
+    hooks:
+      - id: codespell
+        args: ['--ignore-regex="(\b[A-Z]+\b)"', '--ignore-words=.codespell.ignore']
+        files: \.html$
+
+  - repo: local
+    hooks:
+      - id: htmlhint
+        name: htmlhint
+        entry: npm run lint:html
+        language: system
+        files: \.html$
