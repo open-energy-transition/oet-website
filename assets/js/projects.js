@@ -32,6 +32,34 @@ document.addEventListener('DOMContentLoaded', function() {
             // Example:
             // category: 'consultancy', 'software development', 'training and capacity building'],
             {
+              category: ["software development", "consultancy"],
+              status: "ongoing",
+              imageUrl: "assets/img/vecteezy_hdr-battersea-powerstation-london_7352560.jpg",
+              title:
+                "Open-Source Market Model Innovation Project",
+              subtitle:
+                "An open-source modelling initiative to support a transparent, collaborative, and data-driven transition to a net-zero energy system.",
+              description:
+                "In partnership with the National Energy System Operator (NESO), we are contributing to the \
+                  transformation of the energy sector through the Open-Source Market Model project, funded by \
+                  the Network Innovation Allowance (NIA). This project aims to create an affordable and \
+                  accessible tool and project database for analysing energy systems, using open-source software \
+                  and open data only. This method encourages transparency, inclusivity, and broader \
+                  engagement with stakeholders. \
+                  The project includes assessing suitable open-source models, assessing potential risks and \
+                  opportunities in using open-source and open data, replicating the results from NESO’s existing \
+                  commercial tool, and building an advanced open-source market model that reflects real-world \
+                  energy demands, renewable supply potential, and infrastructure. It also ensures transparency, \
+                  accessibility, and addresses any associated security concerns. \
+                  By adopting trusted tools like PyPSA-Eur, the project aims to enable government, industry, and \
+                  academia to engage with and contribute to energy system modeling. This collaborative, open-source \
+                  approach strengthens model credibility, democratizes access, and ultimately supports \
+                  the UK’s long-term energy transition and climate goals.",
+              date: "2025-07-15",
+              partner:
+                "N/A",
+            },
+              {
               category: ["software development", "data", "training and capacity building"],
               status: "ongoing",
               imageUrl: "assets/img/projects/ohmygrid-logo.png",
