@@ -27,6 +27,41 @@ document.addEventListener('DOMContentLoaded', function() {
           // Card data goes here
           // Example:
           {
+            category: ["data"],
+            title: "The Open Energy Modelling Tool Trackers (beta) is live",
+            date: "2025-09-22",
+            author: "Open Energy Transition",
+            source: "https://openmod-tracker.org/",
+          },
+          {
+            category: ["conference"],
+            title: "Webinar: Commercial-Grade Open-Source Software for Energy Planning",
+            date: "2025-09-18",
+            author: "Open Energy Transition",
+            source: "https://www.youtube.com/live/4TQvwnKtSGs",
+          },
+          {
+            category: ["conference"],
+            title: "Luciana Marques (OET) presented the talk <em>Open Tools for Resilient Power System Planning: From Climate Data to Market Design</em> at the Hydropower Workshop hosted by the World Bank, GFDRR, ESMAP, and AFD",
+            date: "2025-09-17",
+            author: "Luciana Marques",
+            source: "https://www.linkedin.com/feed/update/urn:li:activity:7373994708156526592",
+          },
+          {
+            category: ["data"],
+            title: "Awesome Electricity Demand: an curated, open-source collection of global electricity demand data (hourly & sub-hourly)",
+            date: "2025-09-09",
+            author: "Open Energy Transition",
+            source: "https://github.com/open-energy-transition/Awesome-Electricity-Demand",
+          },
+          {
+            category: ["conference"],
+            title: "Maximilian Parzen (OET) talked at IEA Wind Task 43 Working Groups 2 & 3 monthly meeting on <em>The Future of Energy Planning: Open-Source vs. Proprietary Solutions?</em>",
+            date: "2025-08-29",
+            author: "IEA Wind Task 43",
+            source: "https://www.linkedin.com/feed/update/urn:li:activity:7367150512258953218",
+          },
+          {
             category: ["study"],
             title: "MapYouGrid is an open-source and collaborative initiative to map the world's electricity grids",
             date: "2025-08-05",
@@ -84,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function() {
           },
           {
             category: ["conference"],
-            title: "Martha (OET) spoke at the OSEAS conference in the workshop <em>Advancing Mission 300 with Open Source</em>.",
+            title: "Martha Frysztacki (OET) spoke at the OSEAS conference in the workshop <em>Advancing Mission 300 with Open Source</em>.",
             date: "2025-06-11",
             author: "Open Source in Energy Access Symposium",
             source: "https://www.oseas.org/speakers",
