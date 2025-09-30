@@ -217,7 +217,7 @@ document.addEventListener('DOMContentLoaded', function() {
           },
           {
             category: ["study", "report"],
-            title: "Report on PyPSA-UA (built on the PyPSA-Eur framework with simulatation of the Ukrainian power grid from the present to 2030.",
+            title: "Report on PyPSA-UA (built on the PyPSA-Eur framework with simulation of the Ukrainian power grid from the present to 2030.",
             date: "2024-11-26",
             author: "Fundacja Instrat and Clean Energy Lab (CEL)",
             source: "https://instrat.pl/en/ukraine-against-darkness/",
