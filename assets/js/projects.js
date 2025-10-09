@@ -209,7 +209,7 @@ document.addEventListener('DOMContentLoaded', function() {
             },
             {
               category: ["consultancy"],
-              status: "completed",
+              status: "past",
               imageUrl: "assets/img/projects/form_energy.png",
               title: "System Benefits of Energy Storage in Germany - Form Energy",
               subtitle:
@@ -357,7 +357,8 @@ document.addEventListener('DOMContentLoaded', function() {
               client: "Breakthrough Energy",
               outcome: [
                 {
-                  title: "The website will be launched soon",
+                  title: "Open Energy Benchmark Website",
+                  link: "https://openenergybenchmark.org/",
                 },
                 {
                   title: "Explore the Github repository",
