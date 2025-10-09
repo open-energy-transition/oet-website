@@ -138,8 +138,12 @@ document.addEventListener('DOMContentLoaded', function() {
                   long-term sustainability via capacity-building and knowledge transfer. This initiative represents \
                   a meaningful step toward greater resilience and cooperation in the European energy system.",
               date: "2024-12-01",
-              partner:
-                "European Union Agency for the Cooperation of Energy Regulators (ACER)",
+              partner: [
+                {
+                  title: "European Union Agency for the Cooperation of Energy Regulators (ACER)",
+                  link: "https://www.acer.europa.eu/"
+                },
+               ],
             },
             {
               category: ["software development", "consultancy"],
@@ -205,7 +209,12 @@ document.addEventListener('DOMContentLoaded', function() {
               and gained insights into PyPSA-Eur’s capabilities, data, and installation. Hands-on tutorials and Q&A sessions \
               ensured practical knowledge, empowering attendees to effectively use PyPSA for power system modeling.",
               date: "2024-11-12",
-              partner: "Eurelectric",
+              partner: [
+                {
+                  title: "European Union Agency for the Cooperation of Energy Regulators (ACER)",
+                  link: "https://www.eurelectric.org/"
+                },
+               ],
             },
             {
               category: ["consultancy"],
@@ -273,7 +282,12 @@ document.addEventListener('DOMContentLoaded', function() {
               transport sector decarbonization. This will contribute to shaping sustainable energy strategies and support global efforts \
               to reduce carbon emissions in transportation.",
               date: "2024-09-01",
-              client: "The International Council on Clean Transportation",
+              partner: [
+                {
+                  title: "The International Council on Clean Transportation",
+                  link: "https://theicct.org/"
+                 }
+              ],
             },
             {
               category: ["training and capacity building"],
@@ -291,7 +305,12 @@ document.addEventListener('DOMContentLoaded', function() {
               exploring renewable integration, hydropower systems, and uncertainty modeling through Monte Carlo simulations. \
               This initiative empowers African energy experts to drive sustainable, reliable energy transitions across the continent.",
               date: "2024-08-26",
-              partner: "The International Centre for Hydropower (ICH)",
+               partner: [
+                {
+                  title: "The International Centre for Hydropower (ICH)",
+                  link: "https://ich.no/"
+                }
+              ],
             },
             {
               category: ["consultancy", "software development"],
@@ -439,7 +458,12 @@ document.addEventListener('DOMContentLoaded', function() {
               costs, and fostering a more collaborative environment. It will also set a new standard for how energy systems are modeled \
               at theTSOs, driving efficiency and innovation while ensuring data security.",
               date: "2023-12-06",
-              partner: "TransnetBW GmbH",
+              partner: [
+                {
+                  title: "TransnetBW GmbH",
+                  link: "https://www.transnetbw.de/de"
+                },
+              ], 
             },
             {
               category: ["training and capacity building"],
@@ -616,7 +640,16 @@ document.addEventListener('DOMContentLoaded', function() {
               implementation of project objectives and efficient functioning of developed software tools. \
               This project contributes to Zambias clean cooking transition and promotes a sustainable and just energy system.",
               date: "2023-03-01",
-              partner: "University of Zambia, Climate Compatible Growth (CCG)",
+              partner: [
+                {
+                  title: "University of Zambia",
+                  link: "https://www.unza.zm/"
+                },
+                {
+                  title: "Climate Compatible Growth (CCG)",
+                  link: "https://climatecompatiblegrowth.com/"
+                },
+              ]
             },
             {
               category: [
