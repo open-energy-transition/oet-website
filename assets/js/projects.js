@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
               status: "ongoing",
               imageUrl: "assets/img/projects/tso-support.png",
               title:
-                "Free monthly support for system operators",
+                "Free monthly PyPSA support for system operators",
               subtitle:
                 "Expert PyPSA guidance and support sessions exclusively for European transmission system operators",
               description:
