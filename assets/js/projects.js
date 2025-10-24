@@ -32,6 +32,26 @@ document.addEventListener('DOMContentLoaded', function() {
             // Example:
             // category: 'consultancy', 'software development', 'training and capacity building'],
             {
+              category: ["consultancy", "training and capacity building"],
+              status: "ongoing",
+              imageUrl: "assets/img/projects/tso-support.png",
+              title:
+                "Free monthly PyPSA support for system operators",
+              subtitle:
+                "Expert PyPSA guidance and support sessions exclusively for European transmission system operators",
+              description:
+                "Open Energy Transition offers free monthly support sessions exclusively for European transmission system operators exploring PyPSA and open-source energy modeling.\n\n" +
+                "These sessions also provide a valuable opportunity to network with other system operators and share experiences.",
+              date: "2025-12-01",
+              outcome: [
+                {
+                  title: "Learn more and register",
+                  link: "tso-support.html",
+                }
+              ],
+              partner: "N/A",
+            },
+            {
               category: ["software development", "consultancy"],
               status: "ongoing",
               imageUrl: "assets/img/vecteezy_hdr-battersea-powerstation-london_7352560.jpg",
