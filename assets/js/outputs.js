@@ -27,6 +27,48 @@ document.addEventListener('DOMContentLoaded', function() {
           // Card data goes here
           // Example:
           {
+            category: ["tool"],
+            title: "Launching DemandCast: ML for generating time series for future electricity demands",
+            date: "2025-12-11",
+            author: "Open Energy Transition",
+            source: "https://www.linkedin.com/feed/update/urn:li:activity:7404822344940171265",
+          },
+          {
+            category: ["webinar"],
+            title: "Agora Energiewende webinar with Martha Frysztacki (OET): Empowerment Through Openness",
+            date: "2025-12-08",
+            author: "Agora Energiewende",
+            source: "https://www.linkedin.com/feed/update/urn:li:activity:7400133748161253376",
+          },
+          {
+            category: ["conference"],
+            title: "PEB-talk with Harry van der Weijde (OET)",
+            date: "2025-11-27",
+            author: "Platform Energiebewustzijn (PEB)",
+            source: "https://www.linkedin.com/events/peb-talk-harryvanderweijde7381642570071764993/",
+          },
+          {
+            category: ["conference"],
+            title: "Annual Forum Session Highlight: Session 7—Planning in an Uncertain World: The Evolving Role of Energy Modelling with Martha Fryszatcki (OET)",
+            date: "2025-11-25",
+            author: "Energy Modelling Hub - Carrefour de modélisation énergétique",
+            source: "https://www.linkedin.com/posts/energy-modelling-hub-carrefour-de-mod%C3%A9lisation-%C3%A9nerg%C3%A9tique_emh-annual-forum-session-7-activity-7398788507521159168-QwFT?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAVQ2RoBXzOE8KqS8FR7jSQHNtOlOApbDgA",
+          },
+          {
+            category: ["workshop"],
+            title: "Free monthly support sessions in PyPSA for European TSOs by Open Energy Transition",
+            date: "2025-11-19",
+            author: "Open Energy Transition",
+            source: "https://www.linkedin.com/feed/update/urn:li:activity:7396857311819976706",
+          },
+          {
+            category: ["conference"],
+            title: "Speaker spotlight: Tobias Augspurger (OET) at Illuminate Energy Data Conference",
+            date: "2025-11-17",
+            author: "Illuminate Energy Data",
+            source: "https://www.linkedin.com/posts/illuminate-energy-data_energy-data-energydata-activity-7396210989119066112-egOD?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAVQ2RoBXzOE8KqS8FR7jSQHNtOlOApbDgA",
+          },
+          {
             category: ["news"],
             title: "Interview with Tosin George (OET): The power of shared data in the energy transition",
             date: "2025-11-09",
