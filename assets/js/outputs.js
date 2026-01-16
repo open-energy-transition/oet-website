@@ -27,6 +27,27 @@ document.addEventListener('DOMContentLoaded', function() {
           // Card data goes here
           // Example:
           {
+            category: ["news"],
+            title: "2025 Open Energy Transition wrap-up in numbers",
+            date: "2025-12-30",
+            author: "Open Energy Transition",
+            source: "https://www.linkedin.com/feed/update/urn:li:activity:7411680135147569152",
+          },
+          {
+            category: ["news"],
+            title: "The new PyPSA task force shares their goals and roadmap for 2026",
+            date: "2025-12-18",
+            author: "Open Energy Transition",
+            source: "https://www.linkedin.com/feed/update/urn:li:activity:7407381856943353857",
+          },
+          {
+            category: ["study"],
+            title: "Release of Open-TYNDP v0.4: Under active development",
+            date: "2025-12-16",
+            author: "Open Energy Transition",
+            source: "https://open-tyndp.readthedocs.io/en/latest/release_notes.html#open-tyndp-v0-4-16th-december-2025",
+          },
+          {
             category: ["tool"],
             title: "Launching DemandCast: ML for generating time series for future electricity demands",
             date: "2025-12-11",
@@ -77,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function() {
           },
           {
             category: ["conference"],
-            title: "Maximilian Parzen (OET) shares words on open-source grid planning at IRENA conference",
+            title: "Maximilian Parzen (OET) on open-source grid planning at IRENA conference",
             date: "2025-11-03",
             author: "Open Energy Transition",
             source: "https://www.linkedin.com/feed/update/urn:li:activity:7391105077589127168",
@@ -98,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function() {
           }, 
           {
             category: ["conference"],
-            title: "Hazem Abdelkhalek and Arsyan Mohamad Virio Andreyana (OET) at the 25th ASEAN Energy Business Forum",
+            title: "Hazem Abdel-Khalek and Arsyan Mohamad Virio Andreyana (OET) at the 25th ASEAN Energy Business Forum",
             date: "2025-10-22",
             author: "Open Energy Transition",
             source: "https://www.linkedin.com/feed/update/urn:li:activity:7386697176808312832",
@@ -133,7 +154,7 @@ document.addEventListener('DOMContentLoaded', function() {
           },
           {
             category: ["Open Energy Transition"],
-            title: "Meet out Head of Depaterment Tool & Data: Hazem Abdel-Khalek (OET)",
+            title: "Meet our Head of Department Modeling Tool & Data: Hazem Abdel-Khalek (OET)",
             date: "2025-10-07",
             author: "Open Energy Transition",
             source: "https://www.linkedin.com/feed/update/urn:li:activity:7381248174646169600",
