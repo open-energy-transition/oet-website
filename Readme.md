@@ -1,3 +1,9 @@
+# Deprecated
+
+This repository has been archived. The new website can be found at: https://github.com/open-energy-transition/oet-website-v2
+
+---
+
 # Open Energy Transition website
 
 The "Open Energy Transition" website can be used as template for your own purpose. The html code is located in the `index.html` and the css (styling of website) is located in `assets/css`.
@@ -14,3 +20,4 @@ To use the website, it is worth to investigate the following features that we bu
 - Logomakr for vector logos
 
 As code environment, we had code experience using VScode and the "Live Server" add-on.
+
